@@ -10,7 +10,7 @@ Family Travel Editor shares that process as an Agent Skill for Codex and compati
 
 ![The author's workflow: sources, story, edit, review, publish](docs/workflow.png)
 
-*The diagram describes the originating workflow. Analysis checks are described by function; optional services are not bundled integrations or mandatory subscriptions.*
+*The diagram describes the originating workflow. Named services and audio models are optional examples, not bundled integrations or mandatory subscriptions.*
 
 ## What it helps you do
 
@@ -19,7 +19,7 @@ Family Travel Editor shares that process as an Agent Skill for Codex and compati
 - Edit versioned timelines in Resolve with clear boundaries around each change.
 - Check actual exports, apply timecoded feedback and maintain project preferences.
 
-**v0.1.1 is experimental.** It is a workflow for a human and an agent, not a one-click film generator. The bundled XML helper produces same-rate, video-only straight cuts at integer 24/25/30 fps. It does not conform dialogue, mix music or build titles. The skill guides those tasks through the editor and available tools.
+**v0.1.0 is experimental.** It is a workflow for a human and an agent, not a one-click film generator. The bundled XML helper produces same-rate, video-only straight cuts at integer 24/25/30 fps. It does not conform dialogue, mix music or build titles. The skill guides those tasks through the editor and available tools.
 
 ## Quick start
 
@@ -86,5 +86,3 @@ Original code and instructions: [MIT](LICENSE). Included example media is synthe
 Independent project; not affiliated with Blackmagic Design.
 
 Created by [Denis Kortunov](https://github.com/denyakortunov).
-
-[Privacy policy](docs/privacy.md) · [Terms of use](docs/terms.md)

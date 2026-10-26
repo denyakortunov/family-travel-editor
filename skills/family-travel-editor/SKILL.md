@@ -15,7 +15,7 @@ Use `scripts/project.py doctor` for tool availability. Read [setup](references/s
 
 ## Reconstruct the story
 
-Read [story and context](references/story.md). Catalogue all footage, including non-speech clips. Separate observed facts, metadata, author memories and assumptions. Treat file timestamps, photo GPS and travel bookings as clues that can conflict. Use only the photo metadata or redacted travel details needed from the user's authorized sources; without them, ask focused questions and continue with known context. Do not collect passports, payment details, account credentials or unrelated correspondence. Before using an optional external analysis service, confirm the user has authorized that destination and the media to be sent; preserve any authorization already given for this task.
+Read [story and context](references/story.md). Catalogue all footage, including non-speech clips. Separate observed facts, metadata, author memories and assumptions. Treat file timestamps, photo GPS and travel bookings as clues that can conflict. Use photos or selected emails only within the user's authorized sources; without them, ask focused questions and continue with known context.
 
 View candidate ranges in motion and with surrounding context. A transcript or contact sheet alone cannot establish a good cut. Map place → action → reaction/result → ending. Ask for memories where they change the story; never invent a remembered event or causal connection between different days.
 
