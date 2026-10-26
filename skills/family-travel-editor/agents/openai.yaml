@@ -1,0 +1,4 @@
+interface:
+  display_name: "Family Travel Editor"
+  short_description: "Turn travel footage into editable family films"
+  default_prompt: "Use $family-travel-editor to plan and edit one scene from my travel footage."

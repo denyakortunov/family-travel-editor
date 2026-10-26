@@ -1,0 +1,44 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "family-travel-editor",
+  "version": "0.1.0",
+  "description": "Plan and edit family travel films with a repeatable, human-reviewed DaVinci Resolve workflow.",
+  "author": {
+    "name": "Denis Kortunov",
+    "url": "https://github.com/denyakortunov"
+  },
+  "homepage": "https://github.com/denyakortunov/family-travel-editor",
+  "repository": "https://github.com/denyakortunov/family-travel-editor",
+  "license": "MIT",
+  "keywords": [
+    "video-editing",
+    "travel",
+    "davinci-resolve",
+    "agent-skills"
+  ],
+  "extensions": {
+    "com.openai": {
+      "requires_local_executor": true,
+      "interface": {
+        "displayName": "Family Travel Editor",
+        "shortDescription": "Edit your travel stories",
+        "longDescription": "An experimental local workflow for family travel films: reconstruct trip context, plan scenes, draft narration, edit in DaVinci Resolve, check exports and apply timecoded feedback. Requires your footage and a local editor. Optional services are configured separately. Includes a synthetic example; does not promise automatic finished films.",
+        "developerName": "Denis Kortunov",
+        "category": "Productivity",
+        "capabilities": [
+          "Read",
+          "Write"
+        ],
+        "websiteURL": "https://github.com/denyakortunov/family-travel-editor",
+        "supportURL": "https://github.com/denyakortunov/family-travel-editor/issues",
+        "defaultPrompt": [
+          "Help me plan the first scene from my travel footage.",
+          "Apply my timecoded comments to a new version of my family film."
+        ],
+        "brandColor": "#147e87",
+        "composerIcon": "./assets/icon.svg",
+        "logo": "./assets/icon.svg"
+      }
+    }
+  }
+}

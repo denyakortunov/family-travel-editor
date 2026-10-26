@@ -1,0 +1,14 @@
+{
+  "synthetic": true,
+  "comments": [
+    {
+      "id": "demo-1",
+      "version": "v1",
+      "timecode": "00:00:04:00",
+      "request": "Shorten the middle shot by two seconds; preserve the first and last shots.",
+      "status": "applied",
+      "result_version": "v2",
+      "verification": "See validation.md; no author acceptance claimed."
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "Synthetic scene v1",
+  "fps": 25,
+  "width": 640,
+  "height": 360,
+  "shots": [
+    {
+      "path": "shot-1.mp4",
+      "in": 0,
+      "out": 100,
+      "source_frames": 100,
+      "role": "establish"
+    },
+    {
+      "path": "shot-2.mp4",
+      "in": 0,
+      "out": 100,
+      "source_frames": 100,
+      "role": "action"
+    },
+    {
+      "path": "shot-3.mp4",
+      "in": 0,
+      "out": 100,
+      "source_frames": 100,
+      "role": "result"
+    }
+  ]
+}
