@@ -1,9 +1,9 @@
 ---
 name: family-travel-editor
-description: Plan and edit family travel films from existing footage in DaVinci Resolve, reconstruct trip context, draft personal narration, and apply timecoded feedback while preserving the editable project.
+description: Edit travel videos and family films from camera or drone footage in DaVinci Resolve with AI assistance. Use for footage cataloguing, trip storytelling, scene planning, personal voiceover and timecoded review revisions while preserving an editable project.
 ---
 
-# Family Travel Editor
+# Travel Video Editor for DaVinci Resolve
 
 Turn a collection of clips into a coherent film with the filmmaker. Work on one named scene or revision at a time; keep an editable timeline and evidence of what was checked. This skill needs local file access for media operations and a working Resolve installation for native editing. Installing it does not install Resolve, grant account access, or supply audio models.
 
