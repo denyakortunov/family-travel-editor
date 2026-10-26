@@ -1,5 +1,5 @@
-# v0.1.0 — experimental first release
+# v0.1.1 — directory preparation
 
-A portable skill for family travel film editing, extracted from a real personal workflow. Includes English/Russian documentation, workflow illustration, project templates, source cataloguing, export measurement, a guarded Resolve connection helper and video-only FCP 7 XML generation.
+Uses a provider-neutral workflow diagram and analysis instructions. The directory title fits the 30-character limit, and the package links to published privacy and usage terms. Instructions limit trip context to selected, redacted information and require authorization for optional external analysis.
 
-A synthetic three-shot example demonstrates a timecoded revision from 12 to 10 seconds. Helper unit tests and media decoding are covered in docs/validation.md. Live Resolve import and public directory installation remain unvalidated. Optional services and audio models are not bundled. There is no automatic full-film editor or audio conform in this release.
+The editing helpers and their limitations are unchanged. The release remains experimental; live Resolve import is unvalidated. This package does not claim approval or availability in the ChatGPT directory.
