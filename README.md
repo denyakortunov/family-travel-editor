@@ -1,8 +1,8 @@
-# Travel Video Editor for DaVinci Resolve
+# AI Travel Video Editor for DaVinci Resolve
 
 **An AI video editing skill for travel videos and family films in DaVinci Resolve.**
 
-[Русская версия](README.ru.md) · [Quick start](#quick-start) · [Synthetic example](examples/first-scene/README.md) · [Validation](docs/validation.md)
+[Quick start](#quick-start) · [Synthetic example](examples/first-scene/README.md) · [Validation](docs/validation.md)
 
 I travel with my family and shoot on a DJI Osmo Pocket 3 and drones. Editing a trip usually takes me 20–30 hours. Working with an agent has not yet demonstrated a time saving, but it gives me a way to turn repeated decisions into a reusable process: reconstruct the story, ask about the memories, build a scene, review it and keep what we learned.
 
@@ -78,6 +78,10 @@ The installed skill contains general instructions. Your source paths, personal m
 ## Contributing and reporting problems
 
 Open an [issue](https://github.com/denyakortunov/family-travel-editor/issues) with the command, tool versions, expected result and a small reproducible example. Remove private media paths and personal context. For Resolve reports, distinguish XML generation, import, playback and export. Please keep changes focused and include a behavioural test for helper fixes.
+
+## Documentation
+
+The main documentation is in English. A [Russian translation](README.ru.md) is also available.
 
 ## License
 
