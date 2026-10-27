@@ -75,11 +75,7 @@ Fill in the footage folder and your editor, or leave the editor undecided:
 
 Expect a catalogue (`catalog.json`), a scene plan (`scene.json`) and a status note describing the next step. Review the story before the agent derives the frame-based shot plan. The file catalogue is technical evidence, not proof that every clip was watched.
 
-**No footage ready? Start with the included test instead:**
-
-> Read the skill and `examples/story-to-cut/README.md`. Use the included synthetic clips in a new temporary folder. Show me the 12-second preview, apply the sample feedback and show the 10-second version. Explain what changed and what stayed intact. Do not open Resolve.
-
-[Exact demo commands](examples/first-scene/README.md) · [Filled scene and feedback example](examples/story-to-cut/README.md)
+**Want to understand the workflow first?** Follow the [worked story example](docs/from-footage-to-film.md#a-worked-story-example-a-break-from-the-heat): see how a remembered reason for the trip shapes the scene plan, narration and a specific review note.
 
 <details>
 <summary><strong>Install the skill in Codex for future projects</strong></summary>
@@ -113,15 +109,16 @@ The skill and its helper scripts are **free and open source**. A paid Resolve li
 
 Cost categories checked against linked product sources on 27 October 2026; limits and plans can change. Tools are optional examples, not accounts or subscriptions bundled with the skill. [Editor capabilities and integration limits](skills/family-travel-editor/references/editors.md).
 
-## Test a precise edit before using your own footage
+<details>
+<summary><strong>For contributors: automated trimming test (color bars, no travel footage)</strong></summary>
 
-**“Shorten the middle shot by two seconds. Keep the opening and ending unchanged.”**
+The repository includes an intentionally artificial FFmpeg test fixture. Its clips contain **animated color bars**, with no people, speech or music. They check that a two-second trim changes only the selected shot and preserves the surrounding source ranges.
 
-The repository includes three generated test clips. The supplied scripts render a 12-second preview, apply that correction and render a 10-second version. You can inspect the source ranges and compare the actual exports. This is a small technical check of trimming and preservation, with no personal footage, speech or music.
+This is a software verification test, not a sample travel film or a preview of the skill's creative output. Keep it separate from the [story and editing workflow](docs/from-footage-to-film.md).
 
-[**Run the trimming test →**](docs/walkthrough.md) · [Before: 12-second MP4](examples/first-scene/generated/v1.mp4) · [After: 10-second MP4](examples/first-scene/generated/v2.mp4)
+[Technical test instructions and files](docs/walkthrough.md) · [Recorded validation](docs/validation.md)
 
-The test is deliberately separate from the story example above: test patterns prove timing, not storytelling. The [local browser version](docs/walkthrough.html) has both video players; download the repository and open it locally. GitHub shows HTML source rather than running the page.
+</details>
 
 ## What is included—and what needs your setup
 
