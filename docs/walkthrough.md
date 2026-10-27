@@ -1,6 +1,6 @@
-# Walkthrough: make one edit, check what changed
+# Technical test: shorten the middle shot, preserve the rest
 
-A small, reproducible use case for an AI editing agent. Start with three clips, make a 12-second preview, then shorten the middle shot to produce a 10-second revision.
+A small, reproducible trimming test for an AI editing agent. Start with three clips, make a 12-second preview, then shorten the middle shot to produce a 10-second revision.
 
 **These are generated test patterns, not travel footage.** They let you inspect timing and preservation without personal media, paid services or an editor account. The example demonstrates the mechanics of a revision; it does not demonstrate automatic storytelling, listening or a finished film.
 
@@ -97,4 +97,4 @@ python3 skills/family-travel-editor/scripts/render_preview.py examples/first-sce
 
 The skill does not bundle an autonomous full-film editor. The included renderer produces silent straight cuts. Audio mixing, titles, native editor operation and publication need appropriate tools and separate verification. iMovie and CapCut can use the plan and feedback workflow with manual assembly; no native adapter for them is included.
 
-[Start your own scene](../README.md#start-with-one-scene) · [Choose your editor](../skills/family-travel-editor/references/editors.md)
+[See the full travel-film workflow](from-footage-to-film.md) · [Start your own scene](../README.md#start-with-one-scene) · [Choose your editor](../skills/family-travel-editor/references/editors.md)
