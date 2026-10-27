@@ -2,23 +2,34 @@
 
 **Turn camera and drone footage into a family film with an AI agent: organize clips, reconstruct the story, draft voiceover and learn from timecoded feedback.**
 
-[Start with one scene](#start-with-one-scene) · [Real film & story](docs/real-film.md) · [Choose your editor](skills/family-travel-editor/references/editors.md) · [Validation](docs/validation.md)
+[Start with one scene](#start-with-one-scene) · [Illustrated walkthrough](docs/walkthrough.md) · [Choose your editor](skills/family-travel-editor/references/editors.md) · [Validation](docs/validation.md)
 
-I travel with my family and shoot on a DJI Osmo Pocket 3 and drones. Editing a trip usually takes me 20–30 hours. Working with an agent has not yet demonstrated a time saving. What it gives me is a way to retain the work: the questions we answered, the cuts we corrected and the preferences I would otherwise have to explain again.
+Family Travel Editor packages a video-editing workflow as an Agent Skill for Codex and compatible local agents: instructions, examples and small helper scripts. The agent helps inspect footage, ask useful questions, plan scenes and apply scoped revisions. You supply context and make the creative decisions.
 
-Family Travel Editor packages that process as an Agent Skill for Codex and compatible local agents. A skill is a folder of instructions and small helper scripts that your agent reads. It is not a standalone editor or a one-click film generator. **You do not need to buy DaVinci Resolve to plan a film or try the included video-only preview.** The storytelling workflow is editor-independent; automated timeline operations depend on the chosen editor and adapter.
+**Start with one short scene.** You do not need to buy DaVinci Resolve to plan it or try the included video-only preview. Automated timeline operations depend on the chosen editor and adapter.
 
-## See the real workflow
+## See exactly what changes
 
-[![Watch the author's Bali film on YouTube](docs/bali-preview.jpg)](https://www.youtube.com/watch?v=hzqUOtD2AqU&t=641s)
+The included example uses three generated test clips. No personal videos, accounts, speech or music are needed.
 
-[Watch the published Bali film](https://www.youtube.com/watch?v=hzqUOtD2AqU) · [Read the case study and specific revisions](docs/real-film.md)
+| 1 · Plan | 2 · Render | 3 · Revise and check |
+|---|---|---|
+| Three source clips, four seconds each | A 12-second silent preview | Shorten the middle shot; preserve opening and ending → 10 seconds |
 
-This film came from the larger personal workflow that inspired the skill. It is **not** a film generated end-to-end by this public starter package. The linked footage is public; personal source media, email records and project databases are not included.
+![A readable comparison of the original and revised three-shot timeline](docs/walkthrough/timeline.svg)
 
-![The author's workflow: sources, story, edit, review, publish](docs/workflow.png)
+**[Open the illustrated walkthrough →](docs/walkthrough.md)** — actual source frames, the suggested agent prompt, exact shot ranges, both videos, feedback and reproduction commands. A [local HTML version](docs/walkthrough.html) adds side-by-side video players; download the repository and open that file in your browser.
 
-The diagram shows my own tools. Resolve, Photos, Gmail, Replay, Claude, Gemini and other audio models are examples, not required subscriptions or bundled connections. Replace a service with another tool that can supply the same evidence: metadata, a transcript, a review comment or an editable timeline.
+This example verifies timing and a bounded revision. It is not evidence of automatic storytelling or a completed family film.
+
+<details>
+<summary>Where the other tools fit</summary>
+
+The broader workflow can use photo metadata, selected travel records, speech tools, a video editor and timecoded feedback. Each supplies a specific input or action. Resolve, Photos, Gmail, Replay, Claude and Gemini are optional examples, not required subscriptions or bundled connections.
+
+[Original overview diagram](docs/workflow.png) · [Tool choices and integration limits](skills/family-travel-editor/references/editors.md)
+
+</details>
 
 ## What works today
 
@@ -71,6 +82,6 @@ Keep your scene plans, personal memories and preferences in the film workspace, 
 
 The primary documentation is English. [Russian overview](README.ru.md).
 
-Original code and instructions: [MIT](LICENSE). Synthetic example media is included for testing. The real-film still and linked family video are illustrative examples, **not covered by the code license**; see [third-party and media notices](THIRD_PARTY_NOTICES.md). Independent project; not affiliated with the editors or services shown.
+Original code and instructions: [MIT](LICENSE). Synthetic example media is included for testing. See [third-party notices](THIRD_PARTY_NOTICES.md) for the optional-tool diagram assets. Independent project; not affiliated with the editors or services shown.
 
 Created by [Denis Kortunov](https://github.com/denyakortunov).

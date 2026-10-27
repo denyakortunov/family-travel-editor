@@ -1,6 +1,6 @@
 # A filled story, feedback and memory example
 
-This is a **synthetic teaching example**, not a transcript of the author's family trip. The three test-pattern clips stand in for setup → action → result. The real film is linked separately in the [case study](../../docs/real-film.md).
+This is a **synthetic teaching example**, not a transcript of the author's family trip. The three test-pattern clips stand in for setup → action → result. Follow the [illustrated walkthrough](../../docs/walkthrough.md) for actual source frames, the two cuts and a step-by-step explanation.
 
 1. Read [scene.json](scene.json): facts, a question, scene structure and intended shot roles. There are no fabricated memories or dialogue.
 2. Resolve those roles to the included fixture's measured source frames. The [v1 shot plan](../first-scene/generated/v1.json) has three four-second shots. This is the technical JSON accepted by `timeline.py` and `render_preview.py`; the narrative `scene.json` is not.
