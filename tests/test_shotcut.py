@@ -72,9 +72,9 @@ class MeltRoundTrip(unittest.TestCase):
             self.assertTrue(tree.findall(".//property[@name='shotcut']"))
             def pixels(path):
                 return subprocess.check_output(['ffmpeg', '-v', 'error', '-i', str(path),
-                    '-vf', 'scale=32:18:flags=area,format=gray', '-an', '-f', 'rawvideo', '-'])
+                    '-vf', 'format=rgb24,scale=32:18:flags=area,format=rgb24', '-an', '-f', 'rawvideo', '-'])
             expected = pixels(reference)
-            self.assertEqual(len(expected), 225 * 32 * 18)
+            self.assertEqual(len(expected), 225 * 32 * 18 * 3)
             for name, source in [('original', project), ('reloaded', reloaded)]:
                 output = root / (name + '.mp4')
                 melt(source, 'avformat:' + str(output), 'vcodec=libx264', 'crf=18', 'an=1')
@@ -86,8 +86,8 @@ class MeltRoundTrip(unittest.TestCase):
                 actual = pixels(output)
                 self.assertEqual(len(actual), len(expected))
                 # Compare every frame, including the cut boundaries, at reduced resolution.
-                errors = [sum(abs(a-b) for a,b in zip(actual[i:i+576], expected[i:i+576]))/576
-                          for i in range(0, len(actual), 576)]
+                errors = [sum(abs(a-b) for a,b in zip(actual[i:i+1728], expected[i:i+1728]))/1728
+                          for i in range(0, len(actual), 1728)]
                 if max(errors) >= 8.0:
                     for label, video in [('reference', reference), ('actual', output)]:
                         png = subprocess.check_output(['ffmpeg', '-v', 'error', '-i', str(video), '-frames:v', '1', '-vf', 'scale=320:180', '-f', 'image2pipe', '-vcodec', 'png', '-'])
