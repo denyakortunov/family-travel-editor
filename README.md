@@ -29,6 +29,7 @@ The diagram shows my own tools. Resolve, Photos, Gmail, Replay, Claude, Gemini a
 | Voiceover and review | Writing guidance, versioned feedback and preference examples | Your recording and listening; optional transcription tools |
 | Produce a simple preview | FFmpeg renderer from a shot plan | FFmpeg + ffprobe; same-rate 24/25/30 fps clips; **video only** |
 | Prepare a Resolve timeline | FCP 7 XML generator and guarded import helper | Manual import, or working Studio scripting for the bridge; native import still unvalidated |
+| Prepare a Shotcut project | Experimental picture-only MLT generator; source/range checks | ffprobe; Shotcut for desktop editing. MLT rendering and desktop save are checked separately |
 | Use iMovie, CapCut or another editor | Portable story, shot list, voiceover and feedback | Manual assembly or a separately tested adapter; no native adapter bundled |
 | Publish a film | Delivery checklist | Your account, review and explicit publishing instruction |
 
@@ -57,7 +58,7 @@ Invoke `$family-travel-editor`. Other clients can use their own skill directory 
 
 The required foundation is a local agent with media/file access, your footage and your judgement. Account fees and model usage depend on the tools you choose; this repository charges nothing and includes no service credits.
 
-For a free command-driven preview, use the bundled FFmpeg path. For a future editable open-source integration, Shotcut/MLT is a promising starting point; Kdenlive and libopenshot also expose useful building blocks. These are **integration candidates, not tested adapters in this release**. iMovie and CapCut users can already use the planning and review workflow while assembling the timeline in their editor. [Comparison and official sources](skills/family-travel-editor/references/editors.md).
+For a free command-driven preview, use the bundled FFmpeg path. An [experimental Shotcut/MLT adapter](skills/family-travel-editor/references/shotcut.md) now generates a picture-only project. Its native MLT rendering tests are separate from desktop open/edit/save verification. Kdenlive and libopenshot remain **integration candidates, not bundled adapters**. iMovie and CapCut users can already use the planning and review workflow while assembling the timeline in their editor. [Comparison and official sources](skills/family-travel-editor/references/editors.md).
 
 Without Photos or email, answer the agent's questions. Without Replay, send version + timecode + comment. Without a second model, use technical measurements and human review. Switching tools must preserve the story decisions, source ranges, feedback and previous versions; it does not guarantee project-format compatibility.
 
