@@ -1,4 +1,5 @@
 import json
+import base64
 import os
 from pathlib import Path
 import shutil
@@ -87,6 +88,10 @@ class MeltRoundTrip(unittest.TestCase):
                 # Compare every frame, including the cut boundaries, at reduced resolution.
                 errors = [sum(abs(a-b) for a,b in zip(actual[i:i+576], expected[i:i+576]))/576
                           for i in range(0, len(actual), 576)]
+                if max(errors) >= 8.0:
+                    for label, video in [('reference', reference), ('actual', output)]:
+                        png = subprocess.check_output(['ffmpeg', '-v', 'error', '-i', str(video), '-frames:v', '1', '-vf', 'scale=320:180', '-f', 'image2pipe', '-vcodec', 'png', '-'])
+                        print('FRAME_' + label + '=' + base64.b64encode(png).decode(), flush=True)
                 worst = max(range(len(errors)), key=errors.__getitem__)
                 print('MLT metrics:', name, streams[0]['width'], streams[0]['height'], 'worst frame', worst, 'errors', errors[::25], flush=True)
                 self.assertEqual((streams[0]['width'], streams[0]['height']), (640, 360))
