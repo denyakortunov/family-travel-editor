@@ -23,7 +23,6 @@ The remaining acceptance check is to open the generated project in Shotcut, insp
 | Input mismatch | Incorrect source frame count and frame rate rejected before delivery | No complete variable-frame-rate certification; normalize separate copies when needed |
 | Skill structure | Bundled skill validator passed | Does not prove automatic discovery or editorial quality |
 | Python and whitespace | Compilation and `git diff --check` passed | Functional coverage is the test suite above |
-| Real film illustration | Still extracted from the author's local final master; chapter/revision links use the recorded public YouTube publication | Not a demonstration of this starter package producing the full film; links show final result, not before/after |
 | Resolve native round trip | Deferred: another editing session owns the active Resolve project | No claim of tested native import, playback or export |
 | Other editors | Official Shotcut, Kdenlive and libopenshot documentation reviewed | No shipped or tested native adapter for those editors, iMovie or CapCut |
 

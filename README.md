@@ -1,77 +1,102 @@
 # AI Travel Video Editor
 
-**Turn camera and drone footage into a family film with an AI agent: organize clips, reconstruct the story, draft voiceover and learn from timecoded feedback.**
+**Turn a folder of travel clips into a scene plan, a first cut and a clear next revision—with an AI agent and your creative direction.**
 
-[Start with one scene](#start-with-one-scene) · [Real film & story](docs/real-film.md) · [Choose your editor](skills/family-travel-editor/references/editors.md) · [Validation](docs/validation.md)
+[**Try it with one scene →**](#start-with-one-scene) · [See a working example](docs/walkthrough.md) · [Choose your editor](skills/family-travel-editor/references/editors.md)
 
-I travel with my family and shoot on a DJI Osmo Pocket 3 and drones. Editing a trip usually takes me 20–30 hours. Working with an agent has not yet demonstrated a time saving. What it gives me is a way to retain the work: the questions we answered, the cuts we corrected and the preferences I would otherwise have to explain again.
+![From footage and context to a scene plan, first cut and feedback](docs/workflow-overview.svg)
 
-Family Travel Editor packages that process as an Agent Skill for Codex and compatible local agents. A skill is a folder of instructions and small helper scripts that your agent reads. It is not a standalone editor or a one-click film generator. **You do not need to buy DaVinci Resolve to plan a film or try the included video-only preview.** The storytelling workflow is editor-independent; automated timeline operations depend on the chosen editor and adapter.
+Camera clips. Drone shots. Half-remembered moments. This skill gives your agent a process for finding the story, choosing source ranges and turning your feedback into the next version. Start with a manageable scene instead of trying to solve the entire trip at once.
 
-## See the real workflow
+**Free, open-source instructions and helper scripts.** Use Codex or a compatible local agent. You do not need to buy Resolve to plan a scene or render the included silent preview; your chosen agent or external services may have their own fees.
 
-[![Watch the author's Bali film on YouTube](docs/bali-preview.jpg)](https://www.youtube.com/watch?v=hzqUOtD2AqU&t=641s)
+## What you get
 
-[Watch the published Bali film](https://www.youtube.com/watch?v=hzqUOtD2AqU) · [Read the case study and specific revisions](docs/real-film.md)
+- **A clearer story:** a footage catalogue, useful questions and a scene plan you can review before editing.
+- **A concrete first cut:** selected source ranges and a simple FFmpeg video preview, or timeline preparation for supported tools.
+- **Revisions you can follow:** version + timecode + request, a bounded change and a check of the exported result.
+- **Context you can keep:** scene decisions and explicit preferences stored in your project for the next session.
 
-This film came from the larger personal workflow that inspired the skill. It is **not** a film generated end-to-end by this public starter package. The linked footage is public; personal source media, email records and project databases are not included.
+The agent helps with the work. You decide which moments matter, confirm memories and judge the finished scene.
 
-![The author's workflow: sources, story, edit, review, publish](docs/workflow.png)
+## See one edit from start to finish
 
-The diagram shows my own tools. Resolve, Photos, Gmail, Replay, Claude, Gemini and other audio models are examples, not required subscriptions or bundled connections. Replace a service with another tool that can supply the same evidence: metadata, a transcript, a review comment or an editable timeline.
+**Three test clips. One correction. Two comparable results.**
 
-## What works today
+The first preview is 12 seconds. Ask to shorten the middle shot by two seconds while preserving the opening and ending. The revised preview is 10 seconds.
 
-| Task | Included here | What you supply |
-|---|---|---|
-| Catalogue footage | Local file hashes and optional ffprobe metadata | Footage; a local agent to view and interpret it |
-| Find the story | Scene template, questions, editorial guidance | Your memories; optional selected photo GPS or travel records |
-| Voiceover and review | Writing guidance, versioned feedback and preference examples | Your recording and listening; optional transcription tools |
-| Produce a simple preview | FFmpeg renderer from a shot plan | FFmpeg + ffprobe; same-rate 24/25/30 fps clips; **video only** |
-| Prepare a Resolve timeline | FCP 7 XML generator and guarded import helper | Manual import, or working Studio scripting for the bridge; native import still unvalidated |
-| Prepare a Shotcut project | Experimental picture-only MLT generator; source/range checks | ffprobe; Shotcut for desktop editing. MLT rendering and desktop save are checked separately |
-| Use iMovie, CapCut or another editor | Portable story, shot list, voiceover and feedback | Manual assembly or a separately tested adapter; no native adapter bundled |
-| Publish a film | Delivery checklist | Your account, review and explicit publishing instruction |
+![Original and revised timelines, compared at the same scale](docs/walkthrough/timeline.svg)
 
-The helpers do not automatically conform dialogue, mix music, build titles or publish to YouTube. An agent can use other available tools for those tasks, but should say what it actually verified. [Editor options and automation boundaries](skills/family-travel-editor/references/editors.md).
+[**Open the illustrated walkthrough →**](docs/walkthrough.md) · [V1 video: 12 seconds](examples/first-scene/generated/v1.mp4) · [V2 video: 10 seconds](examples/first-scene/generated/v2.mp4)
+
+The walkthrough includes actual frames from the test clips, a suggested agent prompt, exact shot ranges, the feedback record and reproduction commands. It demonstrates timing and preservation using synthetic clips, with no people, speech or music. It does not claim to reproduce a finished travel film.
+
+Prefer a browser view? After downloading the repository, open [docs/walkthrough.html](docs/walkthrough.html) for the same steps with two video players. GitHub displays the HTML source; the illustrated Markdown guide above works directly on GitHub.
 
 ## Start with one scene
 
-1. [Download the current source](https://github.com/denyakortunov/family-travel-editor/archive/refs/heads/main.zip), unzip it and open the folder in a local agent that can read files and run commands. Python 3.9+ is enough for planning and the basic catalogue. Keep your footage in a separate folder.
-2. Paste this prompt, filling in your footage folder and preferred editor. You can also ask the agent to help locate your footage.
+### 1. Download and open
+
+[**Download the latest source ZIP**](https://github.com/denyakortunov/family-travel-editor/archive/refs/heads/main.zip), unzip it and open the folder in a local agent that can read files and run commands. Keep your footage in a separate folder. Python 3.9+ supports the basic catalogue; FFmpeg and ffprobe are needed for the preview.
+
+### 2. Give your agent this starting task
+
+Fill in the footage folder and your editor, or leave the editor undecided:
 
 > Read `skills/family-travel-editor/SKILL.md`. My footage is in [folder] and I use [editor, or undecided]. Start with one short scene. Check the available tools, create a separate planning workspace, catalogue the clips and ask me only the questions that change the story. Give me a scene plan with confirmed facts and open questions before editing. Preserve my originals. If you cannot view or hear the material, say so. Do not require Resolve or paid services for planning.
 
-3. Expect `catalog.json`, a filled `scene.json`, and `STATUS.md` explaining the next step. The catalogue is technical metadata, not proof the clips were watched. Review the story before the agent derives a frame-based `shot-plan-v1.json`. See the [filled example](examples/story-to-cut/README.md) for the difference.
+### 3. Review the plan, then build the cut
 
-**No footage ready?** Ask the agent: “Read the skill and `examples/story-to-cut/README.md`. Use the included synthetic clips to generate a video-only preview in a new temporary folder. Show me the 12-second version, apply the sample feedback and show the 10-second version. Do not open Resolve.” This exercises the mechanics without uploading private material. [Exact commands](examples/first-scene/README.md).
+Expect a catalogue (`catalog.json`), a scene plan (`scene.json`) and a status note describing the next step. Review the story before the agent derives the frame-based shot plan. The file catalogue is technical evidence, not proof that every clip was watched.
 
-To make the skill discoverable in Codex, run the installer once, then start a fresh chat:
+**No footage ready? Start with the included test instead:**
+
+> Read the skill and `examples/story-to-cut/README.md`. Use the included synthetic clips in a new temporary folder. Show me the 12-second preview, apply the sample feedback and show the 10-second version. Explain what changed and what stayed intact. Do not open Resolve.
+
+[Exact demo commands](examples/first-scene/README.md) · [Filled scene and feedback example](examples/story-to-cut/README.md)
+
+<details>
+<summary><strong>Install the skill in Codex for future projects</strong></summary>
+
+From the repository root:
 
 ```sh
 python3 tools/install_skill.py --destination ~/.codex/skills
 ```
 
-Invoke `$family-travel-editor`. Other clients can use their own skill directory or read `SKILL.md` directly. For updates, `--update` retains a dated backup of the old installed skill. Keep film memory outside the installation. [Setup and troubleshooting](skills/family-travel-editor/references/setup.md).
+Start a fresh chat and invoke `$family-travel-editor`. For updates, add `--update`; the installer keeps a dated backup. Store film memory in your project, outside the installed skill. Other agents can use their own skill folder or read `SKILL.md` directly. [Setup and troubleshooting](skills/family-travel-editor/references/setup.md).
 
-## Pick tools you already have
+</details>
 
-The required foundation is a local agent with media/file access, your footage and your judgement. Account fees and model usage depend on the tools you choose; this repository charges nothing and includes no service credits.
+## Fit it to the tools you already use
 
-For a free command-driven preview, use the bundled FFmpeg path. An [experimental Shotcut/MLT adapter](skills/family-travel-editor/references/shotcut.md) now generates a picture-only project. Its native MLT rendering tests are separate from desktop open/edit/save verification. Kdenlive and libopenshot remain **integration candidates, not bundled adapters**. iMovie and CapCut users can already use the planning and review workflow while assembling the timeline in their editor. [Comparison and official sources](skills/family-travel-editor/references/editors.md).
+The workflow separates story decisions from editor-specific operations. Optional tools can supply metadata, transcripts, review comments or an editable timeline.
 
-Without Photos or email, answer the agent's questions. Without Replay, send version + timecode + comment. Without a second model, use technical measurements and human review. Switching tools must preserve the story decisions, source ranges, feedback and previous versions; it does not guarantee project-format compatibility.
+| Your setup | What you can do now |
+|---|---|
+| Local agent + Python | Catalogue files, work through questions, plan scenes and record feedback |
+| Add FFmpeg + ffprobe | Render a silent, straight-cut preview from same-rate 24/25/30 fps clips |
+| DaVinci Resolve | Generate video-only FCP 7 XML; guarded Studio import helper included, native round trip still unvalidated |
+| Shotcut (experimental) | Picture-only MLT generator on this branch; native MLT tests pass, desktop open/edit/save verification is still pending. [Adapter guide](skills/family-travel-editor/references/shotcut.md) |\n| iMovie, CapCut or another editor | Use the story, shot list and feedback; assemble manually or supply a separately tested adapter |
+| Photos, email or travel notes | Optionally reconstruct context from selected evidence; answering the agent's questions is enough to start |
+| Replay or another review tool | Give versioned timecode comments; plain text works too |
 
-## Resume, report a problem, contribute
+[Editor guide and integration limits](skills/family-travel-editor/references/editors.md) · [Full optional-tool diagram](docs/workflow.png)
 
-Keep your scene plans, personal memories and preferences in the film workspace, not the installed skill. To resume: “Read my workspace's STATUS, scene plan, preferences and open feedback. Continue the named version; tell me what remains unverified.” [Filled feedback and memory](examples/story-to-cut/README.md).
+Whisper, GigaAM, Gemini and an optional Claude audit are examples of tools used in the broader workflow. They are not bundled accounts or required subscriptions. Record what a tool actually checked and what still needs human review.
 
-[Report a reproducible problem](https://github.com/denyakortunov/family-travel-editor/issues/new/choose), or contribute an editor adapter with a tiny example and evidence of import, playback and export. See the [roadmap](docs/roadmap.md) and [contribution guide](CONTRIBUTING.md). The highest-value next step is a reproducible native editor round trip, not another service integration badge.
+## Know what is included
 
-## Documentation and license
+This is an **Agent Skill**, not a standalone video editor. The included renderer makes silent previews. It does not automatically mix dialogue and music, add titles, operate every editor or publish a full film. The skill provides guidance for those stages; execution requires appropriate tools and verification.
 
-The primary documentation is English. [Russian overview](README.ru.md).
+[Validation and known limits](docs/validation.md) · [Roadmap](docs/roadmap.md) · [Release notes](docs/release-notes.md)
 
-Original code and instructions: [MIT](LICENSE). Synthetic example media is included for testing. The real-film still and linked family video are illustrative examples, **not covered by the code license**; see [third-party and media notices](THIRD_PARTY_NOTICES.md). Independent project; not affiliated with the editors or services shown.
+## Try it, then help improve it
+
+Start with one scene. If something breaks, [report the editor, exact command and observed result](https://github.com/denyakortunov/family-travel-editor/issues/new/choose). If you build an adapter, include a tiny reproducible example and evidence of import, playback and export. [Contribution guide](CONTRIBUTING.md).
+
+To resume a project, ask your agent to read its status, scene plan, preferences and open feedback before continuing the named version.
+
+Original code and instructions: [MIT](LICENSE). Synthetic example media is included for testing. [Third-party notices](THIRD_PARTY_NOTICES.md). Independent project; not affiliated with the editors or services shown.
 
 Created by [Denis Kortunov](https://github.com/denyakortunov).
