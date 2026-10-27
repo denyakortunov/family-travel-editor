@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "synthetic": true,
+  "comments": [
+    {
+      "id": "demo-1",
+      "source_version": "v1",
+      "timecode": "00:00:04:00",
+      "request": "Shorten the middle shot by two seconds; preserve the first and last shots.",
+      "scope": "this scene only",
+      "status": "applied",
+      "result_version": "v2",
+      "change": "Middle source out changes from 100 to 50; first and last source ranges unchanged.",
+      "verification": {
+        "method": "compare plans and count output frames",
+        "expected_frames": 250,
+        "author_acceptance": "not requested or claimed in this synthetic example"
+      }
+    }
+  ]
+}

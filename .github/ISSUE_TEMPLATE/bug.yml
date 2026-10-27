@@ -1,0 +1,18 @@
+name: Problem running the skill
+description: Report a reproducible first-run, helper or editor problem
+title: "[Bug] "
+body:
+  - type: textarea
+    id: task
+    attributes:
+      label: What were you trying to do?
+      description: Include the command or agent request and expected vs actual result. Remove personal paths and content.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment and evidence
+      description: OS, Python, editor edition/version, doctor output and a small synthetic example. For editors distinguish import, playback and export.
+    validations:
+      required: true

@@ -1,5 +1,12 @@
-# v0.1.0 — experimental first release
+# v0.2.0 — a clearer first scene, with your preferred editor
 
-A portable skill for family travel film editing, extracted from a real personal workflow. Includes English/Russian documentation, workflow illustration, project templates, source cataloguing, export measurement, a guarded Resolve connection helper and video-only FCP 7 XML generation.
+- Editor-independent story/planning workflow; explicit distinction between bundled helpers, manual assembly and future adapters.
+- Real Bali film case study, three timecoded revision examples and an author-approved illustrative still.
+- One first-run path, filled narrative/feedback/memory examples and separate shot-plan documentation.
+- Video-only FFmpeg preview renderer with source checks, output-frame verification and overwrite refusal.
+- Task-based doctor with readable output and JSON; clearer plan errors; installed-skill updates preserve a backup.
+- Clean-install and media smoke tests, issue template and adapter roadmap.
 
-A synthetic three-shot example demonstrates a timecoded revision from 12 to 10 seconds. Helper unit tests and media decoding are covered in docs/validation.md. Live Resolve import and public directory installation remain unvalidated. Optional services and audio models are not bundled. There is no automatic full-film editor or audio conform in this release.
+The repository/package identity remains `family-travel-editor`. Existing links keep working. The provider-rich original workflow diagram remains unchanged. This source release is separate from any OpenAI-specific submission package.
+
+Limitations: no automatic full film, audio conform, mixed-rate timeline, titles, or new native editor integration. Resolve import/playback/export remains unvalidated. Real-film footage is linked for illustration and is not redistributed under the MIT code license.

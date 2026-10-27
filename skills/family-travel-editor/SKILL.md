@@ -1,17 +1,17 @@
 ---
 name: family-travel-editor
-description: Edit travel videos and family films from camera or drone footage in DaVinci Resolve with AI assistance. Use for footage cataloguing, trip storytelling, scene planning, personal voiceover and timecoded review revisions while preserving an editable project.
+description: Plan and edit travel videos and family films from camera or drone footage with AI assistance and the user’s preferred editor. Use for footage cataloguing, trip storytelling, scene planning, personal voiceover and timecoded review revisions while preserving an editable project.
 ---
 
-# Travel Video Editor for DaVinci Resolve
+# AI Travel Video Editor
 
-Turn a collection of clips into a coherent film with the filmmaker. Work on one named scene or revision at a time; keep an editable timeline and evidence of what was checked. This skill needs local file access for media operations and a working Resolve installation for native editing. Installing it does not install Resolve, grant account access, or supply audio models.
+Turn a collection of clips into a coherent film with the filmmaker. Work on one named scene or revision at a time; keep an editable timeline and evidence of what was checked. This skill needs local file access for media operations. Planning is editor-independent; native editing requires a supported editor adapter. Installing it does not install an editor, grant account access, or supply audio models.
 
 ## Start from the actual project
 
 Find the user's workspace, current project/version, footage and preferences. Continue existing work when present. For a new project, use `scripts/project.py init WORKSPACE` to create empty planning files. Do not initialize over an existing project. Select a short representative scene before scaling to a whole trip.
 
-Use `scripts/project.py doctor` for tool availability. Read [setup](references/setup.md) for the bundled commands and [Resolve operations](references/resolve.md) before touching Resolve. If Resolve is unavailable, complete the catalogue, questions and scene plan; report native editing as pending. A generated XML file is not evidence of an imported or working Resolve timeline.
+Ask which editor the user already uses. Read [editor choices](references/editors.md) when selecting tools or replacing a service. Use `scripts/project.py doctor` for task-specific tool availability. Read [setup](references/setup.md) for the bundled commands and [Resolve operations](references/resolve.md) before touching Resolve. If the chosen editor has no available adapter, complete the catalogue, questions and scene plan; offer manual assembly or the explicitly silent FFmpeg preview without claiming native support. A generated XML file is not evidence of an imported or working Resolve timeline.
 
 ## Reconstruct the story
 
@@ -21,7 +21,7 @@ View candidate ranges in motion and with surrounding context. A transcript or co
 
 ## Edit a bounded scene
 
-Read [editing principles](references/editing.md) and the user's preferences. Describe the intended change and protected material, then duplicate the timeline or create a new named version. Track source ranges, frame rates and why each shot contributes new information. Preserve complete selected thoughts, real reactions and meaningful motion. Adapt pacing to the scene, not a fixed shot length.
+Read [editing principles](references/editing.md) and the user's preferences. Describe the intended change and protected material, then duplicate the timeline or create a new named version. Track source ranges, frame rates and why each shot contributes new information. Before a helper export, derive a technical shot plan from the narrative scene using [plan formats](references/plan-formats.md); do not pass the narrative template directly to a timeline helper. Preserve complete selected thoughts, real reactions and meaningful motion. Adapt pacing to the scene, not a fixed shot length.
 
 Draft voiceover from confirmed memories. Let the author record it; do not fabricate missing family dialogue. Optional music, sound effects and models are choices, not required subscriptions. Record their provenance and check the actual resulting mix.
 
@@ -37,6 +37,7 @@ Deliver the editable project plus a clearly labelled review export, remaining li
 
 - `scripts/project.py`: workspace initialization, read-only catalogue, tool discovery, export measurement.
 - `scripts/timeline.py`: validated, video-only straight-cut FCP 7 XML from an explicit shot plan. It is a technical interchange helper, not an automatic story editor or complete audio conform.
+- `scripts/render_preview.py`: FFmpeg video-only preview from the same shot plan; requires ffprobe and rejects mismatched rates/dimensions/duration. No audio or editable native project.
 - `scripts/resolve_bridge.py`: read-only connection probe and guarded XML import into an already open, empty, explicitly named project.
 - `assets/templates/`: blank preferences, scene, feedback and status files. Copy them into the user's project; do not write personal data into the installed skill.
 

@@ -1,6 +1,6 @@
 # Setup and commands
 
-Start with Python 3.9+ and local access to the footage. Native editing targets DaVinci Resolve Studio on macOS; other installations are not validated. FFmpeg and ffprobe are separate tools: install them using a trusted package manager or your existing installation. No models, accounts or paid services are installed automatically.
+Start with Python 3.9+ and local access to the footage. Planning works without an editor. The Resolve bridge targets Studio on macOS; its native round trip is not validated. Read [editor choices](editors.md) for other workflows. FFmpeg and ffprobe are separate tools: install them using a trusted package manager or your existing installation. No models, accounts or paid services are installed automatically.
 
 From the skill directory:
 
@@ -17,3 +17,22 @@ python3 scripts/resolve_bridge.py probe
 `measure` requires FFmpeg; it decodes the complete video/audio, logs freeze/black and audio loudness analyses, and reports decode errors. Logs are observations requiring interpretation: black frames may be intentional, still scenery is not automatically an error, and silence has no finite integrated loudness. `--ffmpeg` / `--ffprobe` override executable names. The script never rewrites an export.
 
 Without connected Photos/Gmail, use a user-selected metadata export and questions. Without Replay, use a table of version + timecode + comment. Without audio models, use available measurements and human listening, with coverage disclosed. Cloud audio analysis requires the user's authorized service and material transfer; names in the diagram do not mean those services are bundled.
+
+
+## Diagnose the task you need
+
+`doctor --task plan` checks the basic helper environment; `catalog` allows hashing without ffprobe; `preview` requires FFmpeg and ffprobe; `measure` requires FFmpeg. Use `--json` for machine-readable output. Missing required tools return exit code 2. `--task resolve` always reports NOT CHECKED and returns 2: binary discovery cannot establish a live connection or authorize touching an active project.
+
+| Symptom | Next step |
+|---|---|
+| FFmpeg/ffprobe not found | Install FFmpeg with ffprobe using your platform's package manager, or pass explicit paths. Planning still works |
+| Workspace already exists | Resume it by reading STATUS and plans, or choose a new directory; do not erase it |
+| Missing fps/width/height | You supplied a narrative scene, not a technical shot plan. Read [plan formats](plan-formats.md) |
+| Unsupported rate/dimensions/rotation | Inspect the original and normalize a separate copy. Do not relabel 29.97 as 30 |
+| Existing output | Choose a new versioned filename. Helpers refuse replacement |
+| Resolve bridge unavailable | Use planning or FFmpeg preview; optionally test manual XML import in a separate empty project |
+| Preview has no sound | Expected: the starter renderer is video-only. It does not preserve dialogue or music |
+
+## Update an installed skill
+
+From a fresh repository checkout, run `python3 tools/install_skill.py --destination ~/.codex/skills --update`. The installer stages the new copy and preserves the previous installation in the sibling `~/.codex/skills-backups/` directory, outside skill discovery. Start a fresh chat afterward. To roll back, keep the current copy separately and restore the backed-up folder to the original skill location. Film workspaces remain separate; the installer does not migrate their schemas.

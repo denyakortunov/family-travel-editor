@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "example": true,
+  "story": [],
+  "pacing": [],
+  "voiceover": [],
+  "music": [],
+  "titles": [],
+  "delivery": {},
+  "note": "No global preference inferred from a single shot-specific timing request. Record explicit reusable preferences with source quote, date and scope."
+}

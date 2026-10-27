@@ -21,6 +21,19 @@ To build XML from the checked-in plan and clips:
 python3 skills/family-travel-editor/scripts/timeline.py examples/first-scene/generated/v2.json --media-root examples/first-scene/generated/media --output /path/to/new-v2.xml
 ```
 
+## Preview without buying an editor
+
+With FFmpeg and ffprobe installed, render the existing plan directly. This command needs no Resolve or account:
+
+```sh
+python3 skills/family-travel-editor/scripts/project.py doctor --task preview
+python3 skills/family-travel-editor/scripts/render_preview.py examples/first-scene/generated/v2.json --media-root examples/first-scene/generated/media --output /path/to/new-preview.mp4
+```
+
+Use `v1.json` and a different output name for the 12-second original. The helper checks input metadata/frame counts, renders to a temporary file and checks the output frame count before delivering it. Supply `--ffmpeg PATH --ffprobe PATH` for binaries outside PATH. These previews are silent and flattened; they do not replace an editable project. See the [filled narrative and feedback example](../story-to-cut/README.md).
+
+## Optional Resolve import
+
 Open a **new, empty** Resolve project named `Family Travel Editor Demo`, then import that XML using File → Import → Timeline or the guarded helper:
 
 ```sh

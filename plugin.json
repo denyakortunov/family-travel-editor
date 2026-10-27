@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "family-travel-editor",
-  "version": "0.1.0",
-  "description": "AI-assisted travel video editing in DaVinci Resolve: organize footage, plan family films, draft voiceover and apply timecoded feedback.",
+  "version": "0.2.0",
+  "description": "AI-assisted travel video editing: organize footage, plan family films, draft voiceover and apply timecoded feedback with your preferred editor.",
   "author": {
     "name": "Denis Kortunov",
     "url": "https://github.com/denyakortunov"
@@ -24,9 +24,9 @@
     "com.openai": {
       "requires_local_executor": true,
       "interface": {
-        "displayName": "Travel Video Editor for DaVinci Resolve",
+        "displayName": "AI Travel Video Editor",
         "shortDescription": "Edit travel videos with AI",
-        "longDescription": "An independent AI-assisted skill for editing travel videos and family films in DaVinci Resolve. Organize camera and drone footage, reconstruct trip context, plan scenes, draft personal voiceover, check exports and apply timecoded review comments. Works with your local footage and Resolve; optional audio models and services are configured separately. Experimental: helper scripts support cataloguing and simple video-only XML timelines, not automatic finished films. Not affiliated with Blackmagic Design.",
+        "longDescription": "An independent agent skill for travel videos and family films. Organize footage, reconstruct context, plan scenes, draft voiceover and apply timecoded feedback. The workflow is editor-independent; bundled helpers provide video-only FFmpeg previews and experimental Resolve XML interchange. Other editors need manual assembly or a separate adapter. Requires a local agent; optional services are configured separately.",
         "developerName": "Denis Kortunov",
         "category": "Productivity",
         "capabilities": [
@@ -36,9 +36,7 @@
         "websiteURL": "https://github.com/denyakortunov/family-travel-editor",
         "supportURL": "https://github.com/denyakortunov/family-travel-editor/issues",
         "defaultPrompt": [
-          "Help me edit my travel footage into a family film in DaVinci Resolve, starting with one scene.",
-          "Draft a personal travel voiceover from my confirmed memories and scene plan.",
-          "Apply my timecoded review comments to a new version of my DaVinci Resolve timeline."
+          "Help me plan one scene from my travel footage using my preferred editor."
         ],
         "brandColor": "#147e87",
         "composerIcon": "./assets/icon.svg",

@@ -1,0 +1,31 @@
+{
+  "example": "synthetic; no real people or trip",
+  "title": "Setup, action, result",
+  "confirmed_context": [
+    {
+      "fact": "Three generated clips, 100 frames each at 25 fps",
+      "source": "included technical fixture"
+    }
+  ],
+  "questions": [
+    "For a real scene: what changed between arrival and departure?"
+  ],
+  "setup": "Show where the action begins (stand-in: shot-1).",
+  "action": "Show the activity (stand-in: shot-2).",
+  "result": "Keep the outcome visible (stand-in: shot-3).",
+  "ending": "End after the result; no invented voiceover.",
+  "shots": [
+    {
+      "source": "shot-1.mp4",
+      "purpose": "setup"
+    },
+    {
+      "source": "shot-2.mp4",
+      "purpose": "action"
+    },
+    {
+      "source": "shot-3.mp4",
+      "purpose": "result"
+    }
+  ]
+}

@@ -82,10 +82,33 @@ def measure(media, output, ffmpeg='ffmpeg'):
     return result.returncode
 
 
+def doctor(task='plan', ffmpeg='ffmpeg', ffprobe='ffprobe'):
+    binaries = {'ffmpeg': shutil.which(ffmpeg), 'ffprobe': shutil.which(ffprobe)}
+    requirements = {'plan': [], 'catalog': [], 'preview': ['ffmpeg', 'ffprobe'],
+                    'measure': ['ffmpeg'], 'resolve': []}
+    missing = [name for name in requirements[task] if not binaries[name]]
+    notes = ['Python 3.9+ is required for the helpers.']
+    if task == 'catalog' and not binaries['ffprobe']:
+        notes.append('Catalogue hashes are available; install ffprobe for duration/rate metadata.')
+    if missing:
+        notes.append('Install FFmpeg including ffprobe, or pass --ffmpeg PATH and --ffprobe PATH.')
+    if task == 'resolve':
+        notes.append('Not connected or tested. When no other edit is active, run resolve_bridge.py probe separately.')
+    if task == 'plan':
+        notes.append('Planning needs no editor or paid service; viewing/listening depends on your agent tools.')
+    python_ok = sys.version_info >= (3, 9)
+    return {'task': task, 'ready': python_ok and not missing if task != 'resolve' else None,
+            'python': sys.version.split()[0], 'platform': sys.platform,
+            'tools': binaries, 'missing': missing, 'notes': notes}
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     sub = parser.add_subparsers(dest='command', required=True)
-    sub.add_parser('doctor')
+    doc = sub.add_parser('doctor')
+    doc.add_argument('--task', choices=['plan', 'catalog', 'preview', 'measure', 'resolve'], default='plan')
+    doc.add_argument('--json', action='store_true')
+    doc.add_argument('--ffmpeg', default='ffmpeg'); doc.add_argument('--ffprobe', default='ffprobe')
     init = sub.add_parser('init'); init.add_argument('workspace', type=Path)
     cat = sub.add_parser('catalog'); cat.add_argument('source', type=Path)
     cat.add_argument('--output', type=Path, required=True); cat.add_argument('--ffprobe', default='ffprobe')
@@ -94,9 +117,17 @@ def main():
     args = parser.parse_args()
     try:
         if args.command == 'doctor':
-            print(json.dumps({'python': sys.version.split()[0], 'platform': sys.platform,
-                              'ffmpeg': shutil.which('ffmpeg'), 'ffprobe': shutil.which('ffprobe'),
-                              'resolve': 'Run resolve_bridge.py probe separately; not checked.'}, indent=2))
+            report = doctor(args.task, args.ffmpeg, args.ffprobe)
+            if args.json:
+                print(json.dumps(report, indent=2))
+            else:
+                state = 'NOT CHECKED' if report['ready'] is None else ('READY' if report['ready'] else 'MISSING TOOLS')
+                print(f"{args.task}: {state} (Python {report['python']})")
+                for name, path in report['tools'].items():
+                    print(f"  {name}: {path or 'not found'}")
+                for note in report['notes']:
+                    print(note)
+            return 0 if report['ready'] else 2
         elif args.command == 'init':
             args.workspace.mkdir(parents=True, exist_ok=False)
             templates = Path(__file__).resolve().parents[1] / 'assets/templates'

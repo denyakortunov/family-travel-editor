@@ -1,4 +1,4 @@
 interface:
-  display_name: "Travel Video Editor for DaVinci Resolve"
-  short_description: "AI-assisted travel video editing in DaVinci Resolve"
-  default_prompt: "Use $family-travel-editor to plan and edit one scene from my travel footage."
+  display_name: "AI Travel Video Editor"
+  short_description: "Plan travel films and edit with your preferred tools"
+  default_prompt: "Use $family-travel-editor to plan one scene from my travel footage with my preferred editor."

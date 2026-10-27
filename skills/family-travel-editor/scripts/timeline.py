@@ -14,16 +14,24 @@ def child(parent, name, text=None, **attrs):
 
 
 def validate(plan, media_root):
+    if not isinstance(plan, dict):
+        raise ValueError('Shot plan must be a JSON object')
+    missing = [key for key in ('fps', 'width', 'height', 'shots') if key not in plan]
+    if missing:
+        raise ValueError('Missing shot-plan fields: ' + ', '.join(missing) +
+                         '. scene.json is a narrative plan; derive shot-plan-v1.json using references/plan-formats.md.')
     fps = plan.get('fps')
     if type(fps) is not int or fps not in (24, 25, 30):
-        raise ValueError('v0.1 supports integer 24, 25 or 30 fps only')
+        raise ValueError('This helper supports integer 24, 25 or 30 fps only')
     for key in ('width', 'height'):
         if type(plan.get(key)) is not int or plan[key] <= 0:
             raise ValueError('Positive integer dimensions are required')
-    if not plan.get('shots'):
+    if not isinstance(plan.get('shots'), list) or not plan['shots']:
         raise ValueError('A nonempty shot list is required')
     root = Path(media_root).resolve()
-    for shot in plan['shots']:
+    for index, shot in enumerate(plan['shots'], 1):
+        if not isinstance(shot, dict) or not isinstance(shot.get('path'), str) or not shot['path']:
+            raise ValueError(f'Shot {index} needs a nonempty relative path')
         path = Path(shot['path'])
         if path.is_absolute() or root not in (root / path).resolve().parents:
             raise ValueError('Shot paths must stay inside the media directory')

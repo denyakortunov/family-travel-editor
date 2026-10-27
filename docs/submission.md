@@ -1,4 +1,6 @@
-# ChatGPT plugin submission
+# ChatGPT plugin submission — historical preparation notes
+
+These notes record the original 26 October preparation, not current portal eligibility or an active submission. The OpenAI-specific submission variant is maintained separately; this GitHub update does not publish or replace it.
 
 Prepared as a **skills-only, desktop-required** package. The portable `plugin.json` declares `extensions.com.openai.requires_local_executor: true`. It bundles no MCP server and no lifecycle hooks. The GitHub release and public ChatGPT directory listing are independent.
 
