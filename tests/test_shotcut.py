@@ -66,7 +66,7 @@ class MeltRoundTrip(unittest.TestCase):
             melt(project, 'xml:' + str(reloaded), 'store=shotcut')
             self.assertTrue(reloaded.is_file())
             # Generic MLT serialization tests the connected timeline; it is not a Shotcut UI save.
-            # Shotcut reattaches the detached media bin when saving through its application.
+            # Detached media-bin retention is a separate Shotcut UI save check.
             tree = ET.parse(reloaded)
             self.assertTrue(tree.findall(".//property[@name='shotcut']"))
             def pixels(path):
@@ -87,4 +87,7 @@ class MeltRoundTrip(unittest.TestCase):
                 # Compare every frame, including the cut boundaries, at reduced resolution.
                 errors = [sum(abs(a-b) for a,b in zip(actual[i:i+576], expected[i:i+576]))/576
                           for i in range(0, len(actual), 576)]
-                self.assertLess(max(errors), 8.0, (name, max(errors)))
+                worst = max(range(len(errors)), key=errors.__getitem__)
+                print('MLT metrics:', name, streams[0]['width'], streams[0]['height'], 'worst frame', worst, 'errors', errors[::25], flush=True)
+                self.assertEqual((streams[0]['width'], streams[0]['height']), (640, 360))
+                self.assertLess(max(errors), 8.0, (name, worst, max(errors)))
