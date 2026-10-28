@@ -6,7 +6,7 @@ The shared workflow produces a catalogue, confirmed context, scene plan, source 
 |---|---|---|
 | FFmpeg | Yes: command-line trim and render | Bundled `render_preview.py`; silent straight-cut MP4 from validated same-rate media. No editable multi-track editor project |
 | DaVinci Resolve | XML interchange; external Python scripting where the installed edition supports it | Bundled video-only FCP 7 XML and guarded bridge. Live native import/playback/export not yet validated. Studio is the target for the external bridge; planning and XML generation do not need it |
-| Shotcut / MLT | Text MLT XML; command-line export with melt | Recommended open-source adapter candidate. No generator or round-trip validation bundled |
+| Shotcut / MLT | Text MLT XML; command-line export with melt | Experimental picture-only `shotcut.py` generator; see [workflow and validation limits](shotcut.md). Desktop open/edit/save verification remains separate |
 | Kdenlive | MLT rendering and generated render scripts | Candidate. A renderable MLT file is not automatically a fully editable Kdenlive project; native metadata must be tested |
 | OpenShot / libopenshot | Video-editing library with Python bindings | Candidate. Library rendering and desktop project interchange need separate implementation and validation |
 | iMovie / CapCut | No native automation adapter verified here | Use plans, shot lists, narration and timecoded feedback, then assemble in the UI. Do not promise unattended editing or modify undocumented project internals as if they were a stable API |

@@ -1,5 +1,19 @@
 # Validation coverage
 
+## Unreleased Shotcut adapter — 27 October 2026
+
+The `shotcut-adapter` branch adds a new MLT generator. **Desktop open/edit/save verification is still pending.** Do not present this as a completed Shotcut UI round trip.
+
+- Local macOS tests: 15 passed, one native MLT test skipped because the test renderer could not start in the current session.
+- Linux GitHub Actions: all 16 tests passed on Python 3.9 and 3.12, including native MLT 7.22.0 rendering and XML serialization/reload.
+- The native fixture starts the first source at frame 25, then joins the next two shots. Both the original and serialized/reloaded MLT export 225 frames at 25 fps, 640×360, with no audio stream.
+- Every decoded frame is compared to the FFmpeg reference at reduced resolution in RGB, including the two cut boundaries. This is a synthetic picture check, not a sound or artistic review.
+- A generic MLT XML serialization preserves the connected timeline, but is not a substitute for checking Shotcut's desktop save and source-bin retention.
+
+Evidence: [native MLT test run](https://github.com/denyakortunov/family-travel-editor/actions/runs/40475180440). The Mac was locked during the UI attempt. The official Shotcut 26.9.28 DMG matched its published SHA-256; its app signature passed the system verification when run with sufficient access. No security checks were bypassed. The Mac renderer startup timed out; no Mac export or desktop success is claimed.
+
+The remaining acceptance check is to open the generated project in Shotcut, inspect the editable V1 entries/source bin, Save As, reopen, make a bounded trim and render the saved project. No active Resolve project needs to be touched.
+
 ## v0.2.0 — 27 October 2026
 
 | Area | Observed result | Limits |

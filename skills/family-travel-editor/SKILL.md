@@ -38,6 +38,7 @@ Deliver the editable project plus a clearly labelled review export, remaining li
 - `scripts/project.py`: workspace initialization, read-only catalogue, tool discovery, export measurement.
 - `scripts/timeline.py`: validated, video-only straight-cut FCP 7 XML from an explicit shot plan. It is a technical interchange helper, not an automatic story editor or complete audio conform.
 - `scripts/render_preview.py`: FFmpeg video-only preview from the same shot plan; requires ffprobe and rejects mismatched rates/dimensions/duration. No audio or editable native project.
+- `scripts/shotcut.py`: experimental picture-only Shotcut MLT generator; read [Shotcut workflow](references/shotcut.md). Distinguish a generated/renderable MLT from a desktop open/edit/save verification.
 - `scripts/resolve_bridge.py`: read-only connection probe and guarded XML import into an already open, empty, explicitly named project.
 - `assets/templates/`: blank preferences, scene, feedback and status files. Copy them into the user's project; do not write personal data into the installed skill.
 
