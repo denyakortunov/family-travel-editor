@@ -1,5 +1,9 @@
 # Release notes
 
+## v0.3.6 — a new travel-ribbon cover
+
+[What’s New](whats-new-v0.3.6.md): people and travel moments, a neutral photographic cover, and consistent desktop/mobile presentation.
+
 ## v0.3.5 — a simpler introduction
 
 [What’s New](whats-new-v0.3.5.md): plain wording for Claude Code and Codex, and an illustration of travel clips becoming a film.
