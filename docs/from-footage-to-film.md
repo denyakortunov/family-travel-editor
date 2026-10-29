@@ -6,7 +6,7 @@ This is the working method behind Family Travel Editor. It combines footage insp
 
 <picture>
   <source media="(max-width: 600px)" srcset="workflow-mobile.svg">
-  <img src="workflow-overview.svg" alt="A concrete scene: catalogue three source clips, choose ranges, assemble in your editor, trim one shot and save the plan and feedback." width="100%">
+  <img src="workflow-overview.svg" alt="Separate travel clips become a film with editing help from the skill in Claude Code or Codex." width="100%">
 </picture>
 
 ## 1. Footage and travel evidence → a context ledger

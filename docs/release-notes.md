@@ -1,5 +1,9 @@
 # Release notes
 
+## v0.3.5 — a simpler introduction
+
+[What’s New](whats-new-v0.3.5.md): plain wording for Claude Code and Codex, and an illustration of travel clips becoming a film.
+
 ## v0.3.4 — concrete workflow diagrams
 
 [What’s New](whats-new-v0.3.4.md): source ranges, a scene plan and a visible revision replace the photographic cover; refreshed typography and a mobile layout.

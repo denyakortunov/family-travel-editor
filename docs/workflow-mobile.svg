@@ -1,93 +1,78 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="480" height="1770" viewBox="0 0 480 1770" role="img" aria-labelledby="title desc"><title id="title">Source files, a plan, editing, revision and saved project context</title><desc id="desc">Illustrative workflow for an AI agent skill, not an app interface. Source clips become a scene plan. Editing happens in your chosen editor. A request trims two seconds from the last shot, preserves earlier shots and keeps both versions.</desc><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1L7 4L1 7" fill="none" stroke="#315bea" stroke-width="1.7"/></marker></defs><style>text{font-family:Arial,Helvetica,sans-serif;fill:#171b25}.mono{font-family:Menlo,Consolas,monospace}.label{letter-spacing:1.3px}</style>
-<rect x="0" y="0" width="480" height="1770" rx="0" fill="#f5f7fa"/>
-<text x="28" y="45" font-size="14" font-weight="600" style="fill:#315bea" class="label" text-anchor="start">WHAT YOU GET</text>
-<text x="26" y="94" font-size="36" font-weight="700" style="fill:#171b25" class="" text-anchor="start">From clips</text>
-<text x="26" y="136" font-size="36" font-weight="700" style="fill:#171b25" class="" text-anchor="start">to a clear revision.</text>
-<rect x="28" y="182" width="27" height="27" rx="7" fill="#315bea"/>
-<text x="41.5" y="202" font-size="15" font-weight="700" style="fill:white" class="" text-anchor="middle">1</text>
-<text x="67" y="202" font-size="23" font-weight="600" style="fill:#171b25" class="" text-anchor="start">Source catalogue</text>
-<rect x="28" y="228" width="424" height="55" rx="8" fill="white" stroke="#dce1e9"/>
-<rect x="40" y="240" width="31" height="31" rx="5" fill="#ecf0fa"/>
-<path d="M51 249L60 255L51 261Z" fill="none" stroke="#315bea" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<text x="84" y="260" font-size="17" font-weight="500" style="fill:#171b25" class="" text-anchor="start">arrival.mov</text>
-<text x="438" y="260" font-size="13" font-weight="500" style="fill:#596273" class="mono" text-anchor="end">01</text>
-<rect x="28" y="293" width="424" height="55" rx="8" fill="white" stroke="#dce1e9"/>
-<rect x="40" y="305" width="31" height="31" rx="5" fill="#ecf0fa"/>
-<path d="M51 314L60 320L51 326Z" fill="none" stroke="#315bea" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<text x="84" y="325" font-size="17" font-weight="500" style="fill:#171b25" class="" text-anchor="start">conversation.mov</text>
-<text x="438" y="325" font-size="13" font-weight="500" style="fill:#596273" class="mono" text-anchor="end">02</text>
-<rect x="28" y="358" width="424" height="55" rx="8" fill="white" stroke="#dce1e9"/>
-<rect x="40" y="370" width="31" height="31" rx="5" fill="#ecf0fa"/>
-<path d="M51 379L60 385L51 391Z" fill="none" stroke="#315bea" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<text x="84" y="390" font-size="17" font-weight="500" style="fill:#171b25" class="" text-anchor="start">departure.mov</text>
-<text x="438" y="390" font-size="13" font-weight="500" style="fill:#596273" class="mono" text-anchor="end">03</text>
-<text x="28" y="448" font-size="21" font-weight="400" style="fill:#596273" class="" text-anchor="start">+ your memories and what matters</text>
-<path d="M240 467V497" fill="none" stroke="#315bea" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
-<rect x="28" y="520" width="27" height="27" rx="7" fill="#315bea"/>
-<text x="41.5" y="540" font-size="15" font-weight="700" style="fill:white" class="" text-anchor="middle">2</text>
-<text x="67" y="540" font-size="23" font-weight="600" style="fill:#171b25" class="" text-anchor="start">Scene plan</text>
-<rect x="28" y="565" width="424" height="247" rx="12" fill="white" stroke="#dce1e9"/>
-<rect x="28" y="565" width="424" height="47" rx="12" fill="#315bea"/>
-<rect x="28" y="594" width="424" height="18" rx="0" fill="#315bea"/>
-<text x="48" y="595" font-size="20" font-weight="600" style="fill:white" class="" text-anchor="start">Suggested cuts</text>
-<text x="432" y="594" font-size="12" font-weight="600" style="fill:#e7edff" class="label" text-anchor="end">PLAN</text>
-<text x="48" y="643" font-size="15" font-weight="500" style="fill:#315bea" class="mono" text-anchor="start">01</text>
-<text x="85" y="643" font-size="18" font-weight="600" style="fill:#171b25" class="" text-anchor="start">Arrival</text>
-<text x="432" y="643" font-size="14" font-weight="400" style="fill:#596273" class="mono" text-anchor="end">00:12–00:18</text>
-<path d="M48 660H432" fill="none" stroke="#dce1e9" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
-<text x="48" y="697" font-size="15" font-weight="500" style="fill:#315bea" class="mono" text-anchor="start">02</text>
-<text x="85" y="697" font-size="18" font-weight="600" style="fill:#171b25" class="" text-anchor="start">Full reply</text>
-<text x="432" y="697" font-size="14" font-weight="400" style="fill:#596273" class="mono" text-anchor="end">00:04–00:14</text>
-<path d="M48 714H432" fill="none" stroke="#dce1e9" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
-<text x="48" y="751" font-size="15" font-weight="500" style="fill:#315bea" class="mono" text-anchor="start">03</text>
-<text x="85" y="751" font-size="18" font-weight="600" style="fill:#171b25" class="" text-anchor="start">Departure</text>
-<text x="432" y="751" font-size="14" font-weight="400" style="fill:#596273" class="mono" text-anchor="end">00:21–00:27</text>
-<text x="48" y="789" font-size="16" font-weight="400" style="fill:#596273" class="" text-anchor="start">Keep the complete reply.</text>
-<path d="M240 831V859" fill="none" stroke="#315bea" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
-<rect x="28" y="880" width="27" height="27" rx="7" fill="#315bea"/>
-<text x="41.5" y="900" font-size="15" font-weight="700" style="fill:white" class="" text-anchor="middle">3</text>
-<text x="67" y="900" font-size="23" font-weight="600" style="fill:#171b25" class="" text-anchor="start">Edit in your app</text>
-<rect x="28" y="925" width="424" height="164" rx="12" fill="white" stroke="#dce1e9"/>
-<rect x="48" y="947" width="101.72727272727273" height="40" rx="5" fill="#bfd0ff"/>
-<text x="98.86363636363637" y="972.0" font-size="14" font-weight="600" style="fill:#171b25" class="" text-anchor="middle">Arrival</text>
-<rect x="152.72727272727275" y="947" width="171.54545454545453" height="40" rx="5" fill="#b8dfd4"/>
-<text x="238.5" y="972.0" font-size="14" font-weight="600" style="fill:#171b25" class="" text-anchor="middle">Reply</text>
-<rect x="327.27272727272725" y="947" width="101.72727272727273" height="40" rx="5" fill="#f2c39f"/>
-<text x="378.1363636363636" y="972.0" font-size="14" font-weight="600" style="fill:#171b25" class="" text-anchor="middle">Exit</text>
-<rect x="327.27272727272725" y="947" width="31.909090909090907" height="40" rx="4" fill="none" stroke="#cc7742"/>
-<path d="M327.27272727272725 992H359.1818181818182" fill="none" stroke="#cc7742" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<text x="48" y="1022" font-size="22" font-weight="500" style="fill:#171b25" class="" text-anchor="start">Picture, speech, music, titles.</text>
-<text x="48" y="1058" font-size="21" font-weight="400" style="fill:#596273" class="" text-anchor="start">Use your available editor tools.</text>
-<path d="M240 1106V1134" fill="none" stroke="#315bea" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
-<rect x="28" y="1157" width="27" height="27" rx="7" fill="#315bea"/>
-<text x="41.5" y="1177" font-size="15" font-weight="700" style="fill:white" class="" text-anchor="middle">4</text>
-<text x="67" y="1177" font-size="23" font-weight="600" style="fill:#171b25" class="" text-anchor="start">Review a specific change</text>
-<rect x="28" y="1202" width="424" height="269" rx="12" fill="white" stroke="#dce1e9"/>
-<text x="48" y="1240" font-size="23" font-weight="500" style="fill:#315bea" class="" text-anchor="start">“Trim 2s from the last shot.”</text>
-<text x="48" y="1280" font-size="18" font-weight="500" style="fill:#596273" class="mono" text-anchor="start">v1 · 22s</text>
-<rect x="48" y="1294" width="101.72727272727273" height="38" rx="5" fill="#bfd0ff"/>
-<text x="98.86363636363637" y="1318.0" font-size="14" font-weight="600" style="fill:#171b25" class="" text-anchor="middle">01</text>
-<rect x="152.72727272727275" y="1294" width="171.54545454545453" height="38" rx="5" fill="#b8dfd4"/>
-<text x="238.5" y="1318.0" font-size="14" font-weight="600" style="fill:#171b25" class="" text-anchor="middle">02</text>
-<rect x="327.27272727272725" y="1294" width="101.72727272727273" height="38" rx="5" fill="#f2c39f"/>
-<text x="378.1363636363636" y="1318.0" font-size="14" font-weight="600" style="fill:#171b25" class="" text-anchor="middle">03</text>
-<rect x="327.27272727272725" y="1294" width="31.909090909090907" height="38" rx="4" fill="none" stroke="#cc7742"/>
-<path d="M327.27272727272725 1337H359.1818181818182" fill="none" stroke="#cc7742" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<text x="48" y="1374" font-size="18" font-weight="500" style="fill:#315bea" class="mono" text-anchor="start">v2 · 20s</text>
-<rect x="48" y="1388" width="101.72727272727273" height="38" rx="5" fill="#bfd0ff"/>
-<text x="98.86363636363637" y="1412.0" font-size="14" font-weight="600" style="fill:#171b25" class="" text-anchor="middle">01</text>
-<rect x="152.72727272727275" y="1388" width="171.54545454545453" height="38" rx="5" fill="#b8dfd4"/>
-<text x="238.5" y="1412.0" font-size="14" font-weight="600" style="fill:#171b25" class="" text-anchor="middle">02</text>
-<rect x="327.27272727272725" y="1388" width="66.81818181818181" height="38" rx="5" fill="#f2c39f"/>
-<text x="360.68181818181813" y="1412.0" font-size="14" font-weight="600" style="fill:#171b25" class="" text-anchor="middle">03</text>
-<text x="48" y="1450" font-size="19" font-weight="400" style="fill:#596273" class="" text-anchor="start">Earlier shots kept. Both versions saved.</text>
-<rect x="28" y="1503" width="27" height="27" rx="7" fill="#315bea"/>
-<text x="41.5" y="1523" font-size="15" font-weight="700" style="fill:white" class="" text-anchor="middle">5</text>
-<text x="67" y="1523" font-size="23" font-weight="600" style="fill:#171b25" class="" text-anchor="start">Resume next time</text>
-<rect x="28" y="1549" width="424" height="105" rx="12" fill="#eaf0ff"/>
-<text x="48" y="1587" font-size="23" font-weight="600" style="fill:#171b25" class="" text-anchor="start">Plan · feedback · saved status</text>
-<text x="48" y="1628" font-size="21" font-weight="400" style="fill:#596273" class="" text-anchor="start">The next chat starts from here.</text>
-<text x="28" y="1696" font-size="19" font-weight="400" style="fill:#596273" class="" text-anchor="start">Illustrative scene. This is an agent skill.</text>
-<text x="28" y="1726" font-size="18" font-weight="400" style="fill:#596273" class="" text-anchor="start">Native editing needs a tested connection.</text>
-<text x="28" y="1756" font-size="19" font-weight="400" style="fill:#596273" class="" text-anchor="start">The bundled helper preview is silent.</text>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="480" height="960" viewBox="0 0 480 960" role="img" aria-labelledby="title desc"><title id="title">Travel clips become a film with help from an AI skill</title><desc id="desc">An AI skill for Claude Code and Codex helps assemble travel videos. Separate illustrated clips of a walk, a street and a train become one filmstrip. Editing takes place in your video editor.</desc><rect width="480" height="960" fill="#faf9f5"/><style>text{font-family:Arial,Helvetica,sans-serif;fill:#242822}</style>
+<defs>
+<g id="walk"><rect width="160" height="104" fill="#e8c4aa"/><path d="M0 85Q65 70 160 90" fill="none" stroke="#bc8464" stroke-width="2"/><g fill="none" stroke="#242822" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><circle cx="65" cy="26" r="7" fill="#242822"/><path d="M62 40L56 61L43 83M56 61L73 82M61 44L76 51L86 40M59 43L45 53"/><circle cx="99" cy="44" r="5" fill="#242822"/><path d="M98 55L94 69L85 84M94 69L106 84M97 57L86 51L85 42M98 57L110 63"/></g></g>
+<g id="street"><rect width="160" height="104" fill="#c6d6d0"/><path d="M0 84H160M20 84V25H64V84M83 84V13H139V84" fill="none" stroke="#365e53" stroke-width="3"/><path d="M28 38H56M28 49H56M92 27H130M92 40H130M92 53H130M92 65H130" stroke="#365e53" stroke-width="3" stroke-dasharray="8 7"/><path d="M35 84V65H49V84M105 84V73H118V84" fill="none" stroke="#365e53" stroke-width="3"/></g>
+<g id="train"><rect width="160" height="104" fill="#d1d0e9"/><path d="M11 76H151M17 84H147" stroke="#67628b" stroke-width="2"/><path d="M19 67V27Q19 19 27 19H119Q127 19 132 27L145 56V67Z" fill="none" stroke="#413c66" stroke-width="3"/><path d="M30 31H53V49H30ZM65 31H88V49H65ZM100 31H119L127 49H100Z" fill="#faf9f5" stroke="#413c66" stroke-width="2"/><circle cx="43" cy="69" r="7" fill="#413c66"/><circle cx="117" cy="69" r="7" fill="#413c66"/></g>
+<marker id="arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M2 2L10 6L2 10" fill="none" stroke="#242822" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker>
+</defs>
+<text x="28" y="61" font-size="34" font-weight="700" fill="#242822" style="fill:#242822" text-anchor="start">Your travel videos</text>
+<text x="28" y="102" font-size="34" font-weight="700" fill="#242822" style="fill:#242822" text-anchor="start">made into a film</text>
+<text x="28" y="147" font-size="23" font-weight="400" fill="#242822" style="fill:#242822" text-anchor="start">AI skill for Claude Code and Codex</text>
+<g transform="translate(53 244) rotate(-10) scale(0.8)"><rect x="-7" y="-15" width="174" height="134" fill="#242822"/><use xlink:href="#walk"/>
+<path d="M0 -9h9M0 113h9" stroke="#faf9f5" stroke-width="5"/>
+<path d="M20 -9h9M20 113h9" stroke="#faf9f5" stroke-width="5"/>
+<path d="M40 -9h9M40 113h9" stroke="#faf9f5" stroke-width="5"/>
+<path d="M60 -9h9M60 113h9" stroke="#faf9f5" stroke-width="5"/>
+<path d="M80 -9h9M80 113h9" stroke="#faf9f5" stroke-width="5"/>
+<path d="M100 -9h9M100 113h9" stroke="#faf9f5" stroke-width="5"/>
+<path d="M120 -9h9M120 113h9" stroke="#faf9f5" stroke-width="5"/>
+<path d="M140 -9h9M140 113h9" stroke="#faf9f5" stroke-width="5"/>
+</g>
+<g transform="translate(192 225) rotate(9) scale(0.8)"><rect x="-7" y="-15" width="174" height="134" fill="#242822"/><use xlink:href="#street"/>
+<path d="M0 -9h9M0 113h9" stroke="#faf9f5" stroke-width="5"/>
+<path d="M20 -9h9M20 113h9" stroke="#faf9f5" stroke-width="5"/>
+<path d="M40 -9h9M40 113h9" stroke="#faf9f5" stroke-width="5"/>
+<path d="M60 -9h9M60 113h9" stroke="#faf9f5" stroke-width="5"/>
+<path d="M80 -9h9M80 113h9" stroke="#faf9f5" stroke-width="5"/>
+<path d="M100 -9h9M100 113h9" stroke="#faf9f5" stroke-width="5"/>
+<path d="M120 -9h9M120 113h9" stroke="#faf9f5" stroke-width="5"/>
+<path d="M140 -9h9M140 113h9" stroke="#faf9f5" stroke-width="5"/>
+</g>
+<g transform="translate(293 320) rotate(-4) scale(0.8)"><rect x="-7" y="-15" width="174" height="134" fill="#242822"/><use xlink:href="#train"/>
+<path d="M0 -9h9M0 113h9" stroke="#faf9f5" stroke-width="5"/>
+<path d="M20 -9h9M20 113h9" stroke="#faf9f5" stroke-width="5"/>
+<path d="M40 -9h9M40 113h9" stroke="#faf9f5" stroke-width="5"/>
+<path d="M60 -9h9M60 113h9" stroke="#faf9f5" stroke-width="5"/>
+<path d="M80 -9h9M80 113h9" stroke="#faf9f5" stroke-width="5"/>
+<path d="M100 -9h9M100 113h9" stroke="#faf9f5" stroke-width="5"/>
+<path d="M120 -9h9M120 113h9" stroke="#faf9f5" stroke-width="5"/>
+<path d="M140 -9h9M140 113h9" stroke="#faf9f5" stroke-width="5"/>
+</g>
+<text x="240" y="458" font-size="25" font-weight="700" fill="#242822" style="fill:#242822" text-anchor="middle">Your clips</text>
+<path d="M240 487V530" fill="none" stroke="#242822" stroke-width="2" stroke-linecap="round" marker-end="url(#arrow)"/>
+<g transform="translate(240 588) scale(1)" fill="none" stroke="#e65e3f" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><circle cx="-16" cy="21" r="10"/><circle cx="16" cy="21" r="10"/><path d="M-10 13L28 -40M10 13L-28 -40"/><circle cy="-3" r="3" fill="#faf9f5"/></g>
+<text x="240" y="651" font-size="25" font-weight="700" fill="#242822" style="fill:#242822" text-anchor="middle">AI editing help</text>
+<path d="M240 680V723" fill="none" stroke="#242822" stroke-width="2" stroke-linecap="round" marker-end="url(#arrow)"/>
+<g transform="translate(40 767) scale(0.8)"><rect x="-8" y="-17" width="508" height="138" fill="#242822"/>
+<use xlink:href="#walk" x="0"/>
+<use xlink:href="#street" x="166"/>
+<use xlink:href="#train" x="332"/>
+<path d="M0 -10h9M0 114h9" stroke="#faf9f5" stroke-width="5"/>
+<path d="M20 -10h9M20 114h9" stroke="#faf9f5" stroke-width="5"/>
+<path d="M40 -10h9M40 114h9" stroke="#faf9f5" stroke-width="5"/>
+<path d="M60 -10h9M60 114h9" stroke="#faf9f5" stroke-width="5"/>
+<path d="M80 -10h9M80 114h9" stroke="#faf9f5" stroke-width="5"/>
+<path d="M100 -10h9M100 114h9" stroke="#faf9f5" stroke-width="5"/>
+<path d="M120 -10h9M120 114h9" stroke="#faf9f5" stroke-width="5"/>
+<path d="M140 -10h9M140 114h9" stroke="#faf9f5" stroke-width="5"/>
+<path d="M160 -10h9M160 114h9" stroke="#faf9f5" stroke-width="5"/>
+<path d="M180 -10h9M180 114h9" stroke="#faf9f5" stroke-width="5"/>
+<path d="M200 -10h9M200 114h9" stroke="#faf9f5" stroke-width="5"/>
+<path d="M220 -10h9M220 114h9" stroke="#faf9f5" stroke-width="5"/>
+<path d="M240 -10h9M240 114h9" stroke="#faf9f5" stroke-width="5"/>
+<path d="M260 -10h9M260 114h9" stroke="#faf9f5" stroke-width="5"/>
+<path d="M280 -10h9M280 114h9" stroke="#faf9f5" stroke-width="5"/>
+<path d="M300 -10h9M300 114h9" stroke="#faf9f5" stroke-width="5"/>
+<path d="M320 -10h9M320 114h9" stroke="#faf9f5" stroke-width="5"/>
+<path d="M340 -10h9M340 114h9" stroke="#faf9f5" stroke-width="5"/>
+<path d="M360 -10h9M360 114h9" stroke="#faf9f5" stroke-width="5"/>
+<path d="M380 -10h9M380 114h9" stroke="#faf9f5" stroke-width="5"/>
+<path d="M400 -10h9M400 114h9" stroke="#faf9f5" stroke-width="5"/>
+<path d="M420 -10h9M420 114h9" stroke="#faf9f5" stroke-width="5"/>
+<path d="M440 -10h9M440 114h9" stroke="#faf9f5" stroke-width="5"/>
+<path d="M460 -10h9M460 114h9" stroke="#faf9f5" stroke-width="5"/>
+<path d="M480 -10h9M480 114h9" stroke="#faf9f5" stroke-width="5"/>
+</g>
+<text x="240" y="894" font-size="25" font-weight="700" fill="#242822" style="fill:#242822" text-anchor="middle">Your film</text>
+<text x="240" y="938" font-size="21" font-weight="400" fill="#242822" style="fill:#242822" text-anchor="middle">Made in your video editor</text>
 </svg>

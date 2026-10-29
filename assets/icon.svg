@@ -1,1 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Family Travel Editor"><rect width="512" height="512" rx="112" fill="#315bea"/><rect x="98" y="128" width="316" height="99" rx="16" fill="white"/><rect x="98" y="267" width="215" height="99" rx="16" fill="white"/><path d="M350 251V385M329 251H371M329 385H371" fill="none" stroke="#bed0ff" stroke-width="14" stroke-linecap="round"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title desc"><title id="title">Family Travel Editor</title><desc id="desc">An AI skill for Claude Code and Codex helps assemble travel videos. Separate illustrated clips of a walk, a street and a train become one filmstrip. Editing takes place in your video editor.</desc><rect width="512" height="512" fill="#242822"/><style>text{font-family:Arial,Helvetica,sans-serif;fill:#242822}</style>
+<defs>
+<g id="walk"><rect width="160" height="104" fill="#e8c4aa"/><path d="M0 85Q65 70 160 90" fill="none" stroke="#bc8464" stroke-width="2"/><g fill="none" stroke="#242822" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><circle cx="65" cy="26" r="7" fill="#242822"/><path d="M62 40L56 61L43 83M56 61L73 82M61 44L76 51L86 40M59 43L45 53"/><circle cx="99" cy="44" r="5" fill="#242822"/><path d="M98 55L94 69L85 84M94 69L106 84M97 57L86 51L85 42M98 57L110 63"/></g></g>
+<g id="street"><rect width="160" height="104" fill="#c6d6d0"/><path d="M0 84H160M20 84V25H64V84M83 84V13H139V84" fill="none" stroke="#365e53" stroke-width="3"/><path d="M28 38H56M28 49H56M92 27H130M92 40H130M92 53H130M92 65H130" stroke="#365e53" stroke-width="3" stroke-dasharray="8 7"/><path d="M35 84V65H49V84M105 84V73H118V84" fill="none" stroke="#365e53" stroke-width="3"/></g>
+<g id="train"><rect width="160" height="104" fill="#d1d0e9"/><path d="M11 76H151M17 84H147" stroke="#67628b" stroke-width="2"/><path d="M19 67V27Q19 19 27 19H119Q127 19 132 27L145 56V67Z" fill="none" stroke="#413c66" stroke-width="3"/><path d="M30 31H53V49H30ZM65 31H88V49H65ZM100 31H119L127 49H100Z" fill="#faf9f5" stroke="#413c66" stroke-width="2"/><circle cx="43" cy="69" r="7" fill="#413c66"/><circle cx="117" cy="69" r="7" fill="#413c66"/></g>
+<marker id="arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M2 2L10 6L2 10" fill="none" stroke="#242822" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker>
+</defs>
+<rect x="78" y="123" width="356" height="266" rx="0" fill="#faf9f5"/><rect x="99" y="165" width="314" height="182" fill="#e65e3f"/><path d="M223 205L302 256L223 307Z" fill="#faf9f5"/>
+<path d="M102 145h22M102 368h22" stroke="#242822" stroke-width="15"/>
+<path d="M149 145h22M149 368h22" stroke="#242822" stroke-width="15"/>
+<path d="M196 145h22M196 368h22" stroke="#242822" stroke-width="15"/>
+<path d="M243 145h22M243 368h22" stroke="#242822" stroke-width="15"/>
+<path d="M290 145h22M290 368h22" stroke="#242822" stroke-width="15"/>
+<path d="M337 145h22M337 368h22" stroke="#242822" stroke-width="15"/>
+<path d="M384 145h22M384 368h22" stroke="#242822" stroke-width="15"/>
+</svg>

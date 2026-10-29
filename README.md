@@ -1,14 +1,14 @@
 # Family Travel Editor
 
-**An AI agent skill for turning travel footage into a story.**
+**An AI skill for Claude Code and Codex that helps you put together your travel videos.**
 
 **This is a skill for your AI agent, not a standalone video editor.** It provides instructions, examples and helper tools for organizing footage, planning scenes and working through revisions. You use it in a local AI agent; you assemble the film in your preferred video editor. Direct editing by the agent requires an available, tested integration.
 
-[**Start here →**](#start-with-one-scene) · [What’s New in v0.3.4](docs/whats-new-v0.3.4.md) · [Capabilities and limits](docs/capabilities.md) · [Real-footage example](examples/grand-canyon-sunset/README.md)
+[**Start here →**](#start-with-one-scene) · [What’s New in v0.3.5](docs/whats-new-v0.3.5.md) · [Capabilities and limits](docs/capabilities.md) · [Real-footage example](examples/grand-canyon-sunset/README.md)
 
 ## Start with one scene
 
-1. **[Download the v0.3.4 source ZIP](https://github.com/denyakortunov/family-travel-editor/releases/download/v0.3.4/family-travel-editor-source-v0.3.4.zip)** and unzip it. Open the extracted folder in your local AI agent.
+1. **[Download the v0.3.5 source ZIP](https://github.com/denyakortunov/family-travel-editor/releases/download/v0.3.5/family-travel-editor-source-v0.3.5.zip)** and unzip it. Open the extracted folder in your local AI agent.
 2. Ask: **“Read `skills/family-travel-editor/SKILL.md`, check this installation and explain the next step.”** The agent needs file access. The helper check needs Python 3.9+; no editor, footage or paid service is required for that check.
 3. Give the agent **your footage folder, a separate working folder and one scene you want to tell**. Name your editor, or say “undecided.” Expect a catalogue, a readable scene plan, open questions and a saved next step. A catalogue is not proof that the clips have been watched.
 
@@ -30,16 +30,17 @@ Open a new chat and invoke `$family-travel-editor`, or ask the agent to read the
 An alternative for other compatible agents is the optional [skills CLI](https://github.com/vercel-labs/skills):
 
 ```sh
-npx skills add https://github.com/denyakortunov/family-travel-editor/tree/v0.3.4/skills/family-travel-editor
+npx skills add https://github.com/denyakortunov/family-travel-editor/tree/v0.3.5/skills/family-travel-editor
 ```
 
 Choose your agent when prompted. This route needs Node.js; the Python installer does not. See the [guide](docs/getting-started.md) for updates with backups and the [test record](docs/validation.md) for what has actually been checked.
 
 </details>
 
-![Three source clips become a scene plan, then a versioned edit with a two-second trim.](assets/social-preview.jpg)
-
-<sub>Illustrative scene: selected source ranges, a complete reply and one bounded revision. This is an agent skill; assembly happens in your editor.</sub>
+<picture>
+  <source media="(max-width: 600px)" srcset="docs/workflow-mobile.svg">
+  <img src="assets/social-preview.jpg" alt="An AI skill for Claude Code and Codex helps turn separate travel clips into a film in your video editor." width="100%">
+</picture>
 
 ## What you get
 
@@ -54,11 +55,6 @@ Choose your agent when prompted. This route needs Node.js; the Python installer 
 Bundled automation currently provides a **silent video preview** and **video-only XML preparation**. Full audio mixing, titles and native editor control are not supplied as an end-to-end workflow. Resolve import/playback/export remains unvalidated. [Detailed capabilities →](docs/capabilities.md)
 
 ## See what the workflow looks like
-
-<picture>
-  <source media="(max-width: 600px)" srcset="docs/workflow-mobile.svg">
-  <img src="docs/workflow-overview.svg" alt="Source catalogue, selected ranges, assembly in your editor, a two-second revision and saved context." width="100%">
-</picture>
 
 Run the [real Grand Canyon footage example](examples/grand-canyon-sunset/README.md): three clips become a 24-second picture edit, then one bounded revision makes it 22 seconds. Source clips and both previews are included in the source ZIP. **Both previews are silent**; no native editor or audio mixing is claimed.
 
