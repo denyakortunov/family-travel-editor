@@ -4,7 +4,7 @@ This is the working method behind Family Travel Editor. It combines footage insp
 
 [Get started](../README.md#start-with-one-scene) · [Tools and costs](../README.md#tools-and-budget) · [Reproducible trimming test](walkthrough.md)
 
-<img src="../assets/social-preview.jpg" alt="An AI skill for Claude Code and Codex helps assemble travel scenes in your video editor." width="100%">
+<img src="../assets/social-preview.jpg" alt="Travel footage on three drives becomes three films with help from an AI skill for Claude Code and Codex, used with your video editor." width="100%">
 
 ## 1. Footage and travel evidence → a context ledger
 

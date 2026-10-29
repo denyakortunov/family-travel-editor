@@ -1,5 +1,9 @@
 # Release notes
 
+## v0.3.7 — the selected drives-to-films cover
+
+[What’s New](whats-new-v0.3.7.md): three drives, an action camera and three film covers, with cleaner hardware rendering and consistent presentation.
+
 ## v0.3.6 — a new travel-ribbon cover
 
 [What’s New](whats-new-v0.3.6.md): people and travel moments, a neutral photographic cover, and consistent desktop/mobile presentation.

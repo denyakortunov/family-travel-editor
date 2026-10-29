@@ -6,7 +6,7 @@ DJI, Gmail, DaVinci Resolve, Dropbox and YouTube symbols come from https://githu
 
 Resolve, FFmpeg, Python, optional models and service integrations are not redistributed by this repository. The color-bar and story-to-cut fixtures are synthetic; the separately credited Grand Canyon exercise uses public-domain NPS footage. No private family footage, travel records or voice recordings are bundled.
 
-The current travel-ribbon cover is original AI-generated illustrative artwork created with OpenAI image generation. Its people and travel scenes are fictional illustrations, not private family footage, testimonials or evidence of an edit made by the skill. The JPEG is exported from the selected raster artwork. The plugin icon is original SVG artwork. Earlier release archives retain their original covers and diagrams.
+The current drives-to-films cover is original AI-generated illustrative artwork created with OpenAI image generation. Its devices, people and travel scenes are illustrative; the trips and film covers are fictional, not private family footage, testimonials or evidence of an edit made by the skill. The JPEG is exported from the selected raster artwork. The plugin icon is original SVG artwork. Earlier release archives retain their original covers and diagrams.
 
 Historical diagrams retain earlier AI-generated device illustrations; those are illustrative, not application screenshots. Document icons reuse source assets in `docs/icons/`. The photographic concept cover from v0.3.3 has been removed from the current package; earlier release archives retain their original contents.
 
