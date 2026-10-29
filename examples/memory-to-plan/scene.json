@@ -1,0 +1,103 @@
+{
+  "title": "Looking for cooler weather in the mountains",
+  "version": "plan-v2",
+  "trial_label": "Agent trial planning session; no footage; supplied public memory; not a real film or user testimonial.",
+  "editor": "undecided",
+  "media_available": false,
+  "source_identity": null,
+  "export_identity": null,
+  "confirmed_context": [
+    {
+      "fact": "The trip went to the mountains to seek cooler weather than Singapore.",
+      "source": "Supplied trial prompt",
+      "confidence": "explicit supplied memory; not independently verified",
+      "conflicting_evidence": "none available"
+    },
+    {
+      "fact": "The speaker remembers sweaters, tea and a fireplace.",
+      "source": "Supplied trial prompt",
+      "confidence": "explicit supplied memory; filmed coverage and order unknown",
+      "conflicting_evidence": "none available"
+    }
+  ],
+  "questions": [
+    "Which mountain destination was this? Needed only for an accurate place title.",
+    "Were sweaters, tea and the fireplace part of the same outing or different days? Needed before implying continuity.",
+    "When footage is available, what actually shows the cooler weather and how does the scene naturally end?"
+  ],
+  "setup": "Proposed theme: seeking a cooler setting than Singapore. Establish the mountain location only with inspected footage that actually shows it; no assumed departure footage.",
+  "action": "Explore the remembered contrast through available footage of sweaters, tea and the fireplace. These are search targets, not claims of recorded actions. Their order remains provisional.",
+  "result": "If supported by footage, let an observed action or genuine reaction convey the experience. No reaction or successful outcome is confirmed yet.",
+  "ending": "Choose a naturally completed filmed action or a settled atmospheric view after review. Fireplace is a candidate only if filmed and appropriate. Do not imply a chronological evening or an emotional conclusion.",
+  "transition": "Undecided until the adjacent scene is known. No fabricated journey or causal bridge.",
+  "shots": [],
+  "coverage_candidates": [
+    {
+      "role": "Orient",
+      "search_target": "Mountain setting, if present",
+      "source_file": null,
+      "in": null,
+      "out": null,
+      "units": null,
+      "observed": false,
+      "gap": "No footage supplied"
+    },
+    {
+      "role": "Develop the reason for travel",
+      "search_target": "A genuine filmed use or detail of sweaters, if present",
+      "source_file": null,
+      "in": null,
+      "out": null,
+      "units": null,
+      "observed": false,
+      "gap": "No footage supplied"
+    },
+    {
+      "role": "Develop an action or atmosphere",
+      "search_target": "Tea, if filmed; retain complete meaningful action",
+      "source_file": null,
+      "in": null,
+      "out": null,
+      "units": null,
+      "observed": false,
+      "gap": "No footage supplied"
+    },
+    {
+      "role": "Potential ending or atmosphere",
+      "search_target": "Fireplace, if filmed; context and chronological position unknown",
+      "source_file": null,
+      "in": null,
+      "out": null,
+      "units": null,
+      "observed": false,
+      "gap": "No footage supplied"
+    }
+  ],
+  "audio": {
+    "added_narration": "none for this scene, per simulated tester revision TRIAL-001",
+    "original_speech": "open until footage can be heard; none selected",
+    "atmosphere": "unknown until listening; preserve useful original sound if available",
+    "music": "undecided; no track, timing or licence chosen"
+  },
+  "protected_context": [
+    "Supplied memories remain memories, not observed clip facts.",
+    "No invented chronology, speech, reactions, timecodes or durations.",
+    "Editor remains undecided."
+  ],
+  "verification": {
+    "planning_files_checked": true,
+    "footage_watched": false,
+    "audio_listened": false,
+    "native_editor_tested": false,
+    "author_accepted": false
+  },
+  "next_step": "Resume from STATUS.md. When a source folder is supplied, check access and catalogue it; inspect candidate footage in motion with surrounding context, build a real coverage map and hear original speech before selecting ranges. Editor choice is needed only for assembly.",
+  "change_basis": {
+    "id": "TRIAL-001",
+    "kind": "simulated tester revision, not a real author preference",
+    "original_wording": "Keep this scene without added narration; leave original speech decisions open until we can hear the footage.",
+    "scope": "this provisional scene only",
+    "prior_version": "plan-v1",
+    "new_version": "plan-v2"
+  }
+}

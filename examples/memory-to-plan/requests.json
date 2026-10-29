@@ -1,0 +1,6 @@
+{
+  "trial_kind": "Agent trial planning session with no footage",
+  "first_request": "Help me plan one travel scene. We went to the mountains because we wanted cooler weather than Singapore. I remember sweaters, tea and a fireplace. I have no footage available in this session, my editor is undecided. Give me a useful provisional plan and a saved next step, without making up shot ranges or claiming to view clips.",
+  "second_request": "Keep this scene without added narration; leave original speech decisions open until we can hear the footage.",
+  "second_request_provenance": "Simulated tester change; not real author feedback"
+}

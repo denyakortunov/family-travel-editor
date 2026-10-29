@@ -1,5 +1,16 @@
 # Validation coverage
 
+## v0.3.1 — 29 October 2026
+
+| Area | Observed result | Limits |
+|---|---|---|
+| Local helper/media suite | 24 tests passed on macOS / Python 3.9.6; includes real silent preview rendering, catalogue timeout/error recovery and unreadable-directory detection, missing source and relative install paths | Timeout/read failures are injected; candidate extensions are not codec certification |
+| Independent first use | A separate Codex agent read the skill, initialized a temporary workspace, passed doctor/self-test and saved a provisional plan plus a bounded revision | No footage, editor, human user or artistic acceptance; [actual session](../examples/memory-to-plan/README.md) |
+| Version-to-version update | Installed v0.3.0, added a local note, updated from the v0.3.1 source ZIP using a relative path with spaces; old version and note preserved in backup, printed self-test command passed | Temporary destination, no personal agent configuration changed |
+| Structure and packaging | Skill structure and Python compilation checked; clean source/plugin extraction and self-tests exercised by suite | No marketplace certification |
+
+The exact release CI run remains the authority for Linux/Python 3.9 and 3.12. Installation does not establish app discovery or video/audio understanding. See [capabilities](capabilities.md).
+
 ## v0.3.0 — 29 October 2026
 
 | Area | Observed result | Limits |

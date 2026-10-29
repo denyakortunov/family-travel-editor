@@ -1,0 +1,26 @@
+name: Question or first-use feedback
+description: Ask for help or tell us where getting started became confusing.
+title: "[First use] "
+body:
+  - type: markdown
+    attributes:
+      value: "No private footage, account details or full logs are required. A short description is enough to start."
+  - type: input
+    id: setup
+    attributes:
+      label: Your setup
+      description: Skill version, agent, operating system and editor, if known.
+      placeholder: "v0.3.1, Codex, macOS, editor undecided"
+  - type: textarea
+    id: expected
+    attributes:
+      label: What were you trying to do?
+    validations:
+      required: true
+  - type: textarea
+    id: stuck
+    attributes:
+      label: Where did you get stuck, or what is unclear?
+      description: Include the instruction you followed and what happened next.
+    validations:
+      required: true

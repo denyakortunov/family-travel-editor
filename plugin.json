@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "family-travel-editor",
-  "version": "0.3.0",
-  "description": "AI-assisted travel video editing: organize footage, plan family films, draft voiceover and apply timecoded feedback with your preferred editor.",
+  "version": "0.3.1",
+  "description": "An AI agent skill for organizing travel footage, planning scenes and revising films in your preferred editor. Not a standalone video editor.",
   "author": {
     "name": "Denis Kortunov",
     "url": "https://github.com/denyakortunov"
@@ -24,9 +24,9 @@
     "com.openai": {
       "requires_local_executor": true,
       "interface": {
-        "displayName": "AI Travel Video Editor",
-        "shortDescription": "Edit travel videos with AI",
-        "longDescription": "An independent agent skill for travel videos and family films. Organize footage, reconstruct context, plan scenes, draft voiceover and apply timecoded feedback. The workflow is editor-independent; bundled helpers provide video-only FFmpeg previews and experimental Resolve XML interchange. Other editors need manual assembly or a separate adapter. Requires a local agent; optional services are configured separately.",
+        "displayName": "Family Travel Editor",
+        "shortDescription": "Plan travel films with your AI agent",
+        "longDescription": "An AI agent skill, not a standalone video editor. Organize footage, reconstruct context, plan scenes and work through timecoded feedback in your preferred editor. Includes local catalogue helpers, a silent video preview and experimental video-only Resolve XML. Full audio editing and native editor control require separately available, tested tools. Start with one scene; keep a saved plan and next step.",
         "developerName": "Denis Kortunov",
         "category": "Productivity",
         "capabilities": [

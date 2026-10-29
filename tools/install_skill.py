@@ -5,10 +5,13 @@ from datetime import datetime, timezone
 from pathlib import Path
 import shutil
 import tempfile
+import sys
+import shlex
+import subprocess
 
 
 def install(source, destination, update=False):
-    source, destination = Path(source), Path(destination).expanduser()
+    source, destination = Path(source).resolve(), Path(destination).expanduser().resolve()
     target = destination / source.name
     if target.is_symlink() or (target.exists() and not target.is_dir()):
         raise ValueError('Refusing to replace a symlink or non-directory skill')
@@ -46,8 +49,10 @@ def main():
         p.exit(1, f'Error: {error}\n')
     version = (target / 'VERSION').read_text().strip()
     print(f'Installed family-travel-editor {version} at {target}.')
-    print('Open a new chat and invoke $family-travel-editor. If absent, restart your agent.')
-    print(f'Check installation: python3 "{target / "scripts/self_test.py"}"')
+    print(f'Open a new chat in your film workspace. Ask your agent to read: {target / "SKILL.md"}')
+    print('In Codex you can also invoke $family-travel-editor; discovery depends on the client and destination.')
+    command = [sys.executable, str(target / 'scripts/self_test.py')]
+    print('Check installation: ' + (subprocess.list2cmdline(command) if sys.platform == 'win32' else shlex.join(command)))
     print('Installing does not start an edit. Give the agent your footage folder and one scene.')
     if backup:
         print(f'Previous installation preserved: {backup}')

@@ -1,0 +1,37 @@
+{
+  "checked_at": "2026-10-29T12:41:31+08:00",
+  "scope": "Planning artifacts only",
+  "checks": {
+    "doctor_exit_code": 0,
+    "self_test_exit_code": 0,
+    "scene_json_loads": true,
+    "feedback_json_loads": true,
+    "changed_scene_top_level_fields": [
+      "version",
+      "audio",
+      "change_basis"
+    ],
+    "original_speech_unchanged_and_open": true,
+    "no_selected_shots_or_invented_ranges": true,
+    "no_viewing_or_listening_claims": true,
+    "preferences_unchanged": true,
+    "v1_preserved": true
+  },
+  "not_checked": [
+    "actual footage",
+    "artistic quality",
+    "native editor",
+    "rendered video",
+    "audio mix",
+    "author acceptance"
+  ],
+  "files": {
+    "scene.json": "631a23da34ae90df72c047dc3fb30230f09522dc7c04c80b7e612eccb67e307c",
+    "readable-plan.md": "257e41d6a3998d42056ad3fe5e8fa8ec167d789f4a4d62a6d12b8b98d7c987b3",
+    "preferences.json": "50f0e9fb4b16c5ea2affcc25ff2361d808b9a22426488e924f881db55c37a9a0",
+    "feedback.json": "141389266e6abf93f6b67a4a086072b82893b906fe41dbe2ede905892d55d397",
+    "STATUS.md": "f3d6502597328c451e9c2525cb8235fee673b4016ff2d81acc17fcb459413bc9",
+    "versions/v1-scene.json": "79a421e36155c5eb811a495a519d627be005ec446d841c20ff7a17775d41537b"
+  },
+  "publication_note": "Local machine paths replaced by placeholders; files below hash the published copies, not the original temporary artifacts. All other plan content is unchanged."
+}

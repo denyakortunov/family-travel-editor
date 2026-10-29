@@ -38,3 +38,9 @@ Without connected Photos/Gmail, use a user-selected metadata export and question
 ## Update an installed skill
 
 From a fresh repository checkout, run `python3 tools/install_skill.py --destination ~/.agents/skills --update`. The installer stages the new copy and preserves the previous installation in the sibling `~/.agents/skills-backups/` directory, outside skill discovery. Start a fresh chat afterward. To roll back, keep the current copy separately and restore the backed-up folder to the original skill location. Film workspaces remain separate; the installer does not migrate their schemas.
+
+## Catalogue progress and partial results
+
+The helper reports progress on stderr. Read `summary` and `skipped` in the saved catalogue; `files` includes failed records with their reasons. CLI exit code 2 means no candidates or at least one failed file, with the report saved. Without ffprobe, hash-only records are marked unavailable rather than inspected. A candidate extension is not a promise that a particular codec works. Retry a failed file into a new report after resolving its cause; existing outputs are never overwritten.
+
+Unreadable directory contents are unknown, not zero files. Check `scan_errors` and `summary.scan_failed`; any such failure also returns CLI exit code 2 after saving visible records.

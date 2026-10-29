@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "comments": [
+    {
+      "id": "TRIAL-001",
+      "timestamp": "2026-10-29T12:41:31+08:00",
+      "provenance": "simulated tester condition; not real author feedback",
+      "original_wording": "Keep this scene without added narration; leave original speech decisions open until we can hear the footage.",
+      "target_version": "plan-v1",
+      "result_version": "plan-v2",
+      "timecode": null,
+      "timecode_reason": "Narrative planning only; no timeline or footage",
+      "scope": "This scene only",
+      "intended_change": "Set added narration to none and explicitly leave original speech undecided until listening.",
+      "protected_context": [
+        "Confirmed supplied memories",
+        "Unknown coverage/ranges",
+        "Open original speech decisions",
+        "Undecided editor"
+      ],
+      "status": "verified",
+      "status_scope": "Written plan only, not an edit",
+      "queue_state": "active",
+      "author_accepted": false,
+      "evidence": [
+        "versions/v1-scene.json preserves the earlier narration-undecided state",
+        "scene.json audio.added_narration now says none; original_speech remains open",
+        "readable-plan.md carries the same scene-only instruction"
+      ],
+      "remaining": "Apply and verify this scene instruction if a film is later assembled; no execution or author acceptance claimed."
+    }
+  ]
+}

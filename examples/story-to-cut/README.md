@@ -12,8 +12,10 @@ A useful question for a real arrival scene would be: “What did you think would
 
 ## Resume prompt
 
-> Read this film workspace's STATUS.md, scene.json, preferences.json and feedback.json. Continue from v2. Preserve the first and last source ranges. The example feedback is applied but not accepted. Report what can be checked from the files and what still requires watching/listening or the author's decision.
+> Read the installed SKILL.md, then STATUS.md, scene.json, preferences.json and feedback.json inside examples/story-to-cut in the extracted repository (use its absolute path). Continue from v2. Preserve the first and last source ranges. The example feedback is applied but not accepted. Report what can be checked from the files and what still requires watching/listening or the author's decision.
 
 ## From a correction to a reusable preference
 
 Only if the author separately says “Across my films, keep the reaction after a joke,” add a preference with the exact quote, date, originating feedback ID and scope. Do not turn a request to shorten one shot into a universal maximum shot length. A stored preference guides future decisions; it does not train model weights or prove another computer has the updated project.
+
+The [saved status](STATUS.md) makes this resume prompt usable. For a readable trim table and editor actions, see [manual assembly](../../docs/manual-assembly.md).

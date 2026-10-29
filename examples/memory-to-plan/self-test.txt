@@ -1,0 +1,8 @@
+Scanning source files…
+[1/1] Hashing fixture.mp4
+Saved <temporary-self-test>/film/catalog.json: 1 included, 0 skipped, 0 failed, 1 without metadata.
+Install ffprobe for duration/rate metadata; hashes alone cannot establish shot ranges.
+PASS: family-travel-editor 0.3.1 installation check
+Templates, catalogue, XML ranges and overwrite refusal checked in temporary storage.
+No film was rendered, watched or listened to. No editor connection was tested.
+Next: give your agent a footage folder, a separate workspace and one scene to plan.

@@ -1,5 +1,11 @@
 # Release notes
 
+## v0.3.1 — 29 October 2026
+
+[**What’s New: clearer first use and reliable catalogues →**](whats-new-v0.3.1.md)
+
+A skill, not a standalone editor: a shorter entry page, visible capabilities, a resumable example, manual assembly guidance, per-file catalogue recovery and clearer installer output.
+
 ## v0.3.0 — 29 October 2026
 
 [**What’s New: added, changed, retired, compatibility and downloads →**](whats-new-v0.3.0.md)

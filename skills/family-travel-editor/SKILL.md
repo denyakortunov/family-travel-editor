@@ -3,9 +3,9 @@ name: family-travel-editor
 description: Plan and edit travel videos and family films from camera or drone footage with AI assistance and the user’s preferred editor. Use for footage cataloguing, trip storytelling, scene planning, personal voiceover and timecoded review revisions while preserving an editable project.
 ---
 
-# AI Travel Video Editor
+# Family Travel Editor
 
-Turn a collection of clips into a coherent film with the filmmaker. Work on one named scene or revision at a time; keep an editable timeline and evidence of what was checked. This skill needs local file access for media operations. Planning is editor-independent; native editing requires a supported editor adapter. Installing it does not install an editor, grant account access, or supply audio models.
+This is a skill for an AI agent, not a standalone video editor. Help the filmmaker turn clips into a coherent film using their chosen editor. Work on one named scene or revision at a time; keep an editable timeline and evidence of what was checked. This skill needs local file access for media operations. Planning is editor-independent; native editing requires a supported editor adapter. Installing it does not install an editor, grant account access, or supply audio models.
 
 ## First use and continuing work
 

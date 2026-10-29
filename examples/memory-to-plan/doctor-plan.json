@@ -1,0 +1,18 @@
+{
+  "skill_version": "0.3.1",
+  "skill_path": "<installed-skill>",
+  "task": "plan",
+  "source": null,
+  "ready": true,
+  "python": "3.9.6",
+  "platform": "darwin",
+  "tools": {
+    "ffmpeg": null,
+    "ffprobe": null
+  },
+  "missing": [],
+  "notes": [
+    "Python 3.9+ is required for the helpers.",
+    "Planning needs no editor or paid service; viewing/listening depends on your agent tools."
+  ]
+}
