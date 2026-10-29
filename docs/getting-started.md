@@ -1,6 +1,6 @@
 # Your first scene
 
-[Download v0.3.7](https://github.com/denyakortunov/family-travel-editor/releases/tag/v0.3.7) · [What's New](whats-new-v0.3.7.md) · [Full workflow](from-footage-to-film.md)
+[Download v0.3.8](https://github.com/denyakortunov/family-travel-editor/releases/tag/v0.3.8) · [What's New](whats-new-v0.3.8.md) · [Full workflow](from-footage-to-film.md)
 
 This is a skill for a local AI agent, not a video-editing app. Installing it adds instructions and small helpers. It does not begin an edit, install Resolve, connect private accounts or download models. The helper programs need Python 3.9+ and an agent that can access your files. Text-only planning can begin without Python. ffprobe adds technical media metadata; rendering the optional silent test needs FFmpeg and ffprobe. Your agent has its own access and pricing.
 
@@ -8,7 +8,7 @@ This is a skill for a local AI agent, not a video-editing app. Installing it add
 
 ### Start here: source ZIP, no global installation needed
 
-Download **family-travel-editor-source-v0.3.7.zip** from the release and unzip it. Open the `family-travel-editor` folder in your local agent. The `README.md`, `tools/` and `skills/` folders should be visible. Ask it:
+Download **family-travel-editor-source-v0.3.8.zip** from the release and unzip it. Open the `family-travel-editor` folder in your local agent. The `README.md`, `tools/` and `skills/` folders should be visible. Ask it:
 
 > Read skills/family-travel-editor/SKILL.md. Check this installation and explain the next step. Do not edit any film yet.
 
@@ -35,7 +35,7 @@ Open a new chat in your film workspace and type `$family-travel-editor`. If it d
 From the project where you want to use it:
 
 ```sh
-npx skills add https://github.com/denyakortunov/family-travel-editor/tree/v0.3.7/skills/family-travel-editor
+npx skills add https://github.com/denyakortunov/family-travel-editor/tree/v0.3.8/skills/family-travel-editor
 ```
 
 Choose your agent when prompted. This pins the skill to this release; the short repository form follows current main. The [third-party CLI](https://github.com/vercel-labs/skills) supports several agents; its current documentation requires Node.js 22.20+. The skill itself needs no Node runtime. Use the Python route if you prefer no npm dependency. The entire skill folder is self-contained; repository-level `tools/` and examples are not runtime dependencies. See [what was tested](validation.md).

@@ -4,7 +4,10 @@ This is the working method behind Family Travel Editor. It combines footage insp
 
 [Get started](../README.md#start-with-one-scene) · [Tools and costs](../README.md#tools-and-budget) · [Reproducible trimming test](walkthrough.md)
 
-<img src="../assets/social-preview.jpg" alt="Travel footage on three drives becomes three films with help from an AI skill for Claude Code and Codex, used with your video editor." width="100%">
+<picture>
+  <source media="(max-width: 600px)" srcset="workflow-mobile.svg">
+  <img src="workflow-overview.svg" alt="Five steps: recover the trip from footage and context; find the story and record your voice; assemble picture and sound; review and revise; approve and deliver. Keep project memory for the next session." width="100%">
+</picture>
 
 ## 1. Footage and travel evidence → a context ledger
 

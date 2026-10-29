@@ -1,5 +1,9 @@
 # Release notes
 
+## v0.3.8 — the detailed workflow restored
+
+[What’s New](whats-new-v0.3.8.md): five steps, separated arrows, clearer illustration framing and a mobile layout. The drives cover belongs on the author’s profile.
+
 ## v0.3.7 — the selected drives-to-films cover
 
 [What’s New](whats-new-v0.3.7.md): three drives, an action camera and three film covers, with cleaner hardware rendering and consistent presentation.

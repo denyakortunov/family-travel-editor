@@ -1,14 +1,19 @@
 # Family Travel Editor
 
-<img src="assets/social-preview.jpg" alt="Family Travel Editor: an AI skill for Claude Code and Codex. Three labelled travel drives and an action camera lead to three travel films with AI help, using a separate video editor." width="100%">
-
 **An AI skill for Claude Code and Codex, used with your video editor.** It is not a standalone editor. It provides instructions, examples and helper tools for organizing footage, planning scenes and working through revisions. You use it in a local AI agent; you assemble the film in your preferred video editor. Direct editing by the agent requires an available, tested integration.
 
-[**Start here →**](#start-with-one-scene) · [What’s New in v0.3.7](docs/whats-new-v0.3.7.md) · [Capabilities and limits](docs/capabilities.md) · [Real-footage example](examples/grand-canyon-sunset/README.md)
+[**Start here →**](#start-with-one-scene) · [What’s New in v0.3.8](docs/whats-new-v0.3.8.md) · [Capabilities and limits](docs/capabilities.md) · [Real-footage example](examples/grand-canyon-sunset/README.md)
+
+<picture>
+  <source media="(max-width: 600px)" srcset="docs/workflow-mobile.svg">
+  <img src="docs/workflow-overview.svg" alt="Five steps: recover the trip from footage and context; find the story and record your voice; assemble picture and sound; review and revise; approve and deliver. Keep project memory for the next session." width="100%">
+</picture>
+
+[Explore each step and a worked story example →](docs/from-footage-to-film.md)
 
 ## Start with one scene
 
-1. **[Download the v0.3.7 source ZIP](https://github.com/denyakortunov/family-travel-editor/releases/download/v0.3.7/family-travel-editor-source-v0.3.7.zip)** and unzip it. Open the extracted folder in your local AI agent.
+1. **[Download the v0.3.8 source ZIP](https://github.com/denyakortunov/family-travel-editor/releases/download/v0.3.8/family-travel-editor-source-v0.3.8.zip)** and unzip it. Open the extracted folder in your local AI agent.
 2. Ask: **“Read `skills/family-travel-editor/SKILL.md`, check this installation and explain the next step.”** The agent needs file access. The helper check needs Python 3.9+; no editor, footage or paid service is required for that check.
 3. Give the agent **your footage folder, a separate working folder and one scene you want to tell**. Name your editor, or say “undecided.” Expect a catalogue, a readable scene plan, open questions and a saved next step. A catalogue is not proof that the clips have been watched.
 
@@ -30,7 +35,7 @@ Open a new chat and invoke `$family-travel-editor`, or ask the agent to read the
 An alternative for other compatible agents is the optional [skills CLI](https://github.com/vercel-labs/skills):
 
 ```sh
-npx skills add https://github.com/denyakortunov/family-travel-editor/tree/v0.3.7/skills/family-travel-editor
+npx skills add https://github.com/denyakortunov/family-travel-editor/tree/v0.3.8/skills/family-travel-editor
 ```
 
 Choose your agent when prompted. This route needs Node.js; the Python installer does not. See the [guide](docs/getting-started.md) for updates with backups and the [test record](docs/validation.md) for what has actually been checked.

@@ -8,7 +8,7 @@ Resolve, FFmpeg, Python, optional models and service integrations are not redist
 
 The current drives-to-films cover is original AI-generated illustrative artwork created with OpenAI image generation. Its devices, people and travel scenes are illustrative; the trips and film covers are fictional, not private family footage, testimonials or evidence of an edit made by the skill. The JPEG is exported from the selected raster artwork. The plugin icon is original SVG artwork. Earlier release archives retain their original covers and diagrams.
 
-Historical diagrams retain earlier AI-generated device illustrations; those are illustrative, not application screenshots. Document icons reuse source assets in `docs/icons/`. The photographic concept cover from v0.3.3 has been removed from the current package; earlier release archives retain their original contents.
+The restored vertical workflow diagrams reuse the earlier AI-generated device illustrations, with revised framing and layout; those are illustrative, not application screenshots. Historical diagrams retain their original artwork. Document icons reuse source assets in `docs/icons/`. The photographic concept cover from v0.3.3 has been removed from the current package; earlier release archives retain their original contents.
 
 ## Grand Canyon real-footage exercise
 
