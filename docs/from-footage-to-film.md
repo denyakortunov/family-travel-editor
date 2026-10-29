@@ -58,11 +58,11 @@ Before editing, define what may change and what must remain. After editing, comp
 | Speech and sentence boundaries | Whisper large-v3, GigaAM | Transcripts and suspicious omissions to investigate; not proof of sound quality |
 | Decoding, levels and channels | FFmpeg / ffprobe, signal analysis | Technical observations about the actual export |
 | Music content | Music Flamingo was tried; direct listening | Potential competing vocals and other issues; model answers can be wrong |
-| Picture and sound together | Optional Gemini review | A second opinion within its actual inspection coverage |
+| Motion phases | Playback, optional locally tested motion analysis | Possible searching/reversals; classifications require review |
 | Structure and editorial reasoning | Optional Claude audit | Suggestions about the edit; text review is not listening |
 | Whether the film works | The person making the film | Watch, listen, accept or request changes |
 
-These models and services are **optional examples**, not installed or called by the public package. Use available alternatives, record inspection coverage and report unavailable checks honestly.
+Gemini review was retired from the originating workflow on 29 October 2026. Local models are admitted only for tasks they pass on known controls; missing reliable acoustic review is reported explicitly. These models and services are **optional examples**, not installed or called by the public package. Use available alternatives, record inspection coverage and report unavailable checks honestly.
 
 **Handoff:** versioned comments → scoped changes → a new export → review again.
 

@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "family-travel-editor",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "AI-assisted travel video editing: organize footage, plan family films, draft voiceover and apply timecoded feedback with your preferred editor.",
   "author": {
     "name": "Denis Kortunov",

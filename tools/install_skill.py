@@ -44,7 +44,11 @@ def main():
         target, backup = install(Path(__file__).resolve().parents[1] / 'skills/family-travel-editor', a.destination, a.update)
     except (OSError, ValueError) as error:
         p.exit(1, f'Error: {error}\n')
-    print(f'Installed {target}. Start a fresh chat to refresh discovery.')
+    version = (target / 'VERSION').read_text().strip()
+    print(f'Installed family-travel-editor {version} at {target}.')
+    print('Open a new chat and invoke $family-travel-editor. If absent, restart your agent.')
+    print(f'Check installation: python3 "{target / "scripts/self_test.py"}"')
+    print('Installing does not start an edit. Give the agent your footage folder and one scene.')
     if backup:
         print(f'Previous installation preserved: {backup}')
 

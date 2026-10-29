@@ -2,7 +2,7 @@
 
 **Turn your travel footage and half-remembered moments into a story you can edit—with an AI agent, your own voice and the editor you choose.**
 
-[**Download & try one scene →**](#start-with-one-scene) · [How the full workflow works](docs/from-footage-to-film.md) · [Free tools & alternatives](#choose-your-tools-and-budget)
+[**Download & start →**](#start-with-one-scene) · [What’s New in v0.3.0](docs/release-notes.md) · [How the full workflow works](docs/from-footage-to-film.md) · [Free tools & alternatives](#choose-your-tools-and-budget)
 
 I film our family trips on a DJI Osmo Pocket 3 and drones. Editing a film usually takes me 20–30 hours, so footage can sit untouched for years. I built **Family Travel Editor** to give an AI agent a repeatable process: inspect the material, reconstruct the trip, ask me what mattered, help plan the edit and work through my feedback. It still takes work; I am not claiming a one-click film or a proven time saving.
 
@@ -11,7 +11,7 @@ I film our family trips on a DJI Osmo Pocket 3 and drones. Editing a film usuall
   <img src="docs/workflow-overview.svg" alt="From footage, Photos GPS and booking emails to story, recorded narration, editing, timecoded review and approved delivery" width="960">
 </picture>
 
-The device and interface illustrations are schematic, not screenshots. The diagram shows the **full working method behind the skill**. This repository shares its instructions and helper scripts. Which steps the agent can execute depends on its tools and access; the included renderer makes a simple silent preview.
+The device and interface illustrations are schematic, not screenshots. The diagram retains the earlier tool examples; Gemini is retired from the current originating workflow. Follow the current checks described below. The diagram shows the **full working method behind the skill**. This repository shares its instructions and helper scripts. Which steps the agent can execute depends on its tools and access; the included renderer makes a simple silent preview.
 
 ## What happens between “here are my clips” and a film?
 
@@ -37,13 +37,13 @@ My working setup uses **DaVinci Resolve Studio**, Python scripts and Fairlight f
 
 I review versions in **Dropbox Replay** and comment on the actual moment: “the camera turns away here,” “keep the whole answer,” or “the aircraft sound disappeared.” The agent turns those notes into a bounded change, saves a new version and compares what should have stayed intact. Plain text with **version + timecode + request** works too.
 
-Checks use different tools for different jobs: **Whisper / GigaAM** for speech; **FFmpeg** for decoding and signal measurements; **Gemini** for an optional audiovisual review; **Claude** for an optional editorial second opinion. **Music Flamingo** was also tried for music analysis. These are examples from my setup, not bundled services or guarantees. A transcript is not listening; I still watch and listen to the film.
+Checks use different tools for different jobs: **Whisper / GigaAM** for speech; **FFmpeg** for decoding and signal measurements; locally tested models for narrowly scoped audio/motion questions; **Claude** for an optional editorial second opinion. Gemini review was retired from my workflow; no cloud reviewer is required. These are examples from my setup, not bundled services or guarantees. A transcript is not listening; I still watch and listen to the film.
 
 ### 5. Approve, deliver and keep useful memory
 
 After approval, prepare the final export, thumbnail, description and chapters for **YouTube or another destination**. Check the uploaded result. Keep the scene decisions, accepted recordings, explicit preferences and unresolved feedback in project files so the next session can continue. A comment about one shot stays attached to that version; it does not become a rule for every film. The repository does not automatically publish videos.
 
-[Full workflow, evidence and handoffs →](docs/from-footage-to-film.md) · [Original detailed tool map](docs/workflow.png)
+[Full workflow, evidence and handoffs →](docs/from-footage-to-film.md) · [Historical tool map](docs/workflow.png) (older services shown; current checks are described here)
 
 ## A concrete story: why the sweaters, tea and fireplace matter
 
@@ -61,34 +61,29 @@ This is a **planning example based on an actual author answer**. The edit struct
 
 ## Start with one scene
 
-### 1. Download and open
+1. **[Download v0.3.0 source ZIP](https://github.com/denyakortunov/family-travel-editor/releases/download/v0.3.0/family-travel-editor-source-v0.3.0.zip)** and unzip it. Open the folder in a local agent. This is an Agent Skill, not an app; installation alone does not start an edit.
+2. **Check the installation.** Ask: “Read `skills/family-travel-editor/SKILL.md`, check this installation and explain the next step.” The included self-test needs Python 3.9+, no footage, editor or paid service.
+3. **Start your scene.** Give the agent a footage folder, a separate planning folder, your editor (or “undecided”) and the moment you want to tell. Expect a catalogue, scene plan and a status note before moving to assembly.
 
-[**Download the latest source ZIP**](https://github.com/denyakortunov/family-travel-editor/archive/refs/heads/main.zip), unzip it and open the folder in a local agent that can read files and run commands. Keep your footage in a separate folder. Python 3.9+ supports the basic catalogue; FFmpeg and ffprobe are needed for the preview.
+[**Step-by-step installation, first prompt, expected results and troubleshooting →**](docs/getting-started.md)
 
-### 2. Give your agent this starting task
-
-Fill in the footage folder and your editor, or leave the editor undecided:
-
-> Read `skills/family-travel-editor/SKILL.md`. My footage is in [folder] and I use [editor, or undecided]. Start with one short scene. Check the available tools, create a separate planning workspace, catalogue the clips and ask me only the questions that change the story. Give me a scene plan with confirmed facts and open questions before editing. Preserve my originals. If you cannot view or hear the material, say so. Do not require Resolve or paid services for planning.
-
-### 3. Review the plan, then build the cut
-
-Expect a catalogue (`catalog.json`), a scene plan (`scene.json`) and a status note describing the next step. Review the story before the agent derives the frame-based shot plan. The file catalogue is technical evidence, not proof that every clip was watched.
-
-**Want to understand the workflow first?** Follow the [worked story example](docs/from-footage-to-film.md#a-worked-story-example-a-break-from-the-heat): see how a remembered reason for the trip shapes the scene plan, narration and a specific review note.
-
-<details>
-<summary><strong>Install the skill in Codex for future projects</strong></summary>
-
-From the repository root:
+To install for current Codex versions, run from the extracted repository root:
 
 ```sh
-python3 tools/install_skill.py --destination ~/.codex/skills
+python3 tools/install_skill.py --destination ~/.agents/skills
 ```
 
-Start a fresh chat and invoke `$family-travel-editor`. For updates, add `--update`; the installer keeps a dated backup. Store film memory in your project, outside the installed skill. Other agents can use their own skill folder or read `SKILL.md` directly. [Setup and troubleshooting](skills/family-travel-editor/references/setup.md).
+Open a new chat and invoke `$family-travel-editor`. Existing `~/.codex/skills` users should update their existing location, avoiding duplicate copies. The [guide](docs/getting-started.md) covers verification, updates with backups, Windows and direct use without installation.
 
-</details>
+For other compatible agents, the optional [skills CLI](https://github.com/vercel-labs/skills) can install this release:
+
+```sh
+npx skills add https://github.com/denyakortunov/family-travel-editor/tree/v0.3.0/skills/family-travel-editor
+```
+
+Choose your agent when prompted. The CLI needs Node.js; the Python installation route does not. [Test coverage and limits](docs/validation.md).
+
+**Want to understand the workflow first?** Follow the [worked story example](docs/from-footage-to-film.md#a-worked-story-example-a-break-from-the-heat). The separate color-bar trimming test below verifies timing, not storytelling.
 
 ## Choose your tools and budget
 
@@ -105,7 +100,7 @@ The skill and its helper scripts are **free and open source**. A paid Resolve li
 | Record narration | Your microphone + [Audacity](https://www.audacityteam.org/) or an existing recorder | Audacity is **free / open source**; no specific microphone required |
 | Transcribe speech locally | [Whisper](https://github.com/openai/whisper) | **Open source**; local hardware required. Hosted transcription may charge |
 | Review with timecoded comments | [Dropbox Replay](https://help.dropbox.com/create-upload/dropbox-replay-faq) | **Limited access included with Dropbox plans**; paid options. A text feedback file is free |
-| Get a second opinion | Gemini, Claude, other available reviewers | **Optional**; access and charges vary. Human review remains essential |
+| Get a second opinion | Human review, optional editorial reviewers | **Optional**; access and charges vary. Human review remains essential |
 
 Cost categories checked against linked product sources on 27 October 2026; limits and plans can change. Tools are optional examples, not accounts or subscriptions bundled with the skill. [Editor capabilities and integration limits](skills/family-travel-editor/references/editors.md).
 

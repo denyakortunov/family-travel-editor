@@ -1,5 +1,18 @@
 # Validation coverage
 
+## v0.3.0 — 29 October 2026
+
+| Area | Observed result | Limits |
+|---|---|---|
+| Local helper/media suite | 17 tests passed on macOS / Python 3.9.6, including a real silent render and mocked publication failure/idempotence checks | Synthetic footage; no artistic or speech-quality claim |
+| Source and plugin archives | Built, checksum-verified, extracted and self-tested in temporary folders | Plugin archive structure tested; no marketplace/client import certification |
+| Clean Python installation | Installed from extracted source ZIP; self-test passed from outside the skill folder | Does not prove UI discovery in every client |
+| Third-party skills CLI | skills 1.7.4 installed the local release folder for Codex, Claude Code and Cursor; installed self-test passed | Filesystem installation, not in-app invocation; remote tagged install checked after publication |
+| Editorial procedures | Compared with current editing rules; family-specific paths, identities, film queues and licensed media excluded | Instructions, not a bundled motion model or full-film automation |
+| Native editors and acoustic review | No new certification | Resolve round trip remains unvalidated; draft Shotcut adapter excluded; human listening still needed |
+
+The current CI run is authoritative for its Python 3.9/3.12 results and publication. Source packages include tests; installed skills are self-contained without the repository's tools or examples. Installation self-test uses fake metadata, not playable footage. The optional existing media fixture remains clearly labelled as color bars.
+
 ## v0.2.0 — 27 October 2026
 
 | Area | Observed result | Limits |

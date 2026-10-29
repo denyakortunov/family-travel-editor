@@ -97,7 +97,9 @@ def doctor(task='plan', ffmpeg='ffmpeg', ffprobe='ffprobe'):
     if task == 'plan':
         notes.append('Planning needs no editor or paid service; viewing/listening depends on your agent tools.')
     python_ok = sys.version_info >= (3, 9)
-    return {'task': task, 'ready': python_ok and not missing if task != 'resolve' else None,
+    return {'skill_version': (Path(__file__).resolve().parents[1] / 'VERSION').read_text().strip(),
+            'skill_path': str(Path(__file__).resolve().parents[1]),
+            'task': task, 'ready': python_ok and not missing if task != 'resolve' else None,
             'python': sys.version.split()[0], 'platform': sys.platform,
             'tools': binaries, 'missing': missing, 'notes': notes}
 
@@ -122,6 +124,7 @@ def main():
                 print(json.dumps(report, indent=2))
             else:
                 state = 'NOT CHECKED' if report['ready'] is None else ('READY' if report['ready'] else 'MISSING TOOLS')
+                print(f"family-travel-editor {report['skill_version']} at {report['skill_path']}")
                 print(f"{args.task}: {state} (Python {report['python']})")
                 for name, path in report['tools'].items():
                     print(f"  {name}: {path or 'not found'}")

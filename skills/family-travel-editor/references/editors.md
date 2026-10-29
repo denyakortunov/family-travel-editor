@@ -21,7 +21,7 @@ For any new adapter, first prove a small round trip: clips → source ranges →
 - Gmail/bookings → chosen travel records or answers; never assume new account access.
 - Replay → versioned timecoded text, another review tool or an issue list.
 - Transcription/audio models → any available ASR and listening tools with stated limits. Transcription alone does not judge music or stereo quality.
-- Claude/Gemini second opinion → another available reviewer or human review. Optional, not a prerequisite for starting.
+- Optional editorial second opinion → another available reviewer or human review. Optional, not a prerequisite for starting.
 - YouTube → another delivery destination, with explicit publication instructions and verified output.
 
 ## Official references

@@ -1,5 +1,7 @@
 # Setup and commands
 
+New user? Start with [first run](first-run.md). Commands below are relative to the installed skill directory, not your film workspace. `python3 scripts/self_test.py` checks the standalone installation without footage or external tools.
+
 Start with Python 3.9+ and local access to the footage. Planning works without an editor. The Resolve bridge targets Studio on macOS; its native round trip is not validated. Read [editor choices](editors.md) for other workflows. FFmpeg and ffprobe are separate tools: install them using a trusted package manager or your existing installation. No models, accounts or paid services are installed automatically.
 
 From the skill directory:
@@ -35,4 +37,4 @@ Without connected Photos/Gmail, use a user-selected metadata export and question
 
 ## Update an installed skill
 
-From a fresh repository checkout, run `python3 tools/install_skill.py --destination ~/.codex/skills --update`. The installer stages the new copy and preserves the previous installation in the sibling `~/.codex/skills-backups/` directory, outside skill discovery. Start a fresh chat afterward. To roll back, keep the current copy separately and restore the backed-up folder to the original skill location. Film workspaces remain separate; the installer does not migrate their schemas.
+From a fresh repository checkout, run `python3 tools/install_skill.py --destination ~/.agents/skills --update`. The installer stages the new copy and preserves the previous installation in the sibling `~/.agents/skills-backups/` directory, outside skill discovery. Start a fresh chat afterward. To roll back, keep the current copy separately and restore the backed-up folder to the original skill location. Film workspaces remain separate; the installer does not migrate their schemas.
