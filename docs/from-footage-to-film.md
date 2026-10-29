@@ -2,7 +2,12 @@
 
 This is the working method behind Family Travel Editor. It combines footage inspection, travel context, the author's memory, recorded narration, editing and versioned review. The public skill captures that process; its included scripts cover a smaller, explicitly documented set of operations.
 
-[Get started](../README.md#start-with-one-scene) · [Tools and costs](../README.md#choose-your-tools-and-budget) · [Reproducible trimming test](walkthrough.md)
+[Get started](../README.md#start-with-one-scene) · [Tools and costs](../README.md#tools-and-budget) · [Reproducible trimming test](walkthrough.md)
+
+<picture>
+  <source media="(max-width: 600px)" srcset="workflow-mobile.svg">
+  <img src="workflow-overview.svg" alt="Five stages from travel footage to a reviewed film, with a separate review loop and saved project memory." width="100%">
+</picture>
 
 ## 1. Footage and travel evidence → a context ledger
 

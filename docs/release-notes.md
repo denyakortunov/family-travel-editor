@@ -1,5 +1,9 @@
 # Release notes
 
+## v0.3.3 — visual refresh
+
+[What’s New](whats-new-v0.3.3.md): editorial cover, coordinated icon and redesigned desktop/mobile workflow diagrams.
+
 ## v0.3.2 — 29 October 2026
 
 [**What’s New: real-footage example and fixes from a practical Claude trial →**](whats-new-v0.3.2.md)
