@@ -4,11 +4,11 @@
 
 **This is a skill for your AI agent, not a standalone video editor.** It provides instructions, examples and helper tools for organizing footage, planning scenes and working through revisions. You use it in a local AI agent; you assemble the film in your preferred video editor. Direct editing by the agent requires an available, tested integration.
 
-[**Start here →**](#start-with-one-scene) · [What’s New in v0.3.1](docs/whats-new-v0.3.1.md) · [Capabilities and limits](docs/capabilities.md) · [Worked planning session](examples/memory-to-plan/README.md)
+[**Start here →**](#start-with-one-scene) · [What’s New in v0.3.2](docs/whats-new-v0.3.2.md) · [Capabilities and limits](docs/capabilities.md) · [Real-footage example](examples/grand-canyon-sunset/README.md)
 
 ## Start with one scene
 
-1. **[Download the v0.3.1 source ZIP](https://github.com/denyakortunov/family-travel-editor/releases/download/v0.3.1/family-travel-editor-source-v0.3.1.zip)** and unzip it. Open the extracted folder in your local AI agent.
+1. **[Download the v0.3.2 source ZIP](https://github.com/denyakortunov/family-travel-editor/releases/download/v0.3.2/family-travel-editor-source-v0.3.2.zip)** and unzip it. Open the extracted folder in your local AI agent.
 2. Ask: **“Read `skills/family-travel-editor/SKILL.md`, check this installation and explain the next step.”** The agent needs file access. The helper check needs Python 3.9+; no editor, footage or paid service is required for that check.
 3. Give the agent **your footage folder, a separate working folder and one scene you want to tell**. Name your editor, or say “undecided.” Expect a catalogue, a readable scene plan, open questions and a saved next step. A catalogue is not proof that the clips have been watched.
 
@@ -30,7 +30,7 @@ Open a new chat and invoke `$family-travel-editor`, or ask the agent to read the
 An alternative for other compatible agents is the optional [skills CLI](https://github.com/vercel-labs/skills):
 
 ```sh
-npx skills add https://github.com/denyakortunov/family-travel-editor/tree/v0.3.1/skills/family-travel-editor
+npx skills add https://github.com/denyakortunov/family-travel-editor/tree/v0.3.2/skills/family-travel-editor
 ```
 
 Choose your agent when prompted. This route needs Node.js; the Python installer does not. See the [guide](docs/getting-started.md) for updates with backups and the [test record](docs/validation.md) for what has actually been checked.
@@ -51,7 +51,9 @@ Bundled automation currently provides a **silent video preview** and **video-onl
 
 ## See what the workflow looks like
 
-Start with the [recorded memory-to-plan session](examples/memory-to-plan/README.md): a real public author answer becomes a provisional scene plan, followed by a revision. It contains **no inspected travel footage or finished film**. The [synthetic assembly exercise](examples/story-to-cut/README.md) separately demonstrates exact source ranges and a two-second trim.
+Run the [real Grand Canyon footage example](examples/grand-canyon-sunset/README.md): three clips become a 24-second picture edit, then one bounded revision makes it 22 seconds. Source clips and both previews are included in the source ZIP. **Both previews are silent**; no native editor or audio mixing is claimed.
+
+Without footage, start with the [recorded memory-to-plan session](examples/memory-to-plan/README.md): a real public author answer becomes a provisional scene plan, followed by a revision. It contains **no inspected travel footage or finished film**. The [synthetic assembly exercise](examples/story-to-cut/README.md) separately demonstrates exact source ranges and a two-second trim.
 
 The full method is: **material and memories → story → picture, voices and music in your editor → timecoded review → a saved next step**. Optional photos and selected booking emails can help reconstruct context. They are not required, and a booking does not prove the journey happened. [Full workflow and mountain-trip example →](docs/from-footage-to-film.md)
 

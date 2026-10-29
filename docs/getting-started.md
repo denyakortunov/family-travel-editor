@@ -1,6 +1,6 @@
 # Your first scene
 
-[Download v0.3.1](https://github.com/denyakortunov/family-travel-editor/releases/tag/v0.3.1) · [What's New](whats-new-v0.3.1.md) · [Full workflow](from-footage-to-film.md)
+[Download v0.3.2](https://github.com/denyakortunov/family-travel-editor/releases/tag/v0.3.2) · [What's New](whats-new-v0.3.2.md) · [Full workflow](from-footage-to-film.md)
 
 This is a skill for a local AI agent, not a video-editing app. Installing it adds instructions and small helpers. It does not begin an edit, install Resolve, connect private accounts or download models. The helper programs need Python 3.9+ and an agent that can access your files. Text-only planning can begin without Python. ffprobe adds technical media metadata; rendering the optional silent test needs FFmpeg and ffprobe. Your agent has its own access and pricing.
 
@@ -8,7 +8,7 @@ This is a skill for a local AI agent, not a video-editing app. Installing it add
 
 ### Start here: source ZIP, no global installation needed
 
-Download **family-travel-editor-source-v0.3.1.zip** from the release and unzip it. Open the `family-travel-editor` folder in your local agent. The `README.md`, `tools/` and `skills/` folders should be visible. Ask it:
+Download **family-travel-editor-source-v0.3.2.zip** from the release and unzip it. Open the `family-travel-editor` folder in your local agent. The `README.md`, `tools/` and `skills/` folders should be visible. Ask it:
 
 > Read skills/family-travel-editor/SKILL.md. Check this installation and explain the next step. Do not edit any film yet.
 
@@ -35,7 +35,7 @@ Open a new chat in your film workspace and type `$family-travel-editor`. If it d
 From the project where you want to use it:
 
 ```sh
-npx skills add https://github.com/denyakortunov/family-travel-editor/tree/v0.3.1/skills/family-travel-editor
+npx skills add https://github.com/denyakortunov/family-travel-editor/tree/v0.3.2/skills/family-travel-editor
 ```
 
 Choose your agent when prompted. This pins the skill to this release; the short repository form follows current main. The [third-party CLI](https://github.com/vercel-labs/skills) supports several agents; its current documentation requires Node.js 22.20+. The skill itself needs no Node runtime. Use the Python route if you prefer no npm dependency. The entire skill folder is self-contained; repository-level `tools/` and examples are not runtime dependencies. See [what was tested](validation.md).
@@ -50,16 +50,23 @@ From the installed skill directory (the installer prints its exact location):
 
 ```sh
 python3 scripts/project.py doctor --task plan
-# Once you have footage, also check its folder:
-python3 scripts/project.py doctor --task catalog --source "/absolute/path/to/footage"
 python3 scripts/self_test.py
 ```
 
-Expect `plan: READY` and `PASS: family-travel-editor 0.3.1 installation check`. The check uses temporary fake metadata, validates templates and XML ranges, verifies overwrite refusal and leaves originals untouched. It uses no private media, network, editor or model. It does **not** prove playback, audio quality or editing ability.
+Expect `plan: READY` and `PASS: family-travel-editor 0.3.2 installation check`. The check uses temporary fake metadata, validates templates and XML ranges, verifies overwrite refusal and leaves originals untouched. It uses no private media, network, editor or model. It does **not** prove playback, audio quality or editing ability.
 
 For a separate real-render test, the source ZIP includes [color-bar fixtures and exact commands](../examples/first-scene/README.md): three shots total 12 seconds, then a middle-shot trim makes 10 seconds. Both are silent. This is a technical test, not a sample family film. For a recorded planning interaction without footage, use the [memory-to-plan session](../examples/memory-to-plan/README.md).
 
-## 3. Give it one scene
+## 3. Try real footage or give it one scene
+
+For a complete **picture-only** exercise, the source ZIP includes [Grand Canyon clips, previews and one command](../examples/grand-canyon-sunset/README.md). It generates a separate workspace with STATUS and plans so you can continue tomorrow. It needs FFmpeg/ffprobe and deliberately excludes audio.
+
+With your own footage, check access from the skill directory (replace the path):
+
+```sh
+python3 scripts/project.py doctor --task catalog --source "/absolute/path/to/footage"
+```
+
 
 Copy this and fill in your folders:
 

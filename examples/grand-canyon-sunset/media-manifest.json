@@ -1,0 +1,35 @@
+[
+  {
+    "file": "visitors-wide.mp4",
+    "source_id": "sunset-series-1",
+    "source_in_seconds": 30,
+    "source_out_seconds": 39,
+    "fps": 25,
+    "frames": 225,
+    "sha256": "7b37cfdf0a658a2a0a51c28af733776f8584c5870bf3f9048b3dbce0c0b19b86",
+    "bytes": 206060,
+    "preparation": "640x360, CFR 25 fps without changing playback speed; audio intentionally omitted for the picture-only helper exercise"
+  },
+  {
+    "file": "camera-gesture.mp4",
+    "source_id": "couple-sunset",
+    "source_in_seconds": 21,
+    "source_out_seconds": 34,
+    "fps": 25,
+    "frames": 325,
+    "sha256": "0e43dab16195081c8cc1099f84ddfdc1487bd196b3c2122ef0e1bdf3f0bdf188",
+    "bytes": 744285,
+    "preparation": "640x360, CFR 25 fps without changing playback speed; audio intentionally omitted for the picture-only helper exercise"
+  },
+  {
+    "file": "sunset-ending.mp4",
+    "source_id": "couple-sunset",
+    "source_in_seconds": 58,
+    "source_out_seconds": 70,
+    "fps": 25,
+    "frames": 300,
+    "sha256": "0e01cc04cba2d9b14bed159d9a562bf8c105d002475c6659fe082b80bb7f836f",
+    "bytes": 255106,
+    "preparation": "640x360, CFR 25 fps without changing playback speed; audio intentionally omitted for the picture-only helper exercise"
+  }
+]

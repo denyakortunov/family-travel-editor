@@ -1,0 +1,29 @@
+{
+  "name": "Grand Canyon sunset v2 \u2014 silent picture edit",
+  "fps": 25,
+  "width": 640,
+  "height": 360,
+  "shots": [
+    {
+      "path": "visitors-wide.mp4",
+      "in": 25,
+      "out": 175,
+      "source_frames": 225,
+      "role": "Orient: people gathered at the rim"
+    },
+    {
+      "path": "camera-gesture.mp4",
+      "in": 25,
+      "out": 275,
+      "source_frames": 325,
+      "role": "Action: raise camera, hold, lower; retain the full visible gesture"
+    },
+    {
+      "path": "sunset-ending.mp4",
+      "in": 100,
+      "out": 250,
+      "source_frames": 300,
+      "role": "Ending: sun reaches the horizon"
+    }
+  ]
+}

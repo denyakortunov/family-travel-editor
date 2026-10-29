@@ -1,0 +1,25 @@
+{
+  "rights": "NPS Grand Canyon B-roll: public domain; no NPS endorsement implied",
+  "sources": [
+    {
+      "id": "sunset-series-1",
+      "nps_id": "F8DA8682-155D-451F-671FF82CCFD96A5D",
+      "page": "https://www.nps.gov/media/video/view.htm?id=F8DA8682-155D-451F-671FF82CCFD96A5D",
+      "download": "https://www.nps.gov/nps-audiovideo/audiovideo/5226bc75-199a-4249-8f68-c279c8634d3f720p.mp4",
+      "bytes": 6429936,
+      "sha256": "58ae1ef84491c411c170bbf26be50f9f34cecc9d002f5396ba2cfbdb44b4ba34",
+      "credit": "NPS Video: Blum, Wells, and Wang",
+      "rights_page": "https://www.nps.gov/grca/learn/photosmultimedia/b-roll_hd18.htm"
+    },
+    {
+      "id": "couple-sunset",
+      "nps_id": "FB7856E8-155D-451F-6721E62F15A4C7FE",
+      "page": "https://www.nps.gov/media/video/view.htm?id=FB7856E8-155D-451F-6721E62F15A4C7FE",
+      "download": "https://www.nps.gov/nps-audiovideo/audiovideo/aead32a6-1318-4ef2-85b3-12937fb13a4c720p.mp4",
+      "bytes": 7346258,
+      "sha256": "18469e43644414d8203b824583cc2d8f245573dc27a119d6ade584762bf88d31",
+      "credit": "NPS Video: Blum, Wells, and Wang",
+      "rights_page": "https://www.nps.gov/grca/learn/photosmultimedia/b-roll_hd18.htm"
+    }
+  ]
+}

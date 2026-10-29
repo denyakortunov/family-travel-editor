@@ -151,6 +151,7 @@ def measure(media, output, ffmpeg='ffmpeg'):
                               'Black/freeze flags need interpretation; no speech completeness check.',
                               'No stereo-correlation or mono-compatibility test is performed.']}
     save_new(output, report)
+    print(f'Measurement report: {output} ({report["status"]}). Not a listening or editorial verdict.')
     return result.returncode
 
 

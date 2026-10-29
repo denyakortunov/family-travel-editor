@@ -1,0 +1,16 @@
+{
+  "comments": [
+    {
+      "id": "demo-1",
+      "provenance": "simulated maintainer request for this teaching example; not a real author review",
+      "source_version": "v1",
+      "timecode": "00:16",
+      "request": "Remove the first two seconds of the final sunset shot. Preserve the end of the sunset and keep both visitor shots unchanged.",
+      "scope": "this example only",
+      "status": "applied",
+      "result_version": "v2",
+      "change": "Final source IN changes from frame 50 to 100. OUT remains 250; all other source ranges remain unchanged.",
+      "author_acceptance": false
+    }
+  ]
+}

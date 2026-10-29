@@ -1,5 +1,16 @@
 # Validation coverage
 
+## v0.3.2 — 29 October 2026
+
+| Area | Observed result | Limits |
+|---|---|---|
+| Real-footage exercise | Three normalized NPS source copies rendered into 600-frame v1 and 550-frame v2 at 25 fps | Silent picture edit; no native editor or original-audio evaluation |
+| Protected material | All frames compared at 160×90: protected first 400 frames mean absolute RGB difference 0.0054/255; retained final 150 frames 0.4529/255 | Compression differences; no claim of pixel-identical encoded outputs or artistic approval |
+| Independent Claude trial | Claude Opus 5.5 ran doctor/self-test/example, inspected hashes, XML and frame counts, performed frame comparisons and inspected 14 still frames | No uninterrupted playback, listening, real human-user study or acceptance |
+| Trial findings | Resume state added; misleading self-test/editor messages corrected; staging moved outside result directory | Cloud-sync residue observed, underlying synchronization mechanism not established |
+
+[Actual public example and source rights](../examples/grand-canyon-sunset/README.md) · [Agent test scope and outcomes](agent-trials.md). The final local suite has 28 passing tests, including real rendering and continuation files. The release CI run is authoritative for the final Python 3.9/3.12 suite.
+
 ## v0.3.1 — 29 October 2026
 
 | Area | Observed result | Limits |

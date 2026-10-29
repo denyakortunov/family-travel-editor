@@ -15,6 +15,8 @@ Family Travel Editor is an **AI agent skill**, not a standalone editor or an AI 
 | Mix dialogue, music, titles and graphics | Workflow instructions | Actual editor/tools and listening/viewing checks required |
 | Publish or read photos/email | Optional workflow choices | Separate tools/access and user authorization; no accounts bundled |
 
+The [real-footage exercise](../examples/grand-canyon-sunset/README.md) now demonstrates the silent picture route end to end, including a revision and saved continuation. It does not expand the native-editor or audio capabilities above.
+
 ## Installation is a separate check
 
 | Environment | Evidence | Not established |

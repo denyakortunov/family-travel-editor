@@ -91,7 +91,7 @@ def main():
     a = p.parse_args()
     try:
         frames = build(json.loads(a.plan.read_text()), a.media_root, a.output)
-        print(f'Wrote {frames} video frames. Audio is NOT included. Verify import in Resolve.')
+        print(f'Wrote {frames} video frames. Audio is NOT included. Native editor import, playback and export still need verification.')
     except (ValueError, KeyError, OSError) as error:
         p.exit(1, f'Error: {error}\n')
 

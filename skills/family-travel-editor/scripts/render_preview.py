@@ -58,7 +58,8 @@ def render(plan, media_root, output, ffmpeg='ffmpeg', ffprobe='ffprobe'):
                    f'concat=n={len(plan["shots"])}:v=1:a=0[out]')
     expected = sum(s['out'] - s['in'] for s in plan['shots'])
     # Do not expose a partial failed render as the requested deliverable.
-    with tempfile.TemporaryDirectory(prefix='.preview-', dir=output.parent) as temp:
+    # Keep transient encodes out of cloud-synchronized result folders.
+    with tempfile.TemporaryDirectory(prefix='family-travel-preview-') as temp:
         staged = Path(temp) / 'preview.mp4'
         subprocess.run(command + ['-filter_complex', ';'.join(filters), '-map', '[out]',
             '-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-r', str(plan['fps']), '-fps_mode', 'cfr',

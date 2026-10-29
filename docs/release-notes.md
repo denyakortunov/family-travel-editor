@@ -1,5 +1,11 @@
 # Release notes
 
+## v0.3.2 — 29 October 2026
+
+[**What’s New: real-footage example and fixes from a practical Claude trial →**](whats-new-v0.3.2.md)
+
+A downloadable NPS picture-edit exercise with two actual previews, generated continuation state and clearer helper messages.
+
 ## v0.3.1 — 29 October 2026
 
 [**What’s New: clearer first use and reliable catalogues →**](whats-new-v0.3.1.md)

@@ -1,0 +1,22 @@
+{
+  "title": "Visitors at sunset, Grand Canyon",
+  "context": "Thematic picture-edit exercise from two public NPS b-roll videos; not a personal trip or a claim of shared chronology.",
+  "observed_from_frames": [
+    "Visitors gathered at a viewpoint",
+    "A visitor raises and lowers a camera",
+    "Sun approaching the horizon"
+  ],
+  "unverified": [
+    "Relationships between people",
+    "Whether these takes share the same evening",
+    "Original speech and soundtrack quality"
+  ],
+  "setup": "Orient with a wide shot of visitors",
+  "action": "Keep the complete visible camera gesture",
+  "ending": "Let the sun approach the rim",
+  "audio": "Silent helper exercise. The two original NPS downloads listed in sources.json contain AAC audio. The three included prepared copies in media/ and both helper previews contain video only; their audio was intentionally omitted. No audio conform is claimed.",
+  "technical_plans": [
+    "v1.json",
+    "v2.json"
+  ]
+}

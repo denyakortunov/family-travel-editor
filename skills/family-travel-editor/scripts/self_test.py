@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """Check an installed skill in temporary storage; no footage, network or editor."""
 import json
+import io
+from contextlib import redirect_stderr
 from pathlib import Path
 import subprocess
 import sys
@@ -35,8 +37,10 @@ def run():
         source = media / 'fixture.mp4'
         source.write_bytes(b'Metadata-only fixture. This is not a playable video.')
         original = sha256(source)
-        check(catalog(media, workspace / 'catalog.json', ffprobe='') == 1,
-              'Catalogue did not contain the fixture')
+        # This deliberate metadata-only probe must not diagnose the user's setup.
+        with redirect_stderr(io.StringIO()):
+            check(catalog(media, workspace / 'catalog.json', ffprobe='') == 1,
+                  'Catalogue did not contain the fixture')
         plan = {'fps': 25, 'width': 640, 'height': 360,
                 'shots': [{'path': 'fixture.mp4', 'in': 25, 'out': 75, 'source_frames': 100}]}
         output = workspace / 'check.xml'
