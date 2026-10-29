@@ -1,5 +1,9 @@
 # Release notes
 
+## v0.3.4 — concrete workflow diagrams
+
+[What’s New](whats-new-v0.3.4.md): source ranges, a scene plan and a visible revision replace the photographic cover; refreshed typography and a mobile layout.
+
 ## v0.3.3 — visual refresh
 
 [What’s New](whats-new-v0.3.3.md): editorial cover, coordinated icon and redesigned desktop/mobile workflow diagrams.

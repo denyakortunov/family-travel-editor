@@ -1,46 +1,101 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1130" viewBox="0 0 1200 1130" role="img" aria-labelledby="title desc">
-<title id="title">From travel footage to a film with a story</title><desc id="desc">Gather the trip, find the story, edit in your chosen editor, review and refine, then approve delivery and save context. Review returns to editing. The skill guides the process; direct editing requires a tested connection.</desc>
-<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1L7 4L1 7" fill="none" stroke="#52635c" stroke-width="1.5"/></marker><marker id="return" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1L7 4L1 7" fill="none" stroke="#a75532" stroke-width="1.5"/></marker></defs>
-<style>text{font-family:Arial,Helvetica,sans-serif;fill:#172d26}.serif{font-family:Georgia,Times,serif}.muted{fill:#52635c}.label{font-size:15px;letter-spacing:2.2px}.line{fill:none;stroke:#52635c;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}</style>
-<rect width="1200" height="1130" rx="20" fill="#f8f5ed"/>
-<text x="58" y="65" font-size="15" class="label" >FAMILY TRAVEL EDITOR / THE WORKFLOW</text>
-<text x="56" y="140" font-size="62" class="serif" >From moments to a film.</text>
-<text x="60" y="184" font-size="24" class="muted" >Your story. Your tools. Your decisions.</text>
-<text x="164" y="238" font-size="14" class="label" >THE PROCESS</text>
-<text x="668" y="238" font-size="14" class="label" >WHAT YOU KEEP</text>
-<path d="M56 260H1082" stroke="#d8dbcf"/>
-<text x="60" y="322" font-size="39" class="serif" >01</text>
-<text x="164" y="312" font-size="32" class="serif" >Gather the trip</text>
-<text x="164" y="346" font-size="21" class="muted" >Footage, context, your memories.</text>
-<text x="668" y="318" font-size="22" class="" >A catalogue + useful questions</text>
-<path d="M81 340V376" class="line" marker-end="url(#arrow)"/>
-<path d="M56 392H1082" stroke="#d8dbcf"/>
-<text x="60" y="454" font-size="39" class="serif" >02</text>
-<text x="164" y="444" font-size="32" class="serif" >Find the story</text>
-<text x="164" y="478" font-size="21" class="muted" >Choose moments. Record your voice.</text>
-<text x="668" y="450" font-size="22" class="" >A scene plan + accepted takes</text>
-<path d="M81 472V508" class="line" marker-end="url(#arrow)"/>
-<path d="M56 524H1082" stroke="#d8dbcf"/>
-<text x="60" y="586" font-size="39" class="serif" >03</text>
-<text x="164" y="576" font-size="32" class="serif" >Make the edit</text>
-<text x="164" y="610" font-size="21" class="muted" >Picture and sound in your editor.</text>
-<text x="668" y="582" font-size="22" class="" >A version you can review</text>
-<path d="M81 604V640" class="line" marker-end="url(#arrow)"/>
-<path d="M56 656H1082" stroke="#d8dbcf"/>
-<text x="60" y="718" font-size="39" class="serif" >04</text>
-<text x="164" y="708" font-size="32" class="serif" >Watch. Listen. Refine.</text>
-<text x="164" y="742" font-size="21" class="muted" >Comments tied to a version and time.</text>
-<text x="668" y="714" font-size="22" class="" >Specific changes, earlier cuts kept</text>
-<path d="M81 736V772" class="line" marker-end="url(#arrow)"/>
-<path d="M56 788H1082" stroke="#d8dbcf"/>
-<text x="60" y="850" font-size="39" class="serif" >05</text>
-<text x="164" y="837" font-size="31" class="serif" >Keep the film.</text>
-<text x="164" y="873" font-size="31" class="serif" >Keep the context.</text>
-<text x="668" y="846" font-size="22" class="" >A delivery + a clear next step</text>
-<path d="M1098 720H1144V588H1098" fill="none" stroke="#a75532" stroke-width="1.7" marker-end="url(#return)"/>
-<text x="1132" y="698" font-size="13" class="label" transform="rotate(-90 1132 698)" style="fill:#a75532">REFINE</text>
-<rect x="56" y="947" width="1088" height="88" rx="12" fill="#172d26"/>
-<text x="84" y="982" font-size="14" class="label" style="fill:#e8e7d7">READY FOR NEXT TIME</text>
-<text x="84" y="1012" font-size="23" class="" style="fill:#f8f5ed">Decisions, accepted takes, open feedback and saved status.</text>
-<text x="60" y="1084" font-size="20" class="muted" >A skill guides the work. Editing happens in your editor; automation needs a tested connection.</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1000" viewBox="0 0 1200 1000" role="img" aria-labelledby="title desc"><title id="title">What the skill helps you produce</title><desc id="desc">Illustrative workflow for an AI agent skill, not an app interface. Source clips become a scene plan. Editing happens in your chosen editor. A request trims two seconds from the last shot, preserves earlier shots and keeps both versions.</desc><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1L7 4L1 7" fill="none" stroke="#315bea" stroke-width="1.7"/></marker></defs><style>text{font-family:Arial,Helvetica,sans-serif;fill:#171b25}.mono{font-family:Menlo,Consolas,monospace}.label{letter-spacing:1.3px}</style>
+<rect x="0" y="0" width="1200" height="1000" rx="0" fill="#f5f7fa"/>
+<text x="44" y="58" font-size="14" font-weight="600" style="fill:#315bea" class="label" text-anchor="start">WHAT YOU GET</text>
+<text x="42" y="113" font-size="43" font-weight="700" style="fill:#171b25" class="" text-anchor="start">From source files to a revision.</text>
+<text x="44" y="154" font-size="21" font-weight="400" style="fill:#596273" class="" text-anchor="start">A plan you can follow, changes you can check, and a place to resume.</text>
+<rect x="44" y="196" width="27" height="27" rx="7" fill="#315bea"/>
+<text x="57.5" y="216" font-size="15" font-weight="700" style="fill:white" class="" text-anchor="middle">1</text>
+<text x="83" y="216" font-size="19" font-weight="600" style="fill:#171b25" class="" text-anchor="start">Source catalogue</text>
+<rect x="423" y="196" width="27" height="27" rx="7" fill="#315bea"/>
+<text x="436.5" y="216" font-size="15" font-weight="700" style="fill:white" class="" text-anchor="middle">2</text>
+<text x="462" y="216" font-size="19" font-weight="600" style="fill:#171b25" class="" text-anchor="start">Scene plan</text>
+<rect x="820" y="196" width="27" height="27" rx="7" fill="#315bea"/>
+<text x="833.5" y="216" font-size="15" font-weight="700" style="fill:white" class="" text-anchor="middle">3</text>
+<text x="859" y="216" font-size="19" font-weight="600" style="fill:#171b25" class="" text-anchor="start">Edit in your app</text>
+<rect x="44" y="248" width="310" height="55" rx="8" fill="white" stroke="#dce1e9"/>
+<rect x="56" y="260" width="31" height="31" rx="5" fill="#ecf0fa"/>
+<path d="M67 269L76 275L67 281Z" fill="none" stroke="#315bea" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="100" y="280" font-size="17" font-weight="500" style="fill:#171b25" class="" text-anchor="start">arrival.mov</text>
+<text x="340" y="280" font-size="13" font-weight="500" style="fill:#596273" class="mono" text-anchor="end">01</text>
+<rect x="44" y="313" width="310" height="55" rx="8" fill="white" stroke="#dce1e9"/>
+<rect x="56" y="325" width="31" height="31" rx="5" fill="#ecf0fa"/>
+<path d="M67 334L76 340L67 346Z" fill="none" stroke="#315bea" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="100" y="345" font-size="17" font-weight="500" style="fill:#171b25" class="" text-anchor="start">conversation.mov</text>
+<text x="340" y="345" font-size="13" font-weight="500" style="fill:#596273" class="mono" text-anchor="end">02</text>
+<rect x="44" y="378" width="310" height="55" rx="8" fill="white" stroke="#dce1e9"/>
+<rect x="56" y="390" width="31" height="31" rx="5" fill="#ecf0fa"/>
+<path d="M67 399L76 405L67 411Z" fill="none" stroke="#315bea" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="100" y="410" font-size="17" font-weight="500" style="fill:#171b25" class="" text-anchor="start">departure.mov</text>
+<text x="340" y="410" font-size="13" font-weight="500" style="fill:#596273" class="mono" text-anchor="end">03</text>
+<text x="44" y="470" font-size="17" font-weight="400" style="fill:#596273" class="" text-anchor="start">Files + source ranges + your context</text>
+<path d="M372 348H403" fill="none" stroke="#315bea" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="423" y="248" width="344" height="247" rx="12" fill="white" stroke="#dce1e9"/>
+<rect x="423" y="248" width="344" height="47" rx="12" fill="#315bea"/>
+<rect x="423" y="277" width="344" height="18" rx="0" fill="#315bea"/>
+<text x="443" y="278" font-size="20" font-weight="600" style="fill:white" class="" text-anchor="start">Suggested cuts</text>
+<text x="747" y="277" font-size="12" font-weight="600" style="fill:#e7edff" class="label" text-anchor="end">PLAN</text>
+<text x="443" y="326" font-size="15" font-weight="500" style="fill:#315bea" class="mono" text-anchor="start">01</text>
+<text x="480" y="326" font-size="18" font-weight="600" style="fill:#171b25" class="" text-anchor="start">Arrival</text>
+<text x="747" y="326" font-size="14" font-weight="400" style="fill:#596273" class="mono" text-anchor="end">00:12–00:18</text>
+<path d="M443 343H747" fill="none" stroke="#dce1e9" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="443" y="380" font-size="15" font-weight="500" style="fill:#315bea" class="mono" text-anchor="start">02</text>
+<text x="480" y="380" font-size="18" font-weight="600" style="fill:#171b25" class="" text-anchor="start">Full reply</text>
+<text x="747" y="380" font-size="14" font-weight="400" style="fill:#596273" class="mono" text-anchor="end">00:04–00:14</text>
+<path d="M443 397H747" fill="none" stroke="#dce1e9" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="443" y="434" font-size="15" font-weight="500" style="fill:#315bea" class="mono" text-anchor="start">03</text>
+<text x="480" y="434" font-size="18" font-weight="600" style="fill:#171b25" class="" text-anchor="start">Departure</text>
+<text x="747" y="434" font-size="14" font-weight="400" style="fill:#596273" class="mono" text-anchor="end">00:21–00:27</text>
+<text x="443" y="472" font-size="16" font-weight="400" style="fill:#596273" class="" text-anchor="start">Keep the complete reply.</text>
+<path d="M786 348H800" fill="none" stroke="#315bea" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="820" y="248" width="336" height="247" rx="12" fill="white" stroke="#dce1e9"/>
+<text x="840" y="282" font-size="21" font-weight="600" style="fill:#171b25" class="" text-anchor="start">Follow the plan</text>
+<text x="840" y="317" font-size="16" font-weight="500" style="fill:#596273" class="" text-anchor="start">Picture</text>
+<rect x="840" y="336" width="77.18181818181819" height="35" rx="5" fill="#bfd0ff"/>
+<text x="878.5909090909091" y="358.5" font-size="14" font-weight="600" style="fill:#171b25" class="" text-anchor="middle">Arrival</text>
+<rect x="920.1818181818182" y="336" width="130.63636363636363" height="35" rx="5" fill="#b8dfd4"/>
+<text x="985.5" y="358.5" font-size="14" font-weight="600" style="fill:#171b25" class="" text-anchor="middle">Reply</text>
+<rect x="1053.818181818182" y="336" width="77.18181818181819" height="35" rx="5" fill="#f2c39f"/>
+<text x="1092.409090909091" y="358.5" font-size="14" font-weight="600" style="fill:#171b25" class="" text-anchor="middle">Exit</text>
+<rect x="1053.8181818181818" y="336" width="23.727272727272727" height="35" rx="4" fill="none" stroke="#cc7742"/>
+<path d="M1053.8181818181818 376H1077.5454545454545" fill="none" stroke="#cc7742" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="840" y="411" font-size="17" font-weight="400" style="fill:#171b25" class="" text-anchor="start">Add speech, music and titles</text>
+<text x="840" y="439" font-size="17" font-weight="400" style="fill:#596273" class="" text-anchor="start">with your available editor tools.</text>
+<text x="840" y="474" font-size="14" font-weight="400" style="fill:#596273" class="" text-anchor="start">Native automation needs testing.</text>
+<path d="M988 514V543" fill="none" stroke="#315bea" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="44" y="566" width="1112" height="260" rx="12" fill="white" stroke="#dce1e9"/>
+<rect x="68" y="585" width="27" height="27" rx="7" fill="#315bea"/>
+<text x="81.5" y="605" font-size="15" font-weight="700" style="fill:white" class="" text-anchor="middle">4</text>
+<text x="107" y="605" font-size="19" font-weight="600" style="fill:#171b25" class="" text-anchor="start">Versioned feedback</text>
+<text x="68" y="655" font-size="23" font-weight="500" style="fill:#171b25" class="" text-anchor="start">“Trim the last shot by two seconds.</text>
+<text x="68" y="687" font-size="23" font-weight="500" style="fill:#171b25" class="" text-anchor="start">Keep the full reply before it.”</text>
+<text x="68" y="733" font-size="18" font-weight="400" style="fill:#596273" class="" text-anchor="start">Change one range. Keep earlier shots.</text>
+<text x="68" y="771" font-size="18" font-weight="600" style="fill:#315bea" class="" text-anchor="start">Save v1 alongside v2.</text>
+<path d="M559 630V790" fill="none" stroke="#dce1e9" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="590" y="626" font-size="17" font-weight="500" style="fill:#596273" class="mono" text-anchor="start">v1 · 22s</text>
+<rect x="590" y="644" width="141.54545454545453" height="43" rx="5" fill="#bfd0ff"/>
+<text x="660.7727272727273" y="670.5" font-size="14" font-weight="600" style="fill:#171b25" class="" text-anchor="middle">Arrival</text>
+<rect x="734.5454545454545" y="644" width="237.9090909090909" height="43" rx="5" fill="#b8dfd4"/>
+<text x="853.5" y="670.5" font-size="14" font-weight="600" style="fill:#171b25" class="" text-anchor="middle">Reply</text>
+<rect x="975.4545454545454" y="644" width="141.54545454545453" height="43" rx="5" fill="#f2c39f"/>
+<text x="1046.2272727272727" y="670.5" font-size="14" font-weight="600" style="fill:#171b25" class="" text-anchor="middle">Exit</text>
+<rect x="975.4545454545455" y="644" width="45.18181818181818" height="43" rx="4" fill="none" stroke="#cc7742"/>
+<path d="M975.4545454545455 692H1020.6363636363636" fill="none" stroke="#cc7742" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="590" y="733" font-size="17" font-weight="500" style="fill:#315bea" class="mono" text-anchor="start">v2 · 20s</text>
+<rect x="590" y="751" width="141.54545454545453" height="43" rx="5" fill="#bfd0ff"/>
+<text x="660.7727272727273" y="777.5" font-size="14" font-weight="600" style="fill:#171b25" class="" text-anchor="middle">Arrival</text>
+<rect x="734.5454545454545" y="751" width="237.9090909090909" height="43" rx="5" fill="#b8dfd4"/>
+<text x="853.5" y="777.5" font-size="14" font-weight="600" style="fill:#171b25" class="" text-anchor="middle">Reply</text>
+<rect x="975.4545454545454" y="751" width="93.36363636363636" height="43" rx="5" fill="#f2c39f"/>
+<text x="1022.1363636363635" y="777.5" font-size="14" font-weight="600" style="fill:#171b25" class="" text-anchor="middle">Exit</text>
+<text x="1120" y="720" font-size="15" font-weight="500" style="fill:#9f5528" class="" text-anchor="end">−2s from shot 03</text>
+<rect x="44" y="852" width="1112" height="81" rx="12" fill="#eaf0ff"/>
+<rect x="68" y="867" width="27" height="27" rx="7" fill="#315bea"/>
+<text x="81.5" y="887" font-size="15" font-weight="700" style="fill:white" class="" text-anchor="middle">5</text>
+<text x="107" y="887" font-size="19" font-weight="600" style="fill:#171b25" class="" text-anchor="start">Resume next time</text>
+<text x="407" y="887" font-size="19" font-weight="600" style="fill:#171b25" class="" text-anchor="start">Scene plan</text>
+<text x="606" y="887" font-size="19" font-weight="600" style="fill:#171b25" class="" text-anchor="start">Feedback</text>
+<text x="782" y="887" font-size="19" font-weight="600" style="fill:#171b25" class="" text-anchor="start">Saved status</text>
+<text x="991" y="887" font-size="19" font-weight="600" style="fill:#171b25" class="" text-anchor="start">Preferences</text>
+<text x="407" y="913" font-size="17" font-weight="400" style="fill:#596273" class="" text-anchor="start">The next chat reads these files before continuing.</text>
+<text x="44" y="975" font-size="17" font-weight="400" style="fill:#596273" class="" text-anchor="start">Illustrative scene and timings. Included helper previews are silent; full editing happens in your editor.</text>
 </svg>
