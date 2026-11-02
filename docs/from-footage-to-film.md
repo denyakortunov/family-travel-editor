@@ -1,8 +1,10 @@
 # From a folder of travel clips to a film with a story
 
-This is the working method behind Family Travel Editor. It combines footage inspection, travel context, the author's memory, recorded narration, editing and versioned review. The public skill captures that process; its included scripts cover a smaller, explicitly documented set of operations.
+Family Travel Editor helps an agent work through the footage, recover the story with you, and keep track of edits. The guide below explains the full method. The [capabilities page](capabilities.md) distinguishes it from what the bundled helpers can automate.
 
-[Get started](../README.md#start-with-one-scene) · [Tools and costs](../README.md#tools-and-budget) · [Reproducible trimming test](walkthrough.md)
+[Watch the English overview](https://www.youtube.com/watch?v=FP_AA2khgtM) · [Start with one scene](../README.md#start-with-one-scene) · [Tools and costs](../README.md#tools-and-budget) · [Reproducible trimming test](walkthrough.md)
+
+The new illustrations use physical metaphors from the film. They are AI-generated illustrations, not source footage or records of a real trip.
 
 <picture>
   <source media="(max-width: 600px)" srcset="workflow-mobile.svg">
@@ -11,7 +13,11 @@ This is the working method behind Family Travel Editor. It combines footage insp
 
 ## 1. Footage and travel evidence → a context ledger
 
-Start with camera and drone originals. In the author's setup these include DJI Osmo Pocket 3 footage. Catalogue paths, duration, frame rate and available dates, then inspect the picture and sound with tools that can actually access them. A file inventory is not a record of having watched everything. Transcripts help locate speech; they do not describe all the action or explain why it matters.
+![A traveler matches a boat photograph to a river on a map, with other travel pictures and a camera nearby.](illustrations/recover-the-trip.png)
+
+*Match a moment to its place before deciding where it belongs in the story.*
+
+Start with camera and drone originals. Catalogue paths, duration, frame rate and available dates, then inspect the picture and sound. A file inventory does not establish viewing coverage. Transcripts help locate speech; the action and its meaning need their own review.
 
 Use **Apple Photos** for a specific purpose: GPS, dates and neighboring pictures can identify a location or put a sequence in context. Use **selected email messages** for another: hotel reservations, tickets and transfer arrangements can reconstruct the intended route. Keep these sources separate from what the video shows and what the author remembers. A camera clock can be wrong, and a reservation can go unused.
 
@@ -26,11 +32,15 @@ Use **Apple Photos** for a specific purpose: GPS, dates and neighboring pictures
 
 ## 2. Memory clips and questions → a story and a recording script
 
+![A hand arranges travel photographs into a sequence beside a microphone for personal narration.](illustrations/shape-the-story.png)
+
+*Choose the moments that belong together, then record the memories the pictures cannot explain.*
+
 Show short selections that jog the author's memory. Ask questions tied to a visible moment: what were you trying to do, what changed, what surprised you, how did it end? An answer should influence the scene, not merely fill a questionnaire.
 
 Turn confirmed material into a scene outline: place, setup, action, reaction or result, ending and transition. Then select candidate source ranges. Preserve complete thoughts and reactions; do not generate missing family dialogue or turn guesses into memories.
 
-Draft the **voiceover** from the author's answers. Prepare the lines and approximate durations together, so recording can happen in one session. The author reviews the wording, records it and chooses accepted takes. A HyperX SoloCast is used in the originating setup; an existing microphone and recorder are sufficient. Keep the accepted recordings and add personal context without covering original conversations.
+Draft the **voiceover** from the author's answers. Prepare the lines and approximate durations together, so recording can happen in one session. The author reviews the wording, records it with their microphone and chooses accepted takes. Keep those recordings and add personal context without covering original conversations.
 
 **Handoff:** reviewed scene plan + shot ranges + narration script + accepted recordings.
 
@@ -46,6 +56,10 @@ The **story plan is portable; native editing is tool-specific**. With iMovie or 
 
 ## 4. The exported film → comments and bounded revisions
 
+![Hands mark one selected image for review beside a filmstrip whose surrounding scenes remain in place.](illustrations/revise-one-moment.png)
+
+*Revise the requested moment and check that the rest of the film is preserved.*
+
 Review the exported version in **Dropbox Replay**, or use any system that keeps comments attached to a version and timecode. “Keep the whole answer” and “the aircraft sound disappeared” identify different problems; they should not become a generic instruction to shorten the scene.
 
 Before editing, define what may change and what must remain. After editing, compare picture, speech, music, effects, titles and the surrounding context. A ripple edit moves later material; it must not silently drop it. Keep previous versions and unresolved comments. A successful render does not automatically close a review note.
@@ -54,12 +68,12 @@ Before editing, define what may change and what must remain. After editing, comp
 |---|---|---|
 | Speech and sentence boundaries | Whisper large-v3, GigaAM | Transcripts and suspicious omissions to investigate; not proof of sound quality |
 | Decoding, levels and channels | FFmpeg / ffprobe, signal analysis | Technical observations about the actual export |
-| Music content | Music Flamingo was tried; direct listening | Potential competing vocals and other issues; model answers can be wrong |
+| Music content | Direct listening; optional locally tested audio tools | Competing vocals and other issues to investigate; model answers can be wrong |
 | Motion phases | Playback, optional locally tested motion analysis | Possible searching/reversals; classifications require review |
 | Structure and editorial reasoning | Optional Claude audit | Suggestions about the edit; text review is not listening |
 | Whether the film works | The person making the film | Watch, listen, accept or request changes |
 
-Gemini review was retired from the originating workflow on 29 October 2026. Local models are admitted only for tasks they pass on known controls; missing reliable acoustic review is reported explicitly. These models and services are **optional examples**, not installed or called by the public package. Use available alternatives, record inspection coverage and report unavailable checks honestly.
+Use audio models only for tasks they pass on known controls. The tools above are optional examples, not installed by the public package. Record what was inspected and heard, and state any missing checks. [Detailed checking procedure](../skills/family-travel-editor/references/checks.md).
 
 **Handoff:** versioned comments → scoped changes → a new export → review again.
 

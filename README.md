@@ -1,105 +1,91 @@
 # Family Travel Editor
 
-**An AI skill for Claude Code and Codex, used with your video editor.** It is not a standalone editor. It provides instructions, examples and helper tools for organizing footage, planning scenes and working through revisions. You use it in a local AI agent; you assemble the film in your preferred video editor. Direct editing by the agent requires an available, tested integration.
+**A free AI skill for Claude Code and Codex that helps you turn travel footage into a film.** Organize your clips, recover the story behind them and work through edits with your agent. Use it with your video editor; it is not a standalone editing app.
 
-[**Start here →**](#start-with-one-scene) · [What’s New in v0.3.9](docs/whats-new-v0.3.9.md) · [Capabilities and limits](docs/capabilities.md) · [Real-footage example](examples/grand-canyon-sunset/README.md)
+[**Start with one scene**](#start-with-one-scene) · [Watch the overview](#watch-how-it-works) · [What’s New in v0.3.9](docs/whats-new-v0.3.9.md) · [Capabilities and limits](docs/capabilities.md)
+
+## Watch how it works
+
+<a href="https://www.youtube.com/watch?v=FP_AA2khgtM">
+  <img src="https://i.ytimg.com/vi/FP_AA2khgtM/maxresdefault.jpg" alt="Watch the English Family Travel Editor overview on Banana Lemon Singapore" width="720">
+</a>
+
+[**Watch on YouTube**](https://www.youtube.com/watch?v=FP_AA2khgtM) · Banana Lemon Singapore · English narration and captions. An AI-generated explainer of the working method; the examples below show what the bundled helpers can do.
+
+## Start with one scene
+
+1. **[Download the v0.3.9 source ZIP](https://github.com/denyakortunov/family-travel-editor/releases/download/v0.3.9/family-travel-editor-source-v0.3.9.zip)** and unzip it. Open the extracted folder in your local AI agent.
+2. Ask: **“Read `skills/family-travel-editor/SKILL.md`, check this installation and explain the next step.”** The agent needs file access and Python 3.9+ for the helper check. An editor and footage are optional for this first check.
+3. Give it **your footage folder, a separate working folder and one scene you want to tell**. Name your editor, or say “undecided.” Expect a catalogue, a readable scene plan, open questions and a saved next step.
+
+Downloading does not start an edit. Start a chat and give the agent a scene to work on. Inspecting picture and sound requires suitable tools; a file catalogue alone does not mean the footage has been watched.
+
+[Installation, first prompt, returning tomorrow and troubleshooting](docs/getting-started.md)
+
+<details>
+<summary>Install permanently in Codex or another compatible agent</summary>
+
+From the extracted repository root:
+
+```sh
+python3 tools/install_skill.py --destination ~/.agents/skills
+```
+
+Open a new chat and invoke `$family-travel-editor`, or use the absolute SKILL.md path printed by the installer. If you already use `~/.codex/skills`, update that location to avoid duplicate copies.
+
+Alternatively, use the optional [skills CLI](https://github.com/vercel-labs/skills) and choose your agent when prompted:
+
+```sh
+npx skills add https://github.com/denyakortunov/family-travel-editor/tree/v0.3.9/skills/family-travel-editor
+```
+
+The CLI needs Node.js; the Python installer does not. See the [update and backup guide](docs/getting-started.md#6-update-or-undo-an-update).
+
+</details>
+
+## How it works
 
 <picture>
   <source media="(max-width: 600px)" srcset="docs/workflow-mobile.svg">
   <img src="docs/workflow-overview.svg" alt="Five steps: recover the trip from footage and context; find the story and record your voice; assemble picture and sound; review and revise; approve and deliver. Keep project memory for the next session." width="100%">
 </picture>
 
-[Explore each step and a worked story example →](docs/from-footage-to-film.md)
+[Explore each step and a worked story example](docs/from-footage-to-film.md)
 
-## Start with one scene
+Keep the scene plan, preferences and timecoded feedback in your film workspace. They give the next session a record of what was decided and what still needs work.
 
-1. **[Download the v0.3.9 source ZIP](https://github.com/denyakortunov/family-travel-editor/releases/download/v0.3.9/family-travel-editor-source-v0.3.9.zip)** and unzip it. Open the extracted folder in your local AI agent.
-2. Ask: **“Read `skills/family-travel-editor/SKILL.md`, check this installation and explain the next step.”** The agent needs file access. The helper check needs Python 3.9+; no editor, footage or paid service is required for that check.
-3. Give the agent **your footage folder, a separate working folder and one scene you want to tell**. Name your editor, or say “undecided.” Expect a catalogue, a readable scene plan, open questions and a saved next step. A catalogue is not proof that the clips have been watched.
+The included helpers catalogue files, render **silent video previews** and prepare **video-only Resolve XML**. Full sound mixing, titles and direct editor control need separately available tools. The bundled Resolve import/playback/export route remains unvalidated. For other editors, use the [manual assembly plan](docs/manual-assembly.md) unless you have a tested integration.
 
-Installing or downloading does not start an edit. Text-only planning can begin with your description; inspecting footage requires appropriate agent tools. ffprobe adds technical media metadata; ffmpeg is needed for the optional **silent** preview. Agent services may have their own charges.
+## Try a concrete example
 
-[**Installation, first prompt, expected files, returning tomorrow and troubleshooting →**](docs/getting-started.md)
-
-<details>
-<summary>Install permanently in Codex or another compatible agent</summary>
-
-From the extracted repository root, for current Codex versions:
-
-```sh
-python3 tools/install_skill.py --destination ~/.agents/skills
-```
-
-Open a new chat and invoke `$family-travel-editor`, or ask the agent to read the absolute SKILL.md path printed by the installer. Existing `~/.codex/skills` users should update their existing location to avoid duplicates.
-
-An alternative for other compatible agents is the optional [skills CLI](https://github.com/vercel-labs/skills):
-
-```sh
-npx skills add https://github.com/denyakortunov/family-travel-editor/tree/v0.3.9/skills/family-travel-editor
-```
-
-Choose your agent when prompted. This route needs Node.js; the Python installer does not. See the [guide](docs/getting-started.md) for updates with backups and the [test record](docs/validation.md) for what has actually been checked.
-
-</details>
-
-## What you get
-
-| Step | Useful result | Where it happens |
-|---|---|---|
-| Organize | Catalogue of files, hashes, metadata and problems | Local helper; no content understanding claimed |
-| Shape the story | Scene outline grounded in viewed material and confirmed memories | Agent with available tools and your answers |
-| Prepare assembly | Source ranges, shot roles, speech/music intentions and open questions | Readable plan; [manual assembly example](docs/manual-assembly.md) |
-| Edit and review | A versioned edit, bounded corrections and preserved decisions | Your editor; automation depends on a tested integration |
-| Continue later | Status, preferences and versioned feedback | Your separate film workspace |
-
-Bundled automation currently provides a **silent video preview** and **video-only XML preparation**. Full audio mixing, titles and native editor control are not supplied as an end-to-end workflow. Resolve import/playback/export remains unvalidated. [Detailed capabilities →](docs/capabilities.md)
-
-For sound work in your editor, the skill includes [Fairlight mix checks](skills/family-travel-editor/references/fairlight.md), [object-sound timing](skills/family-travel-editor/references/scene-music.md) and an [optional Epidemic Sound guide](skills/family-travel-editor/references/epidemic-sound.md). These are instructions for your available tools, not an automatic audio renderer.
-
-## See what the workflow looks like
-
-Run the [real Grand Canyon footage example](examples/grand-canyon-sunset/README.md): three clips become a 24-second picture edit, then one bounded revision makes it 22 seconds. Source clips and both previews are included in the source ZIP. **Both previews are silent**; no native editor or audio mixing is claimed.
-
-Without footage, start with the [recorded memory-to-plan session](examples/memory-to-plan/README.md): a real public author answer becomes a provisional scene plan, followed by a revision. It contains **no inspected travel footage or finished film**. The [synthetic assembly exercise](examples/story-to-cut/README.md) separately demonstrates exact source ranges and a two-second trim.
-
-The full method is: **material and memories → story → picture, voices and music in your editor → timecoded review → a saved next step**. Optional photos and selected booking emails can help reconstruct context. They are not required, and a booking does not prove the journey happened. [Full workflow and mountain-trip example →](docs/from-footage-to-film.md)
+- **[Grand Canyon picture edit](examples/grand-canyon-sunset/README.md):** three real source clips become 24 seconds, then a bounded revision makes it 22 seconds. Clips and both silent previews are included in the source ZIP.
+- **[From memory to a scene plan](examples/memory-to-plan/README.md):** an author's answer becomes a provisional plan and a revision. This is a planning example without inspected footage or a finished film.
+- **[Synthetic trimming exercise](examples/story-to-cut/README.md):** exact source ranges and a two-second trim for checking helper behavior.
 
 ## Why I made this
 
-I film our family trips on a DJI Osmo Pocket 3 and drones. Editing a film usually takes me 20–30 hours, so footage can sit untouched for years. I built this skill to give an agent a repeatable process and keep useful decisions between sessions. It still takes work; I am not claiming a one-click film or a proven time saving.
+I film our family trips on a DJI Osmo Pocket 3 and drones. Editing a film usually takes me 20–30 hours, so footage can sit untouched for years. I built this skill to give an agent a repeatable process and keep useful decisions between sessions. It still takes editorial work; time savings have not been measured.
 
-One useful question was why we went to the mountains. My answer: we wanted cooler weather than Singapore. That gives sweaters, tea and a fireplace a shared meaning. The agent still needs to find and inspect actual shots; a memory is a starting point, not an invented image or timestamp.
+One useful question was why we went to the mountains. My answer: we wanted cooler weather than Singapore. That gives sweaters, tea and a fireplace a shared meaning. The next step is to find the actual shots that tell that story.
 
 <details>
-<summary>Tools, cost and alternatives</summary>
+<summary>Tools and budget</summary>
 
 ### Tools and budget
 
-The skill and its helper scripts are **free and open source**. A paid Resolve license is not required to start. Use the services you already have; the agent and any cloud models may have their own charges.
+The skill and helper scripts are free and open source. Your agent, editor and optional services have their own costs. Use the tools you already have; a paid editor is not required to start planning.
 
-| Job | Example tool | Cost / practical alternative |
-|---|---|---|
-| Organize the workflow | Codex or another compatible local agent | Agent plan/API charges depend on your setup; skill files are free |
-| Catalogue and render a test preview | Python + [FFmpeg](https://ffmpeg.org/legal.html) | **Free / open source**; preview helper included |
-| Recover places and travel context | Apple Photos, Gmail | Optional existing accounts or selected exports; your answers also work |
-| Edit a film | [DaVinci Resolve](https://www.blackmagicdesign.com/products/davinciresolve) | **Free edition available; Studio paid.** My external scripting setup targets Studio |
-| Use an open-source editor | [Shotcut](https://www.shotcut.org/) / [Kdenlive](https://kdenlive.org/about/) | **Free / open source.** Plans work now; native adapters need separate validation |
-| Use an editor you know | [iMovie](https://apps.apple.com/us/app/imovie/id408981434) / CapCut | iMovie is **free on supported Apple devices**; CapCut features/plans vary. Manual assembly in this package |
-| Record narration | Your microphone + [Audacity](https://www.audacityteam.org/) or an existing recorder | Audacity is **free / open source**; no specific microphone required |
-| Transcribe speech locally | [Whisper](https://github.com/openai/whisper) | **Open source**; local hardware required. Hosted transcription may charge |
-| Review with timecoded comments | [Dropbox Replay](https://help.dropbox.com/create-upload/dropbox-replay-faq) | **Limited access included with Dropbox plans**; paid options. A text feedback file is free |
-| Get a second opinion | Human review, optional editorial reviewers | **Optional**; access and charges vary. Human review remains essential |
-
-Cost categories checked against linked product sources on 27 October 2026; limits and plans can change. Tools are optional examples, not accounts or subscriptions bundled with the skill. [Editor capabilities and integration limits](skills/family-travel-editor/references/editors.md).
+- Python runs the local helpers. FFmpeg and ffprobe are needed for the optional silent preview.
+- Use your preferred editor. [Editor choices and integration limits](skills/family-travel-editor/references/editors.md) explain the supported routes.
+- Photos, selected travel records and licensed music libraries are optional. Your own answers can supply travel context.
+- For sound work, see [Fairlight mix checks](skills/family-travel-editor/references/fairlight.md), [music and sound timing](skills/family-travel-editor/references/scene-music.md) and the [optional Epidemic Sound guide](skills/family-travel-editor/references/epidemic-sound.md).
 
 </details>
 
-## Data, help and contributing
+## Data and help
 
-The bundled Python helpers run locally without network calls. Your agent may send prompts, images or audio to its provider or connected tools according to your configuration; local helpers do not make every operation local. Use only the sources you choose to share. No private account connection is required.
+The bundled Python helpers run locally without network calls. Your agent and connected tools may send material to their providers according to your setup. Keep private footage, credentials and travel records out of public issues.
 
-[Ask a question or describe where you got stuck](https://github.com/denyakortunov/family-travel-editor/issues/new/choose). Include the skill version, agent/editor and the step that confused you; private footage is not required. [Contributing](CONTRIBUTING.md) · [Validation](docs/validation.md) · [Roadmap](docs/roadmap.md) · [Release history](docs/release-notes.md).
+[Tell us where you got stuck](https://github.com/denyakortunov/family-travel-editor/issues/new/choose), including the skill version, agent/editor and confusing step. [Contributing](CONTRIBUTING.md) · [Validation](docs/validation.md) · [Roadmap](docs/roadmap.md) · [Release history](docs/release-notes.md).
 
-The [color-bar fixture](examples/first-scene/README.md) is a technical render test, not a sample travel film. Earlier provider-specific diagrams are retained as [historical material](docs/workflow.png); they do not describe required tools today.
-
-Original code and instructions: [MIT](LICENSE). [Third-party notices](THIRD_PARTY_NOTICES.md). Independent project, not affiliated with the editors or services mentioned. Created by [Denis Kortunov](https://github.com/denyakortunov).
+Original code and instructions: [MIT](LICENSE). [Third-party notices](THIRD_PARTY_NOTICES.md). Independent project by [Denis Kortunov](https://github.com/denyakortunov).
