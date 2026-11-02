@@ -11,7 +11,7 @@
 | Structure and documentation | Skill validator, Python compilation, whitespace and local Markdown file-link checks passed; new release notes use absolute versioned documentation URLs | Live release URLs become available only after publication |
 | New sound instructions | Compared with the originating project's Fairlight trial and sound-sync procedure; Epidemic Sound guide checked against official MCP documentation on 2 November | No new Fairlight session, paid library operation, listening trial or native adapter certification performed for this release |
 
-The [release workflow](https://github.com/denyakortunov/family-travel-editor/actions/workflows/check.yml) runs the suite on Linux/Python 3.9 and 3.12 and publishes only after both pass. Its run for the tagged commit is authoritative for remote validation. The Shotcut draft remains excluded; no complete sound edit or autonomous film is claimed.
+The [release workflow](https://github.com/denyakortunov/family-travel-editor/actions/workflows/check.yml) runs the suite on Ubuntu 24.04/Python 3.9 and 3.12 and publishes only after both pass. Its run for the tagged commit is authoritative for remote validation. An initial attempt stopped during Python setup on the new Ubuntu 26.04 default, before any test ran. Pinning Ubuntu 24.04 retains the 3.9 check; the official [Python build manifest](https://github.com/actions/python-versions/blob/main/versions-manifest.json) lists compatible builds. The Shotcut draft remains excluded; no complete sound edit or autonomous film is claimed.
 
 ## v0.3.2 — 29 October 2026
 

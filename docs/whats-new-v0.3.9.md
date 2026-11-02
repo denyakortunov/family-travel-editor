@@ -17,6 +17,7 @@ This update brings practical lessons from recent editing into the skill: how to 
 - Downloads, pinned installation commands and the expected installation-check version now agree on v0.3.9. Updating preserves the previous installed copy and leaves film workspaces separate.
 - This release's notes use absolute, versioned documentation links so they work on the GitHub release page as well as in the repository.
 - The roadmap identifies the existing Shotcut draft and the desktop checks still needed before it can ship.
+- Release checks use Ubuntu 24.04 explicitly, preserving the Python 3.9 test after GitHub's default runner moved to Ubuntu 26.04.
 
 ## Compatibility and limits
 
