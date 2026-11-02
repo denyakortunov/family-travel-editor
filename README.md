@@ -7,10 +7,12 @@
 ## Watch how it works
 
 <a href="https://www.youtube.com/watch?v=FP_AA2khgtM">
-  <img src="https://i.ytimg.com/vi/FP_AA2khgtM/maxresdefault.jpg" alt="Watch the English Family Travel Editor overview on Banana Lemon Singapore" width="720">
+  <img src="docs/video-overview.jpg" alt="Watch on YouTube: I film, AI edits - Family Travel Editor overview" width="360">
 </a>
 
-[**Watch on YouTube**](https://www.youtube.com/watch?v=FP_AA2khgtM) · Banana Lemon Singapore · English narration and captions. An AI-generated explainer of the working method; the examples below show what the bundled helpers can do.
+[**&#9654; Watch on YouTube**](https://www.youtube.com/watch?v=FP_AA2khgtM) &middot; 1:45 &middot; English
+
+<sub>Banana Lemon Singapore. AI-generated explainer of the workflow.</sub>
 
 ## Start with one scene
 
