@@ -7,8 +7,8 @@ Family Travel Editor helps an agent work through the footage, recover the story 
 The new illustrations use physical metaphors from the film. They are AI-generated illustrations, not source footage or records of a real trip.
 
 <picture>
-  <source media="(max-width: 600px)" srcset="workflow-mobile-illustrated.svg">
-  <img src="workflow-overview-illustrated.svg" alt="Five steps: recover the trip from footage and context; find the story and record your voice; assemble picture and sound; review and revise; approve and deliver. Keep project memory for the next session." width="100%">
+  <source media="(max-width: 600px)" srcset="workflow-editorial-mobile.png">
+  <img src="workflow-editorial-overview.png" alt="Five steps: recover the trip from footage and context; find the story and record your voice; assemble picture and sound; review and revise; approve and deliver. Keep project memory for the next session." width="100%">
 </picture>
 
 ## 1. Footage and travel evidence → a context ledger
