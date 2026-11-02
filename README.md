@@ -47,8 +47,8 @@ The CLI needs Node.js; the Python installer does not. See the [update and backup
 ## How it works
 
 <picture>
-  <source media="(max-width: 600px)" srcset="docs/workflow-mobile.svg">
-  <img src="docs/workflow-overview.svg" alt="Five steps: recover the trip from footage and context; find the story and record your voice; assemble picture and sound; review and revise; approve and deliver. Keep project memory for the next session." width="100%">
+  <source media="(max-width: 600px)" srcset="docs/workflow-mobile-illustrated.svg">
+  <img src="docs/workflow-overview-illustrated.svg" alt="Five steps: recover the trip from footage and context; find the story and record your voice; assemble picture and sound; review and revise; approve and deliver. Keep project memory for the next session." width="100%">
 </picture>
 
 [Explore each step and a worked story example](docs/from-footage-to-film.md)
