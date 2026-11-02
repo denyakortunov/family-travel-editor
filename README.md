@@ -12,7 +12,6 @@
 
 [**&#9654; Watch on YouTube**](https://www.youtube.com/watch?v=FP_AA2khgtM) &middot; 1:45 &middot; English
 
-<sub>Banana Lemon Singapore. AI-generated explainer of the workflow.</sub>
 
 ## Start with one scene
 
