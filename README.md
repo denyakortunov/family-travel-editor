@@ -2,7 +2,7 @@
 
 **An AI skill for Claude Code and Codex, used with your video editor.** It is not a standalone editor. It provides instructions, examples and helper tools for organizing footage, planning scenes and working through revisions. You use it in a local AI agent; you assemble the film in your preferred video editor. Direct editing by the agent requires an available, tested integration.
 
-[**Start here →**](#start-with-one-scene) · [What’s New in v0.3.8](docs/whats-new-v0.3.8.md) · [Capabilities and limits](docs/capabilities.md) · [Real-footage example](examples/grand-canyon-sunset/README.md)
+[**Start here →**](#start-with-one-scene) · [What’s New in v0.3.9](docs/whats-new-v0.3.9.md) · [Capabilities and limits](docs/capabilities.md) · [Real-footage example](examples/grand-canyon-sunset/README.md)
 
 <picture>
   <source media="(max-width: 600px)" srcset="docs/workflow-mobile.svg">
@@ -13,7 +13,7 @@
 
 ## Start with one scene
 
-1. **[Download the v0.3.8 source ZIP](https://github.com/denyakortunov/family-travel-editor/releases/download/v0.3.8/family-travel-editor-source-v0.3.8.zip)** and unzip it. Open the extracted folder in your local AI agent.
+1. **[Download the v0.3.9 source ZIP](https://github.com/denyakortunov/family-travel-editor/releases/download/v0.3.9/family-travel-editor-source-v0.3.9.zip)** and unzip it. Open the extracted folder in your local AI agent.
 2. Ask: **“Read `skills/family-travel-editor/SKILL.md`, check this installation and explain the next step.”** The agent needs file access. The helper check needs Python 3.9+; no editor, footage or paid service is required for that check.
 3. Give the agent **your footage folder, a separate working folder and one scene you want to tell**. Name your editor, or say “undecided.” Expect a catalogue, a readable scene plan, open questions and a saved next step. A catalogue is not proof that the clips have been watched.
 
@@ -35,7 +35,7 @@ Open a new chat and invoke `$family-travel-editor`, or ask the agent to read the
 An alternative for other compatible agents is the optional [skills CLI](https://github.com/vercel-labs/skills):
 
 ```sh
-npx skills add https://github.com/denyakortunov/family-travel-editor/tree/v0.3.8/skills/family-travel-editor
+npx skills add https://github.com/denyakortunov/family-travel-editor/tree/v0.3.9/skills/family-travel-editor
 ```
 
 Choose your agent when prompted. This route needs Node.js; the Python installer does not. See the [guide](docs/getting-started.md) for updates with backups and the [test record](docs/validation.md) for what has actually been checked.
@@ -53,6 +53,8 @@ Choose your agent when prompted. This route needs Node.js; the Python installer 
 | Continue later | Status, preferences and versioned feedback | Your separate film workspace |
 
 Bundled automation currently provides a **silent video preview** and **video-only XML preparation**. Full audio mixing, titles and native editor control are not supplied as an end-to-end workflow. Resolve import/playback/export remains unvalidated. [Detailed capabilities →](docs/capabilities.md)
+
+For sound work in your editor, the skill includes [Fairlight mix checks](skills/family-travel-editor/references/fairlight.md), [object-sound timing](skills/family-travel-editor/references/scene-music.md) and an [optional Epidemic Sound guide](skills/family-travel-editor/references/epidemic-sound.md). These are instructions for your available tools, not an automatic audio renderer.
 
 ## See what the workflow looks like
 

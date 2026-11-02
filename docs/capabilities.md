@@ -13,6 +13,8 @@ Family Travel Editor is an **AI agent skill**, not a standalone editor or an AI 
 | Prepare Resolve interchange | Video-only FCP 7 XML and guarded bridge | Native import, playback and export remain unvalidated |
 | Use iMovie, CapCut, Shotcut or Kdenlive | Readable manual assembly plan | No native adapter shipped or certified for these editors |
 | Mix dialogue, music, titles and graphics | Workflow instructions | Actual editor/tools and listening/viewing checks required |
+| Review a Fairlight mix or replace processed music | Optional [procedure](../skills/family-travel-editor/references/fairlight.md) | Available Resolve Studio tools, preserved automation and actual export/listening comparison; no bundled automix command |
+| Find music through Epidemic Sound | Optional [connection and selection recipe](../skills/family-travel-editor/references/epidemic-sound.md) | User's connection, tool availability, subscription features and rights for the publication |
 | Publish or read photos/email | Optional workflow choices | Separate tools/access and user authorization; no accounts bundled |
 
 The [real-footage exercise](../examples/grand-canyon-sunset/README.md) now demonstrates the silent picture route end to end, including a revision and saved continuation. It does not expand the native-editor or audio capabilities above.

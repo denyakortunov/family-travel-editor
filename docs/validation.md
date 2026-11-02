@@ -1,5 +1,18 @@
 # Validation coverage
 
+## v0.3.9 — 2 November 2026
+
+| Area | Observed result | Limits |
+|---|---|---|
+| Local helper/media suite | 28 tests passed on macOS / Python 3.9.6 with FFmpeg/ffprobe available, including silent rendering, bounded revision, installation and release guards | No new helper behavior; synthetic and public picture fixtures do not validate sound or native editors |
+| Source and plugin packages | Both archives extracted outside the repository; checksums and file contents verified; self-test passed and planning doctor reported READY; both new references present | Filesystem/package validation, not marketplace approval or in-app discovery |
+| Update from v0.3.8 | Installed the previous version, added a test note, then updated from the extracted v0.3.9 source package using a relative destination containing spaces | Temporary destination; no personal agent configuration changed |
+| Update preservation | Previous version and test note preserved in the sibling backup; existing film workspace hashes unchanged; updated self-test passed | Does not certify every filesystem or operating system |
+| Structure and documentation | Skill validator, Python compilation, whitespace and local Markdown file-link checks passed; new release notes use absolute versioned documentation URLs | Live release URLs become available only after publication |
+| New sound instructions | Compared with the originating project's Fairlight trial and sound-sync procedure; Epidemic Sound guide checked against official MCP documentation on 2 November | No new Fairlight session, paid library operation, listening trial or native adapter certification performed for this release |
+
+The [release workflow](https://github.com/denyakortunov/family-travel-editor/actions/workflows/check.yml) runs the suite on Linux/Python 3.9 and 3.12 and publishes only after both pass. Its run for the tagged commit is authoritative for remote validation. The Shotcut draft remains excluded; no complete sound edit or autonomous film is claimed.
+
 ## v0.3.2 — 29 October 2026
 
 | Area | Observed result | Limits |

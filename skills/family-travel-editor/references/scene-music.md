@@ -8,4 +8,8 @@ Check new music across its entire used range, separately from family speech, for
 
 Start with the filmmaker's reference, accepted music and available licensed libraries when appropriate. Generation is an option, not the default response to every music request. Keep track/source, used range, license terms and selection/rejection reasons. A subscription is not proof of rights for every publication; do not purchase new subscriptions automatically. Respect the user's authorized tools and budget without forcing free alternatives first.
 
+If the filmmaker chooses Epidemic Sound, use the [optional library recipe](epidemic-sound.md). An automated mix also needs a scene-level comparison of intended contrasts; for Resolve, see [Fairlight](fairlight.md).
+
 For a recognizable object, use a suitable sound recording rather than a generic whoosh. Preserve its attack, development and natural tail even when the visual insert ends sooner. Check audibility in context, including smaller speakers when relevant. Existing editor sound libraries are possible sources, not required installations. Keep licensed selected assets in the media workspace, not linked to an application's internal files.
+
+To sync a contact, identify the visual contact frame, the audible attack within the sound file, and where that attack lands in the export. File start and largest waveform peak are not necessarily the attack. Account for trims, speed changes and fades; inspect the result in motion and with sound. Do not retime a whole gesture to match an unrelated peak or add a literal contact sound for an action absent from the picture. After a level or timing adjustment, check the full affected scene with speech, music and neighboring effects.

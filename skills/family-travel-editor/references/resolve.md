@@ -1,6 +1,6 @@
 # Resolve operations
 
-Release status: native import was not validated during v0.1.0 preparation because the live Resolve connection was unavailable. The XML-generation helper was tested separately.
+Release status: the bundled XML import/playback/export round trip remains unvalidated in v0.3.9. XML generation is tested separately. Production experience behind the editing instructions does not certify the bundled adapter.
 
 Use the scripting documentation installed with the user's Resolve version. On macOS it is normally under `/Library/Application Support/Blackmagic Design/DaVinci Resolve/Developer/Scripting/`. Studio and external scripting access may be needed; enable local scripting in the user's Resolve settings only as part of setup. Do not expose network scripting unnecessarily.
 
@@ -17,3 +17,5 @@ The importer requires that exact currently open project, zero timelines, zero me
 For real editing, duplicate a timeline, snapshot source IN/OUT and all video/audio/title tracks, and define what may change. Verify frame-rate and source-boundary semantics with a short probe on the current version; do not assume every API uses the same inclusive end. Check Fusion duration/keys after duplication. Activate the timeline being inspected before interpreting enabled-state or audio properties.
 
 After editing, verify all preserved tracks and corresponding rendered output, save a versioned project export and hash it. A .drp contains project data, not original media. Never change paths or library storage merely to match the example. The bundled XML helper supports only integer 24/25/30 fps, same-rate video, straight cuts and no audio/effects/titles. Other timelines require a native workflow, not silent frame rounding.
+
+Before using AI Audio Assistant or replacing music in a timeline it has processed, read [Fairlight](fairlight.md). It is optional and needs a separate comparison of the rendered mix, including intended musical contrasts and track/bus automation.

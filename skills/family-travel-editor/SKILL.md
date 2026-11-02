@@ -29,6 +29,8 @@ Read [editing principles](references/editing.md) and the user's preferences. Des
 
 Draft voiceover from confirmed memories. Let the author record it; do not fabricate missing family dialogue. Optional music, sound effects and models are choices, not required subscriptions. Record their provenance and check the actual resulting mix. Read [scene music](references/scene-music.md) when choosing music or shaping the balance of montage and live speech.
 
+For Resolve automixing or music replacement after it, read [Fairlight](references/fairlight.md). When the user chooses Epidemic Sound, read the [optional library recipe](references/epidemic-sound.md); it requires their own connection and applicable rights.
+
 ## Verify, review and learn
 
 Read [checks](references/checks.md) for each new export or sound change. Compare the native timeline and actual rendered file. Identify the reviewed version by hash; distinguish measured, transcribed, model-reviewed, watched/listened and accepted by the author. Report untested intervals and unavailable checks. A command returning success is not artistic approval.

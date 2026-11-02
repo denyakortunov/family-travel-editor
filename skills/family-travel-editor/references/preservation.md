@@ -6,6 +6,8 @@ Insertions ripple all linked material unless a replacement was requested. After 
 
 A full mix rebuild needs an inventory of all earlier sound components: dialogue, narration, music, atmosphere and individual effects. A file in the media pool or a muted clip does not establish that it reaches the master. Preserve processing when unpacking compounds. When reimporting a prepared master, verify that buses, normalization and limiting do not process it a second time; unity clip gain alone proves little.
 
+Automixing may regroup tracks and change transitions or track/bus automation. Match sources and time ranges after reordering, and preserve the intended contrast between speech beds, pauses and leading music. Copying clip properties after a music replacement is not proof of equivalent processing. For the Resolve procedure, read [Fairlight](fairlight.md).
+
 Compare the actual exports outside authorized changes with aligned time ranges. Matching PCM hashes/samples can prove audio identity; otherwise explain differences with appropriate codec tolerance. Check affected seams and adjacent context in playback. A present effect may still be inaudible beneath music: assess the requested result at comparable playback loudness.
 
 Save expected versus observed differences and the export hash. The bundled preview test checks a simple picture trim; it is not an automated all-track preservation system. Adapt inspection to the editor and state exactly what could be verified.
