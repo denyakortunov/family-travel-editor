@@ -2,13 +2,19 @@
 
 Family Travel Editor helps an agent work through the footage, recover the story with you, and keep track of edits. The guide below explains the full method. The [capabilities page](capabilities.md) distinguishes it from what the bundled helpers can automate.
 
-[Watch the English overview](https://www.youtube.com/watch?v=FP_AA2khgtM) · [Start with one scene](../README.md#start-with-one-scene) · [Tools and costs](../README.md#tools-and-budget) · [Reproducible trimming test](walkthrough.md)
+[Watch the English overview](https://www.youtube.com/watch?v=FP_AA2khgtM)
+
+[Start with one scene](../README.md#start-with-one-scene)
+
+[Tools and costs](../README.md#tools-and-budget)
+
+[Reproducible trimming test](walkthrough.md)
 
 The new illustrations use physical metaphors from the film. They are AI-generated illustrations, not source footage or records of a real trip.
 
 <picture>
-  <source media="(max-width: 600px)" srcset="workflow-editorial-mobile.png">
-  <img src="workflow-editorial-overview.png" alt="Five steps: recover the trip from footage and context; find the story and record your voice; assemble picture and sound; review and revise; approve and deliver. Keep project memory for the next session." width="100%">
+  <source media="(max-width: 600px)" srcset="workflow-technical-mobile.svg">
+  <img src="workflow-technical-overview.svg" alt="Five steps: recover the trip from footage and context; find the story and record your voice; assemble picture and sound; review and revise; approve and deliver. Keep project memory for the next session." width="100%">
 </picture>
 
 ## 1. Footage and travel evidence → a context ledger
@@ -125,4 +131,6 @@ An example review note—not a real submitted comment:
 
 The agent should identify the version and exact range before editing, save a new version, inspect the affected context and explain what stayed intact. This is the value of the process: evidence becomes a story; a comment becomes a specific, reviewable change.
 
-[Try the process with your own scene](../README.md#start-with-one-scene) · [Run a separate, verifiable trimming test](walkthrough.md)
+[Try the process with your own scene](../README.md#start-with-one-scene)
+
+[Run a separate, verifiable trimming test](walkthrough.md)
