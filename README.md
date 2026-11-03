@@ -2,7 +2,13 @@
 
 **A free AI skill for Claude Code and Codex that helps you turn travel footage into a film.** Organize your clips, recover the story behind them and work through edits with your agent. Use it with your video editor; it is not a standalone editing app.
 
-[**Start with one scene**](#start-with-one-scene) · [Watch the overview](#watch-how-it-works) · [What’s New in v0.3.9](docs/whats-new-v0.3.9.md) · [Capabilities and limits](docs/capabilities.md)
+[**Start with one scene**](#start-with-one-scene)
+
+[Watch the overview](#watch-how-it-works)
+
+[What’s New in v0.3.9](docs/whats-new-v0.3.9.md)
+
+[Capabilities and limits](docs/capabilities.md)
 
 ## Watch how it works
 
@@ -10,7 +16,7 @@
   <img src="docs/video-overview.jpg" alt="Watch on YouTube: I film, AI edits - Family Travel Editor overview" width="360">
 </a>
 
-[**&#9654; Watch on YouTube**](https://www.youtube.com/watch?v=FP_AA2khgtM) &middot; 1:45 &middot; English
+[**&#9654; Watch on YouTube**](https://www.youtube.com/watch?v=FP_AA2khgtM). 1:45. English
 
 
 ## Start with one scene
@@ -47,8 +53,8 @@ The CLI needs Node.js; the Python installer does not. See the [update and backup
 ## How it works
 
 <picture>
-  <source media="(max-width: 600px)" srcset="docs/workflow-editorial-mobile.png">
-  <img src="docs/workflow-editorial-overview.png" alt="Five steps: recover the trip from footage and context; find the story and record your voice; assemble picture and sound; review and revise; approve and deliver. Keep project memory for the next session." width="100%">
+  <source media="(max-width: 600px)" srcset="docs/workflow-technical-mobile.svg">
+  <img src="docs/workflow-technical-overview.svg" alt="Five steps: recover the trip from footage and context; find the story and record your voice; assemble picture and sound; review and revise; approve and deliver. Keep project memory for the next session." width="100%">
 </picture>
 
 [Explore each step and a worked story example](docs/from-footage-to-film.md)
@@ -87,6 +93,12 @@ The skill and helper scripts are free and open source. Your agent, editor and op
 
 The bundled Python helpers run locally without network calls. Your agent and connected tools may send material to their providers according to your setup. Keep private footage, credentials and travel records out of public issues.
 
-[Tell us where you got stuck](https://github.com/denyakortunov/family-travel-editor/issues/new/choose), including the skill version, agent/editor and confusing step. [Contributing](CONTRIBUTING.md) · [Validation](docs/validation.md) · [Roadmap](docs/roadmap.md) · [Release history](docs/release-notes.md).
+[Tell us where you got stuck](https://github.com/denyakortunov/family-travel-editor/issues/new/choose), including the skill version, agent/editor and confusing step. [Contributing](CONTRIBUTING.md)
+
+[Validation](docs/validation.md)
+
+[Roadmap](docs/roadmap.md)
+
+[Release history](docs/release-notes.md).
 
 Original code and instructions: [MIT](LICENSE). [Third-party notices](THIRD_PARTY_NOTICES.md). Independent project by [Denis Kortunov](https://github.com/denyakortunov).
