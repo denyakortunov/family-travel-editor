@@ -13,3 +13,7 @@ The restored vertical workflow diagrams reuse the earlier AI-generated device il
 ## Grand Canyon real-footage exercise
 
 The derivative clips and preview frames in examples/grand-canyon-sunset come from two public-domain NPS b-roll videos credited to NPS Video: Blum, Wells, and Wang. They are not original MIT-licensed camera footage by this project's author. See that example's sources.json and README for the official source pages, download identities and transformations. NPS prohibits implying endorsement; this independent project is not endorsed by NPS. Original source audio is omitted from the picture-only exercise copies and previews.
+
+## High-resolution workflow diagram
+
+The current workflow uses separately generated technical illustrations and vector lettering, numbers and arrows. Instrument Sans lettering is converted to outlines; see [its SIL Open Font License](docs/INSTRUMENT_SANS_LICENSE.txt). Photos, Final Cut Pro and DaVinci Resolve app icons and the official CapCut plugin icon identify optional tools. Marks belong to their respective owners; no endorsement is implied. Historical images remain for earlier links and releases.
