@@ -56,7 +56,9 @@ The CLI needs Node.js; the Python installer does not. See the [update and backup
 
 ## How it works
 
+<a href="docs/workflow-technical-hd.png">
 <img src="docs/workflow-technical-hd.svg" alt="Five steps: recover the trip; find the story and record your voice; assemble in DaVinci Resolve, Final Cut Pro or CapCut depending on setup; review in your editor with optional Dropbox Replay; approve, export and publish." width="100%">
+</a>
 
 [Explore each step and a worked story example](docs/from-footage-to-film.md)
 
