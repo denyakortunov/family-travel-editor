@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "family-travel-editor",
-  "version": "0.3.11",
+  "version": "0.3.12",
   "description": "An AI agent skill for organizing travel footage, planning scenes and revising films in your preferred editor. Not a standalone video editor.",
   "author": {
     "name": "Denis Kortunov",
@@ -36,7 +36,7 @@
         "websiteURL": "https://github.com/denyakortunov/family-travel-editor",
         "supportURL": "https://github.com/denyakortunov/family-travel-editor/issues",
         "defaultPrompt": [
-          "Help me plan one scene from my travel footage using my preferred editor."
+          "Use $family-travel-editor to help me get started: ask about my trip and footage, build a short brief and guide me to the next step."
         ],
         "brandColor": "#292e38",
         "composerIcon": "./assets/icon.svg",

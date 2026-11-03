@@ -1,5 +1,9 @@
 # Release notes
 
+## v0.3.12 — guided first run and saved film brief
+
+[What’s New](whats-new-v0.3.12.md): a short first-use interview, a persistent film brief, editor guidance and an explicit launch prompt after installation.
+
 ## v0.3.11 — CapCut Web assembly and revisions
 
 [What’s New](whats-new-v0.3.11.md): optional official-plugin setup, a verified editable three-clip project, a saved trim and explicit export/frame-rate limits.

@@ -6,7 +6,7 @@
 
 [Watch the overview](#watch-how-it-works)
 
-[What’s New in v0.3.11](docs/whats-new-v0.3.11.md)
+[What’s New in v0.3.12](docs/whats-new-v0.3.12.md)
 
 [Capabilities and limits](docs/capabilities.md)
 
@@ -25,11 +25,11 @@
 
 ## Start with one scene
 
-1. **[Download the v0.3.11 source ZIP](https://github.com/denyakortunov/family-travel-editor/releases/download/v0.3.11/family-travel-editor-source-v0.3.11.zip)** and unzip it. Open the extracted folder in your local AI agent.
-2. Ask: **“Read `skills/family-travel-editor/SKILL.md`, check this installation and explain the next step.”** The agent needs file access and Python 3.9+ for the helper check. An editor and footage are optional for this first check.
-3. Give it **your footage folder, a separate working folder and one scene you want to tell**. Name your editor, or say “undecided.” Expect a catalogue, a readable scene plan, open questions and a saved next step.
+1. **[Download the v0.3.12 source ZIP](https://github.com/denyakortunov/family-travel-editor/releases/download/v0.3.12/family-travel-editor-source-v0.3.12.zip)** and unzip it. Open the extracted folder in your local AI agent.
+2. Ask: **“Read `skills/family-travel-editor/SKILL.md` and help me get started. Ask about my trip and footage, build a short brief and guide me to the next step.”**
+3. Answer in your own words. The agent asks about **your trip and footage, the kind of film you want, and any editor you already use**. “Suggest something” and “I haven’t chosen an editor” are valid answers. It saves the brief and proposes a first scene once it can inspect the material.
 
-Downloading does not start an edit. Start a chat and give the agent a scene to work on. Inspecting picture and sound requires suitable tools; a file catalogue alone does not mean the footage has been watched.
+Installation alone does not open a chat. Invoke `$family-travel-editor` or use the prompt above to start the guided brief; you do not need a finished scene idea. Python 3.9+ is needed for helper checks, not for answering the brief in chat. Inspecting picture and sound requires suitable tools; a file catalogue alone does not mean the footage has been watched.
 
 [Installation, first prompt, returning tomorrow and troubleshooting](docs/getting-started.md)
 
@@ -47,7 +47,7 @@ Open a new chat and invoke `$family-travel-editor`, or use the absolute SKILL.md
 Alternatively, use the optional [skills CLI](https://github.com/vercel-labs/skills) and choose your agent when prompted:
 
 ```sh
-npx skills add https://github.com/denyakortunov/family-travel-editor/tree/v0.3.11/skills/family-travel-editor
+npx skills add https://github.com/denyakortunov/family-travel-editor/tree/v0.3.12/skills/family-travel-editor
 ```
 
 The CLI needs Node.js; the Python installer does not. See the [update and backup guide](docs/getting-started.md#6-update-or-undo-an-update).

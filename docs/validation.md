@@ -1,5 +1,11 @@
 # Validation coverage
 
+## v0.3.12 — 4 November 2026
+
+All 28 local tests pass, including clean installation, workspace creation with `BRIEF.md`, refusal to overwrite an existing workspace and preservation of its filled brief. The installation self-check and skill validator pass. Source and plugin package tests include the new template; user answers are kept outside the installed skill.
+
+The interview, progressive questions and editor guidance are agent instructions, not an installer hook or a deterministic questionnaire UI. Their routing was reviewed against fresh-start, partial-answer and existing-workspace cases; no independent end-to-end model conversation was run for this release. Installation alone does not open a chat.
+
 ## v0.3.11 — 4 November 2026
 
 CapCut Web through the official Codex plugin 0.2.7: three synthetic uploads, a 12-second AI rough cut with three separate editable clips, cloud import/save/read-back, middle-clip tail trim to three seconds and a second cloud save/read-back completed. Independent comparison confirmed source order and bindings, 1280×720 canvas, one video track and contiguous 4/3/4-second clips ending at 11 seconds.

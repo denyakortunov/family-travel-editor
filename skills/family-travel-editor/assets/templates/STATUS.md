@@ -8,9 +8,9 @@ Editor project / review export and hash: none.
 
 Completed: workspace created.
 Evidence and actual checks: none; no footage watched or listened to.
-Remaining work / unresolved feedback: choose a first scene and confirm source access.
+Remaining work / unresolved feedback: collect missing brief answers and confirm source access.
 Active processes: none started by initialization.
-Next action: identify sources, author preferences and first scene.
+Next action: read BRIEF.md and the conversation, ask only missing starter questions, then propose the next step.
 Required user answer: only information missing from the current request.
 Handoff / synchronization: not checked.
 

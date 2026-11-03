@@ -1,6 +1,6 @@
 # Your first scene
 
-[Download v0.3.11](https://github.com/denyakortunov/family-travel-editor/releases/tag/v0.3.11) · [What's New](whats-new-v0.3.11.md) · [Full workflow](from-footage-to-film.md)
+[Download v0.3.12](https://github.com/denyakortunov/family-travel-editor/releases/tag/v0.3.12) · [What's New](whats-new-v0.3.12.md) · [Full workflow](from-footage-to-film.md)
 
 This is a skill for a local AI agent, not a video-editing app. Installing it adds instructions and small helpers. It does not begin an edit, install Resolve, connect private accounts or download models. The helper programs need Python 3.9+ and an agent that can access your files. Text-only planning can begin without Python. ffprobe adds technical media metadata; rendering the optional silent test needs FFmpeg and ffprobe. Your agent has its own access and pricing.
 
@@ -8,9 +8,13 @@ This is a skill for a local AI agent, not a video-editing app. Installing it add
 
 ### Start here: source ZIP, no global installation needed
 
-Download **family-travel-editor-source-v0.3.11.zip** from the release and unzip it. Open the `family-travel-editor` folder in your local agent. The `README.md`, `tools/` and `skills/` folders should be visible. Ask it:
+Download **family-travel-editor-source-v0.3.12.zip** from the release and unzip it. Open the `family-travel-editor` folder in your local agent. The `README.md`, `tools/` and `skills/` folders should be visible. Ask it:
 
-> Read skills/family-travel-editor/SKILL.md. Check this installation and explain the next step. Do not edit any film yet.
+> Read skills/family-travel-editor/SKILL.md and help me get started. Ask about my trip and footage, build a short brief and explain the next step. Do not edit any film yet.
+
+The first reply should briefly explain what the agent will help you make, then ask only the missing starter questions: which trip and where the footage is, what kind of film you want, and whether you already use an editor. You can answer freely or ask it to suggest a format. Later questions about narration, music and memories should relate to your actual material. The agent saves answers in `BRIEF.md` inside your film workspace; it resumes from them next time instead of repeating the questionnaire. Installation does not itself trigger this conversation: invoke the skill or send the prompt above.
+
+Already have a project? Give its workspace path. The agent reads the current status and brief before asking anything again. Older workspaces can gain a missing `BRIEF.md` without running initialization over your existing files.
 
 This works by reading the skill directly. No global installation is necessary. Download `SHA256SUMS.txt` beside the ZIP if you want to verify the exact package: on macOS use `shasum -a 256 <zip>`; on Linux use `sha256sum <zip>`; on PowerShell use `Get-FileHash <zip> -Algorithm SHA256`. Compare the digest for that ZIP, not for a different GitHub-generated source archive.
 
@@ -35,7 +39,7 @@ Open a new chat in your film workspace and type `$family-travel-editor`. If it d
 From the project where you want to use it:
 
 ```sh
-npx skills add https://github.com/denyakortunov/family-travel-editor/tree/v0.3.11/skills/family-travel-editor
+npx skills add https://github.com/denyakortunov/family-travel-editor/tree/v0.3.12/skills/family-travel-editor
 ```
 
 Choose your agent when prompted. This pins the skill to this release; the short repository form follows current main. The [third-party CLI](https://github.com/vercel-labs/skills) supports several agents; its current documentation requires Node.js 22.20+. The skill itself needs no Node runtime. Use the Python route if you prefer no npm dependency. The entire skill folder is self-contained; repository-level `tools/` and examples are not runtime dependencies. See [what was tested](validation.md).
@@ -53,7 +57,7 @@ python3 scripts/project.py doctor --task plan
 python3 scripts/self_test.py
 ```
 
-Expect `plan: READY` and `PASS: family-travel-editor 0.3.11 installation check`. The check uses temporary fake metadata, validates templates and XML ranges, verifies overwrite refusal and leaves originals untouched. It uses no private media, network, editor or model. It does **not** prove playback, audio quality or editing ability.
+Expect `plan: READY` and `PASS: family-travel-editor 0.3.12 installation check`. The check uses temporary fake metadata, validates templates and XML ranges, verifies overwrite refusal and leaves originals untouched. It uses no private media, network, editor or model. It does **not** prove playback, audio quality or editing ability.
 
 For a separate real-render test, the source ZIP includes [color-bar fixtures and exact commands](../examples/first-scene/README.md): three shots total 12 seconds, then a middle-shot trim makes 10 seconds. Both are silent. This is a technical test, not a sample family film. For a recorded planning interaction without footage, use the [memory-to-plan session](../examples/memory-to-plan/README.md).
 
@@ -93,7 +97,7 @@ Give a bounded note such as: “In v1 at 00:04, shorten the middle shot by two s
 
 In a fresh chat, use:
 
-> Read the installed family-travel-editor SKILL.md, then read STATUS.md, scene.json, preferences.json and the relevant feedback.json entries in [absolute film workspace path]. Continue from the recorded version and next step. Recheck source access and editor ownership if editing is needed. State what was actually verified; ask only for missing information required to continue.
+> Read the installed family-travel-editor SKILL.md, then read STATUS.md, BRIEF.md if present, scene.json, preferences.json and the relevant feedback.json entries in [absolute film workspace path]. Continue from the recorded version and next step. Recheck source access and editor ownership if editing is needed. State what was actually verified; ask only for missing information required to continue.
 
 Keep those files in your film workspace, not the skill's installation folder. Save the editor project and identify the corresponding review export before a handoff; shared documents alone do not transfer media or prove synchronization.
 

@@ -53,7 +53,11 @@ def main():
     print('In Codex you can also invoke $family-travel-editor; discovery depends on the client and destination.')
     command = [sys.executable, str(target / 'scripts/self_test.py')]
     print('Check installation: ' + (subprocess.list2cmdline(command) if sys.platform == 'win32' else shlex.join(command)))
-    print('Installing does not start an edit. Give the agent your footage folder and one scene.')
+    print('Start here: "Use $family-travel-editor. Help me get started: ask about my trip and footage, '
+          'build a short brief and guide me to the next step."')
+    print('If the skill is not discovered, ask the agent to read the SKILL.md path above and start the brief interview.')
+    print('Installation alone does not open a chat or start editing. You can answer in your own words; '
+          'an editor and a finished scene idea are not required to start.')
     if backup:
         print(f'Previous installation preserved: {backup}')
 

@@ -30,6 +30,7 @@ def run():
         for name in ('scene.json', 'preferences.json', 'feedback.json'):
             json.loads((workspace / name).read_text())
         check((workspace / 'STATUS.md').is_file(), 'Missing status template')
+        check((workspace / 'BRIEF.md').is_file(), 'Missing film brief template')
         check(subprocess.run(command, capture_output=True).returncode != 0,
               'Existing workspace was not protected')
         media = root / 'media'
@@ -58,7 +59,7 @@ def run():
     print(f'PASS: family-travel-editor {version} installation check')
     print('Templates, catalogue, XML ranges and overwrite refusal checked in temporary storage.')
     print('No film was rendered, watched or listened to. No editor connection was tested.')
-    print('Next: give your agent a footage folder, a separate workspace and one scene to plan.')
+    print('Next: ask your agent to start the brief interview with $family-travel-editor. A finished scene idea is not required.')
 
 
 if __name__ == '__main__':

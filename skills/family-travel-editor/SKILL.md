@@ -9,7 +9,7 @@ This is a skill for an AI agent, not a standalone video editor. Help the filmmak
 
 ## First use and continuing work
 
-On a first invocation or setup request, read [first run](references/first-run.md). Explain what this installation can do, check it, and produce one concrete next step. Resolve scripts and templates relative to this SKILL.md, not the user’s working directory. Film files belong in a separate workspace. On later sessions, resume from that workspace’s current status and selected feedback instead of repeating onboarding.
+On a first invocation, bare skill invocation, “installed, what next?” or setup request, read [first run](references/first-run.md). Start the brief interview in the user’s language: explain the outcome, ask only the missing starter questions, save their answers in the film workspace and give a concrete next step. Do not end with only an installation PASS or a request to invent a scene. Installation alone does not guarantee a chat or automatic execution; when helping install, continue into this interview in the same conversation if possible, otherwise give the exact launch prompt. Resolve scripts and templates relative to this SKILL.md, not the user’s working directory. Film files belong in a separate workspace. On later sessions, resume from that workspace’s current status and selected feedback instead of repeating onboarding.
 
 ## Start from the actual project
 
@@ -46,6 +46,6 @@ Deliver the editable project plus a clearly labelled review export, remaining li
 - `scripts/timeline.py`: validated, video-only straight-cut FCP 7 XML from an explicit shot plan. It is a technical interchange helper, not an automatic story editor or complete audio conform.
 - `scripts/render_preview.py`: FFmpeg video-only preview from the same shot plan; requires ffprobe and rejects mismatched rates/dimensions/duration. No audio or editable native project.
 - `scripts/resolve_bridge.py`: read-only connection probe and guarded XML import into an already open, empty, explicitly named project.
-- `assets/templates/`: blank preferences, scene, feedback and status files. Copy them into the user's project; do not write personal data into the installed skill.
+- `assets/templates/`: blank brief, preferences, scene, feedback and status files. Copy them into the user's project; do not write personal data into the installed skill.
 
 Paths in commands are supplied by the user or discovered locally. Helper scripts use only Python's standard library; FFmpeg/ffprobe and Resolve are separate optional executables. See the references for command arguments and limits.

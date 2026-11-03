@@ -55,8 +55,12 @@ class Onboarding(unittest.TestCase):
             command = [sys.executable, str(target / 'scripts/project.py'), 'init', str(root / 'film')]
             subprocess.run(command, check=True, capture_output=True)
             self.assertEqual(set(p.name for p in (root / 'film').iterdir()),
-                             {'STATUS.md', 'scene.json', 'feedback.json', 'preferences.json'})
+                             {'STATUS.md', 'BRIEF.md', 'scene.json', 'feedback.json', 'preferences.json'})
+            (root / 'film' / 'BRIEF.md').write_text('Trip: Japan. Editor undecided. Keep these answers.')
             self.assertNotEqual(subprocess.run(command, capture_output=True).returncode, 0)
+            self.assertEqual((root / 'film' / 'BRIEF.md').read_text(),
+                             'Trip: Japan. Editor undecided. Keep these answers.')
+            self.assertFalse((target / 'BRIEF.md').exists())
             result = subprocess.run([sys.executable, str(target / 'scripts/timeline.py'),
                 str(ROOT / 'examples/first-scene/generated/v2.json'), '--media-root',
                 str(ROOT / 'examples/first-scene/generated/media'), '--output', str(root / 'v2.xml')],
