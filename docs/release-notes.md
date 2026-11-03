@@ -1,5 +1,13 @@
 # Release notes
 
+## v0.3.11 — CapCut Web assembly and revisions
+
+[What’s New](whats-new-v0.3.11.md): optional official-plugin setup, a verified editable three-clip project, a saved trim and explicit export/frame-rate limits.
+
+## v0.3.10 — Final Cut Pro on Mac
+
+[What’s New](whats-new-v0.3.10.md): optional FCPXML/MCP setup, tested assembly and revised import, with native export and preview limitations.
+
 ## v0.3.9 — preserve the intended sound
 
 [What’s New](whats-new-v0.3.9.md): Fairlight mix review, music replacement with automation checks, object-sound sync, an optional Epidemic Sound recipe and corrected first-use version instructions. Helper behavior is unchanged.

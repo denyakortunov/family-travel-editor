@@ -1,5 +1,11 @@
 # Validation coverage
 
+## v0.3.11 — 4 November 2026
+
+CapCut Web through the official Codex plugin 0.2.7: three synthetic uploads, a 12-second AI rough cut with three separate editable clips, cloud import/save/read-back, middle-clip tail trim to three seconds and a second cloud save/read-back completed. Independent comparison confirmed source order and bindings, 1280×720 canvas, one video track and contiguous 4/3/4-second clips ending at 11 seconds.
+
+The first rendered MP4 contained 360 frames at 30 fps and stereo 44.1 kHz audio; inputs were 25 fps/48 kHz. Container duration was approximately 12.005 seconds. The revised 11-second project was not exported: no separate post-edit export endpoint was exposed in this plugin. Browser reopening, playback/listening, desktop control and account-wide free/paid entitlement were not certified. See [CapCut setup and limits](../skills/family-travel-editor/references/capcut.md). No helper behavior changed.
+
 ## v0.3.10 — 4 November 2026
 
 Final Cut Pro Creator Studio 12.4 / Apple Silicon, third-party FCP MCP Server 0.30.0: stdio MCP initialization, library inspection, generated three-clip FCPXML, native import, middle-clip trim, connected-audio addition and revised import completed. Read-only native queries confirmed 12-second and 11-second sequences at 25 fps. Test libraries were separate from existing films.

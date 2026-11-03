@@ -9,7 +9,8 @@ The shared workflow produces a catalogue, confirmed context, scene plan, source 
 | Final Cut Pro (Mac) | FCPXML generation and optional third-party MCP import | [Setup and tested scope](final-cut.md): basic assembly, trim and audio-bed import checked in Creator Studio 12.4; native export/reopen not certified |
 | Kdenlive | MLT rendering and generated render scripts | Candidate. A renderable MLT file is not automatically a fully editable Kdenlive project; native metadata must be tested |
 | OpenShot / libopenshot | Video-editing library with Python bindings | Candidate. Library rendering and desktop project interchange need separate implementation and validation |
-| iMovie / CapCut | No native automation adapter verified here | Use plans, shot lists, narration and timecoded feedback, then assemble in the UI. Do not promise unattended editing or modify undocumented project internals as if they were a stable API |
+| CapCut Web | Official optional plugin for cloud assembly and saved revisions | [Setup and tested scope](capcut.md): three-clip assembly and 12-to-11-second revision verified; final revised export remains a Web-editor step |
+| iMovie | No native automation adapter verified here | Use plans, shot lists, narration and timecoded feedback, then assemble in the UI. Do not promise unattended editing or modify undocumented project internals as if they were a stable API |
 
 For a first session, ask which editor the user already uses and whether they want planning, a silent rough-cut preview, or an editable timeline. Do not require a paid editor to start. When a requested adapter is missing, deliver the portable plan and explain the remaining assembly step. Do not silently substitute a flattened MP4 for an editable project.
 

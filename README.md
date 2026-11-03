@@ -6,11 +6,13 @@
 
 [Watch the overview](#watch-how-it-works)
 
-[What’s New in v0.3.10](docs/whats-new-v0.3.10.md)
+[What’s New in v0.3.11](docs/whats-new-v0.3.11.md)
 
 [Capabilities and limits](docs/capabilities.md)
 
 **Use Final Cut Pro on Mac:** assemble an editable timeline through FCPXML and an optional MCP connection, then continue in Final Cut. [Setup, tested operations and limits](skills/family-travel-editor/references/final-cut.md).
+
+**Use CapCut Web:** assemble and revise an editable cloud timeline through the optional official plugin. [Setup, tested operations and export limits](skills/family-travel-editor/references/capcut.md).
 
 ## Watch how it works
 
@@ -23,7 +25,7 @@
 
 ## Start with one scene
 
-1. **[Download the v0.3.10 source ZIP](https://github.com/denyakortunov/family-travel-editor/releases/download/v0.3.10/family-travel-editor-source-v0.3.10.zip)** and unzip it. Open the extracted folder in your local AI agent.
+1. **[Download the v0.3.11 source ZIP](https://github.com/denyakortunov/family-travel-editor/releases/download/v0.3.11/family-travel-editor-source-v0.3.11.zip)** and unzip it. Open the extracted folder in your local AI agent.
 2. Ask: **“Read `skills/family-travel-editor/SKILL.md`, check this installation and explain the next step.”** The agent needs file access and Python 3.9+ for the helper check. An editor and footage are optional for this first check.
 3. Give it **your footage folder, a separate working folder and one scene you want to tell**. Name your editor, or say “undecided.” Expect a catalogue, a readable scene plan, open questions and a saved next step.
 
@@ -45,7 +47,7 @@ Open a new chat and invoke `$family-travel-editor`, or use the absolute SKILL.md
 Alternatively, use the optional [skills CLI](https://github.com/vercel-labs/skills) and choose your agent when prompted:
 
 ```sh
-npx skills add https://github.com/denyakortunov/family-travel-editor/tree/v0.3.10/skills/family-travel-editor
+npx skills add https://github.com/denyakortunov/family-travel-editor/tree/v0.3.11/skills/family-travel-editor
 ```
 
 The CLI needs Node.js; the Python installer does not. See the [update and backup guide](docs/getting-started.md#6-update-or-undo-an-update).
