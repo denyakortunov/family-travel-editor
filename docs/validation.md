@@ -1,5 +1,11 @@
 # Validation coverage
 
+## v0.3.10 — 4 November 2026
+
+Final Cut Pro Creator Studio 12.4 / Apple Silicon, third-party FCP MCP Server 0.30.0: stdio MCP initialization, library inspection, generated three-clip FCPXML, native import, middle-clip trim, connected-audio addition and revised import completed. Read-only native queries confirmed 12-second and 11-second sequences at 25 fps. Test libraries were separate from existing films.
+
+The external FFmpeg preview used 24 fps and the revised XML retained a stale 12-second sequence duration; Final Cut reported the actual 11-second clip extent. No native movie export, save/reopen cycle, uninterrupted playback or listening was certified. See [the exact workflow and limits](../skills/family-travel-editor/references/final-cut.md). No CapCut native editing claim is added.
+
 ## v0.3.9 — 2 November 2026
 
 | Area | Observed result | Limits |

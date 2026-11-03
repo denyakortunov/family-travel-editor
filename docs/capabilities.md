@@ -11,6 +11,7 @@ Family Travel Editor is an **AI agent skill**, not a standalone editor or an AI 
 | Produce a scene plan and revision record | Narrative template and review procedure | Facts, memories, assumptions and unviewed footage remain distinct |
 | Render the supplied technical shot plan | FFmpeg silent video preview | ffmpeg/ffprobe available; supported plan/source constraints pass |
 | Prepare Resolve interchange | Video-only FCP 7 XML and guarded bridge | Native import, playback and export remain unvalidated |
+| Assemble in Final Cut Pro on Mac | Optional [FCPXML/MCP route](../skills/family-travel-editor/references/final-cut.md); basic synthetic assembly and revised import verified | Separate server/editor installation; native export/reopen and listening remain unverified; preview limitations documented |
 | Use iMovie, CapCut or Kdenlive | Readable manual assembly plan | No native adapter shipped or certified for these editors |
 | Mix dialogue, music, titles and graphics | Workflow instructions | Actual editor/tools and listening/viewing checks required |
 | Review a Fairlight mix or replace processed music | Optional [procedure](../skills/family-travel-editor/references/fairlight.md) | Available Resolve Studio tools, preserved automation and actual export/listening comparison; no bundled automix command |
