@@ -54,12 +54,11 @@ The CLI needs Node.js; the Python installer does not. See the [update and backup
 
 ## How it works
 
-<picture>
-  <source media="(max-width: 600px)" srcset="docs/workflow-technical-mobile.svg">
-  <img src="docs/workflow-technical-overview.svg" alt="Five steps: recover the trip from footage and context; find the story and record your voice; assemble picture and sound; review and revise; approve and deliver. Keep project memory for the next session." width="100%">
-</picture>
+<img src="docs/workflow-technical-v2.png" alt="Five steps: recover the trip; find the story and record your voice; assemble in DaVinci Resolve, Final Cut Pro or CapCut depending on setup; review in your editor with optional Dropbox Replay; approve, export and publish." width="100%">
 
 [Explore each step and a worked story example](docs/from-footage-to-film.md)
+
+Dropbox Replay is optional. Review in your editor or an AI preview when your connected tools support it, then give feedback with a version and timecode.
 
 Keep the scene plan, preferences and timecoded feedback in your film workspace. They give the next session a record of what was decided and what still needs work.
 
