@@ -33,7 +33,7 @@ For Resolve automixing or music replacement after it, read [Fairlight](reference
 
 ## Verify, review and learn
 
-Read [checks](references/checks.md) for each new export or sound change; use [sound continuity](references/audio-joins.md) for entrances, exits, background changes and music boundaries. Compare the native timeline and actual rendered file. Identify the reviewed version by hash; distinguish measured, transcribed, model-reviewed, watched/listened and accepted by the author. Report untested intervals and unavailable checks. A command returning success is not artistic approval.
+Read [checks](references/checks.md) for each new export or sound change. Review the selected scene’s joins using [transitions](references/transitions.md), including straight cuts, dominant camera gesture, attention and completed action; an effect is optional. For a bounded revision, recheck changed joins with context and reuse prior reviews only where preservation is demonstrated. Use [sound continuity](references/audio-joins.md) for entrances, exits, background changes and music boundaries. Compare the native timeline and actual rendered file. Identify the reviewed version by hash; distinguish measured, transcribed, model-reviewed, watched/listened and accepted by the author. Report untested intervals and unavailable checks. A command returning success is not artistic approval.
 
 Apply feedback with [review and memory](references/review.md). Keep the original comment, timecode/version, concrete change and verification evidence. Reusable taste belongs in preferences; one-off cuts belong in the scene's feedback. Previous approval of an idea does not accept its execution.
 
