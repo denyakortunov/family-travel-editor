@@ -25,7 +25,7 @@ View candidate ranges in motion and with surrounding context. A transcript or co
 
 ## Edit a bounded scene
 
-Read [editing principles](references/editing.md) and the user's preferences. Describe the intended change and protected material, then duplicate the timeline or create a new named version. Track source ranges, frame rates and each shot’s role, including beauty, atmosphere and spatial context. Before a helper export, derive a technical shot plan from the narrative scene using [plan formats](references/plan-formats.md); do not pass the narrative template directly to a timeline helper. Preserve complete selected thoughts, real reactions and meaningful motion. Adapt pacing to the scene, not a fixed shot length. Read [camera motion](references/camera-motion.md) for selected ranges and [preservation](references/preservation.md) before revising a timeline or rebuilding a mix.
+Read [editing principles](references/editing.md) and the user's preferences. Describe the intended change and protected material, then duplicate the timeline or create a new named version. Track source ranges, frame rates and each shot’s role, including beauty, atmosphere and spatial context. Before a helper export, derive a technical shot plan from the narrative scene using [plan formats](references/plan-formats.md); do not pass the narrative template directly to a timeline helper. Preserve complete selected thoughts, real reactions and meaningful motion. Adapt pacing to the scene, not a fixed shot length. Read [camera motion](references/camera-motion.md) for selected ranges, [transitions](references/transitions.md) when shaping motion or spatial joins, and [preservation](references/preservation.md) before revising a timeline or rebuilding a mix.
 
 Draft voiceover from confirmed memories. Let the author record it; do not fabricate missing family dialogue. Optional music, sound effects and models are choices, not required subscriptions. Record their provenance and check the actual resulting mix. Read [scene music](references/scene-music.md) when choosing music or shaping the balance of montage and live speech.
 
@@ -33,7 +33,7 @@ For Resolve automixing or music replacement after it, read [Fairlight](reference
 
 ## Verify, review and learn
 
-Read [checks](references/checks.md) for each new export or sound change. Compare the native timeline and actual rendered file. Identify the reviewed version by hash; distinguish measured, transcribed, model-reviewed, watched/listened and accepted by the author. Report untested intervals and unavailable checks. A command returning success is not artistic approval.
+Read [checks](references/checks.md) for each new export or sound change; use [sound continuity](references/audio-joins.md) for entrances, exits, background changes and music boundaries. Compare the native timeline and actual rendered file. Identify the reviewed version by hash; distinguish measured, transcribed, model-reviewed, watched/listened and accepted by the author. Report untested intervals and unavailable checks. A command returning success is not artistic approval.
 
 Apply feedback with [review and memory](references/review.md). Keep the original comment, timecode/version, concrete change and verification evidence. Reusable taste belongs in preferences; one-off cuts belong in the scene's feedback. Previous approval of an idea does not accept its execution.
 
