@@ -6,7 +6,7 @@
 
 [Watch the overview](#watch-how-it-works)
 
-[What’s New in v0.3.12](docs/whats-new-v0.3.12.md)
+[What’s New in v0.4.0](docs/whats-new-v0.4.0.md)
 
 [Capabilities and limits](docs/capabilities.md)
 
@@ -25,7 +25,7 @@
 
 ## Start with one scene
 
-1. **[Download the v0.3.12 source ZIP](https://github.com/denyakortunov/family-travel-editor/releases/download/v0.3.12/family-travel-editor-source-v0.3.12.zip)** and unzip it. Open the extracted folder in your local AI agent.
+1. **[Download the v0.4.0 source ZIP](https://github.com/denyakortunov/family-travel-editor/releases/download/v0.4.0/family-travel-editor-source-v0.4.0.zip)** and unzip it. Open the extracted folder in your local AI agent.
 2. Ask: **“Read `skills/family-travel-editor/SKILL.md` and help me get started. Ask about my trip and footage, build a short brief and guide me to the next step.”**
 3. Answer in your own words. The agent asks about **your trip and footage, the kind of film you want, and any editor you already use**. “Suggest something” and “I haven’t chosen an editor” are valid answers. It saves the brief and proposes a first scene once it can inspect the material.
 
@@ -47,7 +47,7 @@ Open a new chat and invoke `$family-travel-editor`, or use the absolute SKILL.md
 Alternatively, use the optional [skills CLI](https://github.com/vercel-labs/skills) and choose your agent when prompted:
 
 ```sh
-npx skills add https://github.com/denyakortunov/family-travel-editor/tree/v0.3.12/skills/family-travel-editor
+npx skills add https://github.com/denyakortunov/family-travel-editor/tree/v0.4.0/skills/family-travel-editor
 ```
 
 The CLI needs Node.js; the Python installer does not. See the [update and backup guide](docs/getting-started.md#6-update-or-undo-an-update).

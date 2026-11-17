@@ -17,6 +17,9 @@ Family Travel Editor is an **AI agent skill**, not a standalone editor or an AI 
 | Mix dialogue, music, titles and graphics | Workflow instructions | Actual editor/tools and listening/viewing checks required |
 | Review a Fairlight mix or replace processed music | Optional [procedure](../skills/family-travel-editor/references/fairlight.md) | Available Resolve Studio tools, preserved automation and actual export/listening comparison; no bundled automix command |
 | Find music through Epidemic Sound | Optional [connection and selection recipe](../skills/family-travel-editor/references/epidemic-sound.md) | User's connection, tool availability, subscription features and rights for the publication |
+| Review transitions and sound continuity | [Motion transitions](../skills/family-travel-editor/references/transitions.md) and [sound joins](../skills/family-travel-editor/references/audio-joins.md) instructions | Actual rendered movement, sound and meaningful scene connections; no automatic QA engine bundled |
+| Match colour, stabilize shots and place titles/maps | [Colour/title review](../skills/family-travel-editor/references/colour-and-titles.md) and [stabilization](../skills/family-travel-editor/references/stabilization.md) instructions | Separate editor/tools, actual camera profile/telemetry and before/after export review |
+| Prepare a voiceover recording packet | [Voiceover workflow](../skills/family-travel-editor/references/voiceover.md) | Confirmed memories, approved wording and working local recording path; no recording tool bundled |
 | Publish or read photos/email | Optional workflow choices | Separate tools/access and user authorization; no accounts bundled |
 
 The [real-footage exercise](../examples/grand-canyon-sunset/README.md) now demonstrates the silent picture route end to end, including a revision and saved continuation. It does not expand the native-editor or audio capabilities above.

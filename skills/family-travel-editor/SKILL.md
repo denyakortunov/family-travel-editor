@@ -27,9 +27,11 @@ View candidate ranges in motion and with surrounding context. A transcript or co
 
 Read [editing principles](references/editing.md) and the user's preferences. Describe the intended change and protected material, then duplicate the timeline or create a new named version. Track source ranges, frame rates and each shot’s role, including beauty, atmosphere and spatial context. Before a helper export, derive a technical shot plan from the narrative scene using [plan formats](references/plan-formats.md); do not pass the narrative template directly to a timeline helper. Preserve complete selected thoughts, real reactions and meaningful motion. Adapt pacing to the scene, not a fixed shot length. Read [camera motion](references/camera-motion.md) for selected ranges, [transitions](references/transitions.md) when shaping motion or spatial joins, and [preservation](references/preservation.md) before revising a timeline or rebuilding a mix.
 
-Draft voiceover from confirmed memories. Let the author record it; do not fabricate missing family dialogue. Optional music, sound effects and models are choices, not required subscriptions. Record their provenance and check the actual resulting mix. Read [scene music](references/scene-music.md) when choosing music or shaping the balance of montage and live speech.
+Read [voiceover](references/voiceover.md) when preparing or recording narration. Draft voiceover from confirmed memories. Let the author record it; do not fabricate missing family dialogue. Optional music, sound effects and models are choices, not required subscriptions. Record their provenance and check the actual resulting mix. Read [scene music](references/scene-music.md) when choosing music or shaping the balance of montage and live speech.
 
 For Resolve automixing or music replacement after it, read [Fairlight](references/fairlight.md). When the user chooses Epidemic Sound, read the [optional library recipe](references/epidemic-sound.md); it requires their own connection and applicable rights.
+
+For mixed-camera grading, processed footage, titles or route maps, read [colour and titles](references/colour-and-titles.md). For shake reduction, read [stabilization](references/stabilization.md) before choosing a method or processing a batch.
 
 ## Verify, review and learn
 

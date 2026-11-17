@@ -1,5 +1,13 @@
 # Validation coverage
 
+## v0.4.0 — 17 November 2026
+
+Local macOS/Python 3.9.6 suite: 28 tests ran, 26 passed and 2 media tests explicitly skipped because FFmpeg/ffprobe were unavailable. The source/plugin archive extraction, checksums, isolated installation, workspace preservation and release guards passed. The skill validator, installation self-check, Python compilation and changed-file relative-link checks passed. Helper code and workspace schemas are unchanged.
+
+The new procedures were traced to recent editing work and reviewed against scenarios involving reversed transitions, quiet music sources, stacked ducking, processed footage, incomplete Resolve snapshots and voiceover preparation. This is document/scenario review, not an independent model conversation or a new native-editor/audio trial. No new motion, colour, stabilization or recording automation is certified. Private media, family dialogue, project paths and licensed assets were excluded from the patch.
+
+The [release workflow](https://github.com/denyakortunov/family-travel-editor/actions/workflows/check.yml) runs the full helper/media suite with FFmpeg on Python 3.9 and 3.12. It publishes this version only after both pass; inspect the tagged commit's run for remote results. Existing editor-specific limits below remain applicable.
+
 ## v0.3.12 — 4 November 2026
 
 All 28 local tests pass, including clean installation, workspace creation with `BRIEF.md`, refusal to overwrite an existing workspace and preservation of its filled brief. The installation self-check and skill validator pass. Source and plugin package tests include the new template; user answers are kept outside the installed skill.

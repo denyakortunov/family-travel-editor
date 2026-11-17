@@ -1,5 +1,9 @@
 # Release notes
 
+## v0.4.0 — continuity, colour and reliable revisions
+
+[What’s New](whats-new-v0.4.0.md): rendered transitions, sound joins, whole-film structure, colour and stabilization checks, purposeful titles/maps, voiceover preparation and safer project verification.
+
 ## v0.3.12 — guided first run and saved film brief
 
 [What’s New](whats-new-v0.3.12.md): a short first-use interview, a persistent film brief, editor guidance and an explicit launch prompt after installation.

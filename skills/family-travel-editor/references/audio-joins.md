@@ -17,3 +17,9 @@ If voices need a lower music bed, keep that bed steady through the complete spee
 Compare processed and original sound at matched loudness. If removing a shout or noise creates artificial holes or pumping, reconsider the cut or retain more natural source sound. Do not apply aggressive isolation or an automix preset merely because the editor provides it. Review the music stem and full mix separately when diagnosing a level drop; clip presence does not establish audibility.
 
 For changed joins, record sources, actual overlap interval, curve/level choice and reason. Check the exported transition region for chopped words, clicks, relative background jumps, dips, stereo/mono behavior and sync. ASR, VAD and loudness measurements locate concerns but do not replace listening. Use [checks](checks.md) for evidence limits and [Fairlight](fairlight.md) for the optional Resolve workflow.
+
+## Diagnose a disappearing music bed
+
+Inspect short windows of the music source, its isolated processed stem and the actual mix, especially where speech ends and the picture continues silently. Integrated loudness, continuous clip presence and an absence of visible automation cannot establish that music stays audible. The source itself may have a very quiet middle section.
+
+Check the combined envelope when nearby or overlapping speech sections each trigger ducking: stacked reductions can create an unintended hole. Where they form one continuous speech episode, use a continuous bed or bound the total attenuation, then verify the rendered result. Choose a more suitable musical phrase or make a motivated musical edit when source dynamics cause the problem; do not compensate by pumping every speech pause. Measurements locate the issue but do not prove an inaudible seam.
