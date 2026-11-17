@@ -7,3 +7,5 @@ Maintain direction, eye line and action phase when appropriate; use a change in 
 Voiceover should not cover family conversation. Keep the camera atmosphere and separate speech/music/effects tracks. Under dialogue, choose a stable bed rather than pumping every pause. Check newly introduced music for competing voices across the used section. Effects and musical returns should reflect the action, with source/licensing notes.
 
 Inserts ripple all linked material unless a replacement was requested. Protect later titles, maps, sound effects and sync. Compare all affected tracks, not only the main video track. A rendered preview is not a substitute for an editable project. Label reduced-resolution review copies; export a final master from the available original resolutions.
+
+When a scene feels restless, inspect the sequence of shot types and motion phases rather than simply shortening every clip. Alternate useful movement with naturally calmer live footage and meaningful details as the story warrants. Short-shot examples are not duration quotas. For complete spatial reveals and the actual direction of native effects, read [transitions](transitions.md).

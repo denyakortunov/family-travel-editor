@@ -1,6 +1,6 @@
 # Resolve operations
 
-Release status: the bundled XML import/playback/export round trip remains unvalidated in v0.3.9. XML generation is tested separately. Production experience behind the editing instructions does not certify the bundled adapter.
+Release status: the bundled XML import/playback/export round trip remains unvalidated in this release. XML generation is tested separately. Production experience behind the editing instructions does not certify the bundled adapter.
 
 ## Free or Studio?
 
@@ -40,3 +40,11 @@ For real editing, duplicate a timeline, snapshot source IN/OUT and all video/aud
 After editing, verify all preserved tracks and corresponding rendered output, save a versioned project export and hash it. A .drp contains project data, not original media. Never change paths or library storage merely to match the example. The bundled XML helper supports only integer 24/25/30 fps, same-rate video, straight cuts and no audio/effects/titles. Other timelines require a native workflow, not silent frame rounding.
 
 Before using AI Audio Assistant or replacing music in a timeline it has processed, read [Fairlight](fairlight.md). It is optional and needs a separate comparison of the rendered mix, including intended musical contrasts and track/bus automation.
+
+## Current-session tools and reliable snapshots
+
+When the official Resolve MCP tools are available, inspect the connected version and use its scripting API search/documentation for methods and parameters. Confirm the active project and timeline before any write. The connection and a successful script response do not certify a native edit, nor do they expand permission to unrelated projects. No MCP server is bundled by this skill.
+
+After rendering, activate the intended timeline and confirm its identity before taking a protective snapshot. If enabled-state or audio properties unexpectedly disappear on the Deliver page or an inactive timeline, switch to an appropriate Edit/Fairlight context and reread. Resolve the inconsistent read before changing tracks to make a comparison pass. Compare with the actual export as well.
+
+A reload can expose changed or lost fades inside nested timelines. Two snapshots taken after the reload can agree while both differ from the accepted film. Compare with archived native data and the previously delivered export. Do not repair every zero fade automatically: the source may already contain one. Restore only evidenced differences in copies, preserving Fusion attributes, then check the combined export.
